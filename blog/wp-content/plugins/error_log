@@ -1,0 +1,1 @@
+[05-Nov-2013 16:14:18 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home/justhum/public_html/blog/wp-content/plugins/hello.php on line 60

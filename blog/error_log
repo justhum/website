@@ -1,0 +1,2 @@
+[27-Dec-2013 05:15:24 UTC] PHP Warning:  Missing argument 6 for my_next_post_link(), called in /home/justhum/public_html/blog/wp-content/themes/hum/nav-below-single.php on line 2 and defined in /home/justhum/public_html/blog/wp-content/plugins/better-nearby-posts-links/better_post_links.php on line 43
+[27-Dec-2013 05:15:24 UTC] PHP Fatal error:  Call to undefined function my_previous_post_link() in /home/justhum/public_html/blog/wp-content/themes/hum/nav-below-single.php on line 3

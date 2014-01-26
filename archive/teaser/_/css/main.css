@@ -1,0 +1,312 @@
+/*
+
+    MMMMM          MMMMM                                                        
+    MMMMM          MMMMM                                                        
+    MMMMM          MMMMM                                                        
+    MMMMM          MMMMM                                                        
+    MMMMM          MMMMM       .        .         .   .IMN7      ~NM8+          
+    MMMMM       .,$MMMMM   MMMMM       MMMM   MMMMM.7MMMMMMMN.,MMMMMMMM=        
+    MMMMM  .:DMMMMMMMMMM   MMMMM       MMMM   MMMMMMMMMMMMMMMDMMMMMMMMMM        
+    MMMMMMMMMMMMMMMMMMMM   MMMMM       MMMM   MMMMMMI.  7MMMMMM   .MMMMM        
+    MMMMMMMMMMMM?  MMMMM   MMMMM       MMMM   MMMMM      MMMMM     .MMMM        
+    MMMMMMD+       MMMMM   MMMMM       MMMM   MMMMM      MMMMM      MMMM        
+    MMMMM          MMMMM   MMMMM       MMMM   MMMMM      MMMMM      MMMM        
+    MMMMM          MMMMM   MMMMM.      MMMM   MMMMM      MMMMM      MMMM        
+    MMMMM          MMMMM   MMMMM.     MMMMM   MMMMM      MMMMM      MMMM        
+  . MMMMM       MMMMMMMM   7MMMMMMMMMMMMMMM   MMMMM      MMMMM      MMMM   DMMM7
+ .NMMMMMM    ..MMMMMMMMI    DMMMMMMMMM MMMM   MMMMM      MMMMM      MMMM  .MMMMI
+OMMMMMMMM      MMMMMMMM      .MMMMMD  .MMMM   MMMMM      MMMMM      MMMM   ,MD. 
+MMMMMMMM+      .MMMMZ                  .   .  .          .                 . .. 
+MMMMMMO  .                                                                      
+.$M8+.
+
+*/
+
+* {
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+body {
+    font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: rgb(50, 50, 50) url("../img/background.jpg") 50% 0% no-repeat fixed;
+    background-size: cover;
+    font-size: 16px;
+    -webkit-text-size-adjust: none;
+}
+
+a {
+    color: rgb(117, 223, 229);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#container {
+    margin: 0 auto;
+    width: 80%;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.wf-active #container {
+    opacity: 1;
+}
+
+h1 {
+    background: url("../img/logo.png");
+    background-size: 100%;
+    height: 0;
+    padding: 70px 0 0 0;
+    margin: 8.841155157258324% auto 0;
+    width: 184px;
+    overflow: hidden;
+}
+
+h2 {
+    color: rgb(233, 233, 233);
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 58px;
+    height: auto;
+    margin: 12px auto 0;
+    text-align: center;
+    width: auto;
+    text-rendering: optimizeLegibility;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+}
+
+p {
+    background: url("../img/kickstarter.png") center center no-repeat rgb(255, 255, 255);
+    background-size: 100%;
+    border-radius: 92px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 0px 0px;
+    margin: 5.606243166177133% auto 0;
+    width: 184px;
+    height: 0;
+    padding: 184px 0 0 0;
+    overflow: hidden;
+}
+
+article {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+    margin: 5.606243166177133% auto 0;
+    width: 50%;
+}
+
+#elsewhere {
+    text-align: center;
+    clear: both;
+    margin-bottom: 3%;
+}
+
+form {
+	width: 54.34948083529548%;
+	margin: 5.88273439610916% auto;
+	overflow: hidden;
+}
+
+input {
+    font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float: left;
+	height: 70px;
+	width: 67.3610295777828%;
+	border-radius: 4px;
+	background: rgba(246, 245, 245, 0.92);
+	color: rgb(138, 137, 137);
+	padding: 0 0 0 2%;
+	font-size: 32px;
+	border: none;
+}
+
+input:focus {
+    background: #fff;
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+   color: rgb(190, 190, 190);
+}
+
+input:-moz-placeholder {
+   color: rgb(190, 190, 190);
+}
+
+input::-moz-placeholder {
+   color: rgb(190, 190, 190);
+}
+
+.btn, button {
+    font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
+    text-decoration: none;
+	height: 70px;
+	border-radius: 4px;
+	background: rgb(117, 223, 229);
+	border: none;
+	font-size: 12px;
+	font-weight: 900;
+	line-height: 1em;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	letter-spacing: 1px;
+	padding: 0;
+	text-rendering: optimizeLegibility;
+}
+
+button {
+    float: left;
+	width: 28.662000451569202%;
+    margin: 0 0 0 1.9291036351320838%;
+}
+
+.btn {
+    display: inline-block;
+    line-height: 70px;
+    padding: 0 35px;
+    text-shadow: none;
+}
+
+.btn.secondary {
+    background: #fff;
+}
+
+button:hover, button:focus, .btn:hover, .btn:focus {
+    background: rgb(137, 228, 233);
+    text-decoration: none;
+}
+
+button:active, .btn:active {
+    margin-top: 1px;
+}
+
+.btn.secondary:hover {
+    background: #efefef;
+}
+
+#twitter_btn {
+    overflow: hidden;
+    display: inline-block;
+    height: 0;
+    width: 30px;
+    padding: 26px 0 0 0;
+    background: url("../img/twitter_btn.png");
+    background-size: 100%;
+}
+
+#twitter_btn:active {
+    margin-top: 1px;
+}
+
+
+@media only screen and (max-width: 892px) {
+	form {
+		width: 78.82196784107613%;
+	}
+}
+
+@media only screen and (max-width: 628px) {
+	form {
+		width: 100%;
+		margin: 11.984190563964411% auto;
+	}
+	
+	input {
+		width: 66.95521064301552%;
+	}
+	
+	button {
+		width: 27.09711751662971%;
+		margin: 0 0 0 1.95%;
+	}
+	
+	article {
+    	width: 100%;
+	}
+}
+
+@media only screen and (max-width: 431px) {
+	#container {
+    	width: 100%;
+	}
+	
+	h2 {
+		font-size: 46px;
+		line-height: 44px;
+	}
+	
+	form {
+    	width: 90%;
+	}
+	
+	input {
+		width: 98%;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	button {
+		width: 100%;
+		clear: both;
+		float: none;
+		margin: 2.445101593055423% 0 2.5% 0;
+	}
+}
+
+::selection {
+	background: rgb(117, 223, 229);
+    color: #000;
+    text-shadow: none;
+}
+
+::-moz-selection {
+	background: rgb(117, 223, 229);
+    color: #000;
+    text-shadow: none;
+}
+
+button::selection {
+    background: #fff;
+    text-shadow: none;
+}
+
+button::-moz-selection {
+    background: #fff;
+    text-shadow: none;
+}
+
+input::selection {
+    background: rgb(117, 223, 229);
+    color: #000;
+    text-shadow: none;
+}
+
+input::-moz-selection {
+    background: rgb(117, 223, 229);
+    color: #000;
+    text-shadow: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+    h1 { background-image: url("../img/logo@2x.png"); }
+    
+    p { background-image: url("../img/kickstarter@2x.png"); }
+    
+    #twitter_btn { background-image: url("../img/twitter_btn@2x.png"); }
+
+}
