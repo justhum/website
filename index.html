@@ -58,11 +58,11 @@ MMMMMMO  .
 	            <div class="phone">
 	            	<div class="walkthrough">
 					    <ul class="bjqs">
-					        <li><img src="_/img/01.png" width="198"></li>
-					        <li><img src="_/img/02.png" width="198"></li>
-					        <li><img src="_/img/03.png" width="198"></li>
-					        <li><img src="_/img/04.png" width="198"></li>
-					        <li><img src="_/img/05.png" width="198"></li>
+					        <li><img src="_/img/01.png" width="198" height="351"></li>
+					        <li><img src="_/img/02.png" width="198" height="351"></li>
+					        <li><img src="_/img/03.png" width="198" height="351"></li>
+					        <li><img src="_/img/04.png" width="198" height="351"></li>
+					        <li><img src="_/img/05.png" width="198" height="351"></li>
 					    </ul>
 					</div>
 	            </div>
@@ -159,18 +159,18 @@ MMMMMMO  .
         <div class="section features">
         	<div class="wrapper">
 	            <div class="feature">        
-	                <img src="_/img/quickplay.png" alt="Quick Play" width="38">
+	                <img src="_/img/quickplay.png" alt="Quick Play" width="38" height="46">
 	                <h4>Quick Play</h4>
 	                <p>Hum lets you play your ideas directly without having to drill down into your library.</p>
 	            </div>
 	            
 	            <div class="feature notes">
-	                <h4>Notes<img class="notes" src="_/img/notes.gif" alt="Cursor" width="3"></h4>
+	                <h4>Notes<img class="notes" src="_/img/notes.gif" alt="Cursor" width="3" height="28"></h4>
 	                <p>Hum provides a full page of notes that are kept separate from your lyrics.</p>
 	            </div>
 	            
 	            <div class="feature sharing">
-	                <img src="_/img/sharing.png" alt="Sharing" width="70">
+	                <img src="_/img/sharing.png" alt="Sharing" width="70" height="50">
 	                <h4>Sharing</h4>
 	                <p>Hum allows you to easily share your ideas with others by iMessage or email.</p>
 	            </div>
@@ -265,8 +265,8 @@ MMMMMMO  .
                 $("#jquery_jplayer_1").jPlayer({
                     ready: function (event) {
                         $(this).jPlayer("setMedia", {
-                            m4a:"_/mp3/seemethrough.m4a",
-                            oga:"_/mp3/seemethrough.ogg"
+                            m4a:"http://justhum.s3.amazonaws.com/seemethrough.m4a",
+                            oga:"http://justhum.s3.amazonaws.com/seemethrough.ogg"
                         });
                     },
                     swfPath: "_/mp3",
