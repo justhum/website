@@ -124,10 +124,43 @@ f[7]]),B.concat([f[1]+f[8]])],r=[C.concat([f[2]+f[7]]),C.concat([f[2]+f[8]])];a=
 s.push(f[10]):s.push(f[11]);k.addClass(s.join(" ")).data("target",c);c.data({base:k,mark:a.S.mark,decimals:h});for(d=0;d<a.handles;d++)g=e("<div><div/></div>").appendTo(k),g.addClass(p[d].join(" ")),g.children().addClass(r[d].join(" ")),q(n.start,g.children(),J,{base:k,target:c,handle:g}),q(n.end,g.children(),K,{base:k,target:c,handle:g}),g.data("nui",{target:c,decimals:h,options:a,base:k,style:l,number:d}).data("store",H(g,a.S)),g[0].gPct=F,m.push(g),v(g,t.to(a.range,a.start[d]));k.data({options:a,
 handles:m,style:l});c.data({handles:m});q(n.end,k,L,{base:k,target:c,handles:m})})}.call(this,D)}})($);
 
-/*! jQuery Retina Plugin - v1.0 - 3/25/2012
-* https://github.com/tylercraft/jQuery-Retina
-* Copyright (c) 2012 Tyler Craft; Licensed MIT, GPL */
-(function(a){a.fn.retina=function(b){var c={dataRetina:!0,suffix:"",checkIfImageExists:!1,customFileNameCallback:"",overridePixelRation:!1};b&&jQuery.extend(c,b);var d=!1;if(c.overridePixelRation||window.devicePixelRatio>=1.2)d=!0;return this.each(function(){var b=a(this);b.addClass("retina-off");if(!d)return!1;var e="";c.dataRetina&&b.attr("data-retina")&&(e=b.attr("data-retina")),c.suffix&&(e||(e=b.attr("src")));if(c.suffix){var f=e.replace(/.[^.]+$/,""),g=e.replace(/^.*\./,"");e=f+c.suffix+"."+g}c.customFileNameCallback&&(e=c.customFileNameCallback(b)),c.checkIfImageExists&&e?a.ajax({url:e,type:"HEAD",success:function(){b.attr("src",e),b.removeClass("retina-off"),b.addClass("retina-on")}}):e&&(b.attr("src",e),b.removeClass("retina-off"),b.addClass("retina-on"))})}})(jQuery)
+/*
+	Author: Troy Mcilvena (http://troymcilvena.com)
+	Twitter: @mcilvena
+	Date: 24 November 2011
+	Version: 1.3
+	
+	Revision History:
+		1.0 (23/08/2010)	- Initial release.
+		1.1 (27/08/2010)	- Made plugin chainable
+		1.2 (10/11/2010)	- Fixed broken retina_part setting. Wrapped in self executing function (closure)
+		1.3 (29/10/2011)	- Checked if source has already been updated (via mattbilson)
+*/
+
+(function( $ ){
+	$.fn.retina = function(retina_part) {
+		// Set default retina file part to '-2x'
+		// Eg. some_image.jpg will become some_image-2x.jpg
+		var settings = {'retina_part': '@2x'};
+		if(retina_part) jQuery.extend(settings, { 'retina_part': retina_part });
+
+		if(window.devicePixelRatio >= 2) {
+			this.each(function(index, element) {
+				if(!$(element).attr('src')) return;
+				
+				var checkForRetina = new RegExp("(.+)("+settings['retina_part']+"\\.\\w{3,4})");
+				if(checkForRetina.test($(element).attr('src'))) return;
+
+				var new_image_src = $(element).attr('src').replace(/(.+)(\.\w{3,4})$/, "$1"+ settings['retina_part'] +"$2");
+				$.ajax({url: new_image_src, type: "HEAD", success: function() {
+					$(element).attr('src', new_image_src);
+				}});
+			});
+		}
+		return this;
+	}
+})( jQuery );
+
 /*
  * Basic jQuery Slider plug-in v.1.3
  *
@@ -154,12 +187,72 @@ handles:m,style:l});c.data({handles:m});q(n.end,k,L,{base:k,target:c,handles:m})
  */
 (function(a){a.tools=a.tools||{version:"v1.2.7"};var b;b=a.tools.rangeinput={conf:{min:0,max:100,step:"any",steps:0,value:0,precision:undefined,vertical:0,keyboard:!0,progress:!1,speed:100,css:{input:"range",slider:"slider",progress:"progress",handle:"handle"}}};var c,d;a.fn.drag=function(b){document.ondragstart=function(){return!1},b=a.extend({x:!0,y:!0,drag:!0},b),c=c||a(document).on("mousedown mouseup",function(e){var f=a(e.target);if(e.type=="mousedown"&&f.data("drag")){var g=f.position(),h=e.pageX-g.left,i=e.pageY-g.top,j=!0;c.on("mousemove.drag",function(a){var c=a.pageX-h,e=a.pageY-i,g={};b.x&&(g.left=c),b.y&&(g.top=e),j&&(f.trigger("dragStart"),j=!1),b.drag&&f.css(g),f.trigger("drag",[e,c]),d=f}),e.preventDefault()}else try{d&&d.trigger("dragEnd")}finally{c.off("mousemove.drag"),d=null}});return this.data("drag",!0)};function e(a,b){var c=Math.pow(10,b);return Math.round(a*c)/c}function f(a,b){var c=parseInt(a.css(b),10);if(c)return c;var d=a[0].currentStyle;return d&&d.width&&parseInt(d.width,10)}function g(a){var b=a.data("events");return b&&b.onSlide}function h(b,c){var d=this,h=c.css,i=a("<div><div/><a href='#'/></div>").data("rangeinput",d),j,k,l,m,n;b.before(i);var o=i.addClass(h.slider).find("a").addClass(h.handle),p=i.find("div").addClass(h.progress);a.each("min,max,step,value".split(","),function(a,d){var e=b.attr(d);parseFloat(e)&&(c[d]=parseFloat(e,10))});var q=c.max-c.min,r=c.step=="any"?0:c.step,s=c.precision;s===undefined&&(s=r.toString().split("."),s=s.length===2?s[1].length:0);if(b.attr("type")=="range"){var t=b.clone().wrap("<div/>").parent().html(),u=a(t.replace(/type/i,"type=text data-orig-type"));u.val(c.value),b.replaceWith(u),b=u}b.addClass(h.input);var v=a(d).add(b),w=!0;function x(a,f,g,h){g===undefined?g=f/m*q:h&&(g-=c.min),r&&(g=Math.round(g/r)*r);if(f===undefined||r)f=g*m/q;if(isNaN(g))return d;f=Math.max(0,Math.min(f,m)),g=f/m*q;if(h||!j)g+=c.min;j&&(h?f=m-f:g=c.max-g),g=e(g,s);var i=a.type=="click";if(w&&k!==undefined&&!i){a.type="onSlide",v.trigger(a,[g,f]);if(a.isDefaultPrevented())return d}var l=i?c.speed:0,t=i?function(){a.type="change",v.trigger(a,[g])}:null;j?(o.animate({top:f},l,t),c.progress&&p.animate({height:m-f+o.height()/2},l)):(o.animate({left:f},l,t),c.progress&&p.animate({width:f+o.width()/2},l)),k=g,n=f,b.val(g);return d}a.extend(d,{getValue:function(){return k},setValue:function(b,c){y();return x(c||a.Event("api"),undefined,b,!0)},getConf:function(){return c},getProgress:function(){return p},getHandle:function(){return o},getInput:function(){return b},step:function(b,e){e=e||a.Event();var f=c.step=="any"?1:c.step;d.setValue(k+f*(b||1),e)},stepUp:function(a){return d.step(a||1)},stepDown:function(a){return d.step(-a||-1)}}),a.each("onSlide,change".split(","),function(b,e){a.isFunction(c[e])&&a(d).on(e,c[e]),d[e]=function(b){b&&a(d).on(e,b);return d}}),o.drag({drag:!1}).on("dragStart",function(){y(),w=g(a(d))||g(b)}).on("drag",function(a,c,d){if(b.is(":disabled"))return!1;x(a,j?c:d)}).on("dragEnd",function(a){a.isDefaultPrevented()||(a.type="change",v.trigger(a,[k]))}).click(function(a){return a.preventDefault()}),i.click(function(a){if(b.is(":disabled")||a.target==o[0])return a.preventDefault();y();var c=j?o.height()/2:o.width()/2;x(a,j?m-l-c+a.pageY:a.pageX-l-c)}),c.keyboard&&b.keydown(function(c){if(!b.attr("readonly")){var e=c.keyCode,f=a([75,76,38,33,39]).index(e)!=-1,g=a([74,72,40,34,37]).index(e)!=-1;if((f||g)&&!(c.shiftKey||c.altKey||c.ctrlKey)){f?d.step(e==33?10:1,c):g&&d.step(e==34?-10:-1,c);return c.preventDefault()}}}),b.blur(function(b){var c=a(this).val();c!==k&&d.setValue(c,b)}),a.extend(b[0],{stepUp:d.stepUp,stepDown:d.stepDown});function y(){j=c.vertical||f(i,"height")>f(i,"width"),j?(m=f(i,"height")-f(o,"height"),l=i.offset().top+m):(m=f(i,"width")-f(o,"width"),l=i.offset().left)}function z(){y(),d.setValue(c.value!==undefined?c.value:c.min)}z(),m||a(window).load(z)}a.expr[":"].range=function(b){var c=b.getAttribute("type");return c&&c=="range"||a(b).filter("input").data("rangeinput")},a.fn.rangeinput=function(c){if(this.data("rangeinput"))return this;c=a.extend(!0,{},b.conf,c);var d;this.each(function(){var b=new h(a(this),a.extend(!0,{},c)),e=b.getInput().data("rangeinput",b);d=d?d.add(e):e});return d?d:this}})(jQuery);
 
+$(window).load(function(){
+    $("img").retina();
+});
 $(function(){
 	$('#mc-embedded-subscribe-form').ajaxChimp();
 });
-$(window).load(function(){
-    $('img').retina({
-        suffix: "@2x",
-        checkIfImageExists: true
+$(function(){
+    $('.walkthrough').bjqs({
+		'height' : 351,
+		'width' : 198,
+		'animtype' : 'slide',
+		'showcontrols' : false
+	});
+    
+    $('.keys a').click(function(){
+        $(this).toggleClass("active");
+        return false;
+    });
+    
+    $('.sortby a').click(function(){
+        $(this).siblings().removeClass("active");
+        $(this).addClass("active");
+        
+        return false;
+    });
+    
+    $('a.toggle').click(function(){
+        $(this).toggleClass("active");
+        $(this).siblings().removeClass("active");
+        
+        return false;
+    });
+    
+    $('.dropdowns a').click(function(){
+        return false;
+    });
+    
+    $(".slider").noUiSlider({
+        start: 50,
+        range: [0, 100],
+        handles: 1
+    });
+    
+    $('a.play_btn').click(function(){
+       if ( $(this).hasClass("playing") ) {
+           $("#jquery_jplayer_1").jPlayer("stop");
+       } else {
+           $("#jquery_jplayer_1").jPlayer("play");
+           $(".jp-current-time").show();
+       }
+       
+       $(this).toggleClass("playing");
+       
+       return false;
+    });
+    
+    $("#jquery_jplayer_1").jPlayer({
+        ready: function (event) {
+            $(this).jPlayer("setMedia", {
+                m4a:"http://justhum.s3.amazonaws.com/seemethrough.m4a",
+                oga:"http://justhum.s3.amazonaws.com/seemethrough.ogg"
+            });
+        },
+        swfPath: "_/mp3",
+        supplied: "m4a, oga",
+        wmode: "window",
+        timeFormat: { padMin: false }
     });
 });
