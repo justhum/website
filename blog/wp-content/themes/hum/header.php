@@ -41,7 +41,7 @@ MMMMMMO  .
         <meta property="og:url" content="http://justhum.com/" />
 
 		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7407272/777922/css/fonts.css" />
-        <link rel="stylesheet" href="/_/css/secondary.css">
+        <link rel="stylesheet" href="/_/css/secondary.min.css">
         
         <script type="text/javascript" src="//use.typekit.net/qtx7caw.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -60,7 +60,7 @@ MMMMMMO  .
             	<li><a href="/about/" title="About">About</a></li>
             	<li><a class="current" href="/blog/" title="Blog">Blog</a></li>
             	<li><a href="/support/" title="Support">Support</a></li>
-            	<!-- <li><a href="https://itunes.apple.com/us/app/hum/id796154884?ls=1&mt=8" title="Download on the App Store" class="appstore_btn">Download on <br>the App Store</a></li> -->
+            	<li><a href="https://itunes.apple.com/us/app/hum/id796154884?ls=1&mt=8" title="Download on the App Store" class="appstore_btn" target="_blank">Download on <br>the App Store</a></li>
             </ul> 
         </div>
 
