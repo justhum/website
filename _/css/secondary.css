@@ -52,7 +52,7 @@ a:hover {
 
 .header .navigation {
 	position: absolute;
-	top: 35px;
+	top: 30px;
 	right: 27px;
 }
 
@@ -85,13 +85,13 @@ a:hover {
 a.appstore_btn {
 	font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 300;
-	text-align: left;
+	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
 	background: #4da99d url("../img/apple_small.png") no-repeat 1em center;
 	background-size: 21px;
 	display: inline-block;
-	padding: 1em 1.5em .9em 3.4em;
+	padding: 1em 1em .9em 3.6em;
 	font-size: 12px;
 	line-height: 11px;
 	letter-spacing: 0;
@@ -162,6 +162,7 @@ a.appstore_btn:hover {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-rendering: optimizeLegibility;
+	vertical-align: middle;
 }
 
 .footer ul li a {
@@ -172,6 +173,11 @@ a.appstore_btn:hover {
 .footer ul li a.current {
 	color: #4da99d;
 	border-bottom: solid 2px #4da99d;
+}
+
+.footer ul li a.appstore_btn:hover {
+	border-bottom: none;
+	color: #fff;
 }
 
 .section {
@@ -410,7 +416,7 @@ form {
 	width: 80%;
 	margin: 0 auto;
 	overflow: hidden;
-	max-width: 520px;
+	max-width: 450px;
 }
 
 input {
@@ -663,39 +669,7 @@ pre {
 	}
 }
 
-
-@media only screen and (max-width: 600px) {
-	.bio_photo {
-		float: none;
-		width: 190px;
-		margin: 0 auto 1em;
-	}
-
-	.bio_content {
-		padding-top: 0;
-		margin-bottom: 5em;
-	}
-	
-	
-	.bio {
-		width: 80%;
-		text-align: center;
-		margin: 0 auto;
-	}
-}
-
-
-@media only screen and (max-width: 540px) {
-    .entry_author_image {
-		float: none;
-		margin-bottom: 1em;
-	}
-	
-	.entry-meta,
-	.entry-title {
-		text-align: center;
-	}
-	
+@media only screen and (max-width:760px) {
 	.header {
 		text-align: center;
 		padding: 27px 0 40px;
@@ -715,6 +689,48 @@ pre {
 	.header li {
 		display: block;
 		margin: 0;
+	}
+	
+	.header .appstore_btn {
+		margin-top: 20px;
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+	.bio_photo {
+		float: none;
+		width: 190px;
+		margin: 0 auto 1em;
+	}
+
+	.bio_content {
+		padding-top: 0;
+		margin-bottom: 5em;
+	}
+	
+	.bio {
+		width: 80%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	.footer ul li {
+	    display: block;
+	    margin-bottom: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 540px) {
+    .entry_author_image {
+		float: none;
+		margin-bottom: 1em;
+	}
+	
+	.entry-meta,
+	.entry-title {
+		text-align: center;
 	}
 }
 
@@ -738,11 +754,6 @@ pre {
     input {
     	padding-left: 4%;
 	    width: 96%;
-    }
-    
-    .footer ul li {
-	    display: block;
-	    margin-bottom: 20px;
     }
 }
 

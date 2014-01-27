@@ -30,10 +30,10 @@ a:hover {
 }
 
 a.appstore_btn {
-	text-align: left;
+	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
-	background: #000 url("../img/apple_large.png") no-repeat 1em center;
+	background: #4da99d url("../img/apple_large.png") no-repeat 1em center;
 	background-size: 34px;
 	display: inline-block;
 	position: relative;
@@ -49,7 +49,7 @@ a.appstore_btn {
 
 a.appstore_btn:hover {
 	text-decoration: none;
-	background-color: #222;
+	background-color: #5cb8ac;
 }
 
 .btn {
@@ -89,7 +89,7 @@ a.appstore_btn:hover {
 .name {
 	float: left;
 	text-align: center;
-	margin-top: 140px;
+	margin-top: 130px;
 	width: 400px;
 }
 
@@ -191,6 +191,7 @@ h4 {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-rendering: optimizeLegibility;
+	vertical-align: middle;
 }
 
 .footer ul li a {
@@ -203,12 +204,18 @@ h4 {
 	border-bottom: solid 2px #4da99d;
 }
 
+.footer ul li a.appstore_btn:hover {
+	color: #fff;
+	border-bottom: none;
+}
+
 .footer a.appstore_btn {
-	background-color: #4da99d;
 	font-size: 12px;
+	font-weight: 300;
 	line-height: 11px;
-	padding-left: 3.4em;
+	padding: 1em 1em .9em 3.6em;
 	margin-top: 0;
+	letter-spacing: 0;
 	background-image: url("../img/apple_small.png");
 	background-size: 21px;
 	-webkit-border-radius: 3px;
@@ -586,7 +593,7 @@ form {
 	width: 80%;
 	margin: 0 auto;
 	overflow: hidden;
-	max-width: 520px;
+	max-width: 450px;
 }
 
 input {
@@ -763,6 +770,13 @@ ol.bjqs-markers li.active-marker a {
 	.phone {
 		float: none;
 	}
+}
+
+@media only screen and (max-width: 600px) {
+    .footer ul li {
+	    display: block;
+	    margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
