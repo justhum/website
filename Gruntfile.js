@@ -43,6 +43,13 @@ module.exports = function(grunt) {
 					'_/css/tertiary.min.css': ['_/css/tertiary.css']
 				}	
 			},
+		},
+		
+		watch: {
+			src: {
+				files: ['_/css/main.css', '_/css/secondary.css', '_/css/tertiary.css'],
+				tasks: ['default'],
+			},
 		}
     });
 
@@ -50,6 +57,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
