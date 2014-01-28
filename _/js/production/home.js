@@ -246,12 +246,12 @@ $(function(){
     $("#jquery_jplayer_1").jPlayer({
         ready: function (event) {
             $(this).jPlayer("setMedia", {
-                m4a:"http://justhum.s3.amazonaws.com/seemethrough.m4a",
+                mp3:"http://justhum.s3.amazonaws.com/seemethrough.mp3",
                 oga:"http://justhum.s3.amazonaws.com/seemethrough.ogg"
             });
         },
         swfPath: "_/mp3",
-        supplied: "m4a, oga",
+        supplied: "mp3, oga",
         wmode: "window",
         timeFormat: { padMin: false }
     });
