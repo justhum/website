@@ -89,7 +89,7 @@ a.appstore_btn:hover {
 .name {
 	float: left;
 	text-align: center;
-	margin-top: 130px;
+	margin-top: 118px;
 	width: 400px;
 }
 
@@ -736,6 +736,8 @@ ol.bjqs-markers li.active-marker a {
 
 .price {
 	font-size: 12px;
+	display: block;
+	margin-top: 16px;
 }
 
 @media only screen and (min-width: 1200px) {
