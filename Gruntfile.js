@@ -4,7 +4,6 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 		
-		// Secondary Pages
 		concat: {
 			basic: {
 				src: [
@@ -50,6 +49,24 @@ module.exports = function(grunt) {
 				files: ['_/css/main.css', '_/css/secondary.css', '_/css/tertiary.css'],
 				tasks: ['default'],
 			},
+		},
+		
+		ftpush: {
+			build: {
+				auth: {
+					host: 'ftp.justhum.com',
+					port: 21,
+					authKey: 'key1'
+				},
+				src: '',
+				dest: '/public_html/test/',
+				exclusions: [
+					'/**/.DS_Store',
+					'Gruntfile.js',
+					'node_modules/',
+					'README.md'
+				]
+			}
 		}
     });
 
@@ -58,7 +75,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-ftpush');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
+    grunt.registerTask('deploy', ['ftpush']);
 };
