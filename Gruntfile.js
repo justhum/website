@@ -8,8 +8,6 @@ module.exports = function(grunt) {
 			basic: {
 				src: [
 					'_/js/libs/jquery.ajaxchimp.min.js',
-					'_/js/libs/jquery.retina.min.js',
-					'_/js/retinize.js',
 					'_/js/form.js'
 				],
 				dest: '_/js/production/secondary.js',
@@ -17,7 +15,6 @@ module.exports = function(grunt) {
 			extras: {
 				src: [
 					'_/js/libs/*.js', // All JS in the libs folder
-					'_/js/retinize.js',
 					'_/js/form.js',
 					'_/js/home.js'
 				],

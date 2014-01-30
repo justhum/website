@@ -34,9 +34,9 @@ MMMMMMO  .
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7407272/777922/css/fonts.css" />
-        <link rel="stylesheet" href="/_/css/tertiary.css">
+        <link rel="stylesheet" href="http://cdn.justhum.com/css/tertiary.min.css">
         
-        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="shortcut icon" href="http://cdn.justhum.com/favicon.ico">
     </head>
     <body>
         <div class="container">        

@@ -51,11 +51,11 @@ $(function(){
     $("#jquery_jplayer_1").jPlayer({
         ready: function (event) {
             $(this).jPlayer("setMedia", {
-                mp3:"http://justhum.s3.amazonaws.com/seemethrough.mp3",
-                oga:"http://justhum.s3.amazonaws.com/seemethrough.ogg"
+                mp3:"http://cdn.justhum.com/mp3/seemethrough.mp3",
+                oga:"http://cdn.justhum.com/mp3/seemethrough.ogg"
             });
         },
-        swfPath: "_/mp3",
+        swfPath: "http://cdn.justhum.com/mp3/",
         supplied: "mp3, oga",
         wmode: "window",
         timeFormat: { padMin: false }

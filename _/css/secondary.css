@@ -44,7 +44,7 @@ a:hover {
 	display: block;
 	height: 0;
 	overflow: hidden;
-	background: url("../img/hum_small.png") no-repeat;
+	background: url("http://cdn.justhum.com/img/hum_small.png") no-repeat;
 	background-size: 100%;
 	padding-top: 55px;
 	width: 145px;
@@ -88,7 +88,7 @@ a.appstore_btn {
 	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
-	background: #4da99d url("../img/apple_small.png") no-repeat 1em center;
+	background: #4da99d url("http://cdn.justhum.com/img/apple_small.png") no-repeat 1em center;
 	background-size: 21px;
 	display: inline-block;
 	padding: 1em 1em .9em 3.6em;
@@ -122,7 +122,7 @@ a.appstore_btn:hover {
 
 .footer {
 	font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	background: url("../img/hero_back.jpg") no-repeat center center;
+	background: url("http://cdn.justhum.com/img/hero_back.jpg") no-repeat center center;
 	background-color: #323232;
 	background-size: cover;
 	color: #e9e9e9;
@@ -137,7 +137,7 @@ a.appstore_btn:hover {
 	height: 0;
 	padding-top: 71px;
 	overflow: hidden;
-	background: url("../img/hum.png") no-repeat;
+	background: url("http://cdn.justhum.com/img/hum.png") no-repeat;
 	background-size: 100%;
 }
 
@@ -593,7 +593,7 @@ pre {
 
 .about .photo {
 	width: 100%;
-	background: url("../img/about.jpg") bottom center no-repeat #2d2d2d;
+	background: url("http://cdn.justhum.com/img/about.jpg") bottom center no-repeat #2d2d2d;
 	background-size: 100%;
 	padding-bottom: 55%;
 	height: 0;
@@ -766,18 +766,18 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
     
     .header h1 a {
-		background-image: url("../img/hum_small@2x.png");
+		background-image: url("http://cdn.justhum.com/img/hum_small@2x.png");
 	}
     
     a.appstore_btn {
-		background-image: url("../img/apple_small@2x.png");
+		background-image: url("http://cdn.justhum.com/img/apple_small@2x.png");
 	}
 	
 	.footer {
-		background-image: url("../img/hero_back@2x.jpg");
+		background-image: url("http://cdn.justhum.com/img/hero_back@2x.jpg");
 	}
 	
 	.footer .logo a {
-		background-image: url("../img/hum@2x.png");
+		background-image: url("http://cdn.justhum.com/img/hum@2x.png");
 	}
 }
