@@ -739,7 +739,12 @@ pre {
 		width: 100%;
 	}
 	
+	.about {
+		padding-bottom: 90px;
+	}
+	
 	.bios {
+		padding-top: 90px;
 		padding-bottom: 40px;
 	}
 	
