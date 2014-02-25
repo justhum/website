@@ -8,6 +8,8 @@ module.exports = function(grunt) {
 			basic: {
 				src: [
 					'_/js/libs/jquery.ajaxchimp.min.js',
+					'_/js/libs/fastclick.js',
+					'_/js/fastclick.js',
 					'_/js/form.js'
 				],
 				dest: '_/js/production/secondary.js',
@@ -15,6 +17,7 @@ module.exports = function(grunt) {
 			extras: {
 				src: [
 					'_/js/libs/*.js', // All JS in the libs folder
+					'_/js/fastclick.js',
 					'_/js/form.js',
 					'_/js/home.js'
 				],
@@ -47,24 +50,6 @@ module.exports = function(grunt) {
 				tasks: ['default'],
 			},
 		},
-		
-		ftpush: {
-			build: {
-				auth: {
-					host: 'ftp.justhum.com',
-					port: 21,
-					authKey: 'key1'
-				},
-				src: '',
-				dest: '/public_html/test/',
-				exclusions: [
-					'/**/.DS_Store',
-					'Gruntfile.js',
-					'node_modules/',
-					'README.md'
-				]
-			}
-		}
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
@@ -72,9 +57,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-ftpush');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
-    grunt.registerTask('deploy', ['ftpush']);
 };
