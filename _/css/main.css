@@ -807,6 +807,10 @@ ol.bjqs-markers li.active-marker a {
     h4 {
 	    font-size: 22px;
     }
+    
+    .section {
+		padding: 90px 0;
+	}
 }
 
 
