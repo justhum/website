@@ -299,7 +299,7 @@ a.appstore_btn:hover {
 }
 
 .wp-caption img {
-	margin-bottom: 0;
+	margin-bottom: 1em;
 }
 
 .wp-caption {
