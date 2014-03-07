@@ -10,7 +10,8 @@ module.exports = function(grunt) {
 					'_/js/libs/jquery.ajaxchimp.min.js',
 					'_/js/libs/fastclick.js',
 					'_/js/fastclick.js',
-					'_/js/form.js'
+					'_/js/form.js',
+					'_/js/secondary.js'
 				],
 				dest: '_/js/production/secondary.js',
 			},

@@ -778,3 +778,12 @@ $(function(){
 $(function(){
 	$('#mc-embedded-subscribe-form').ajaxChimp();
 });
+$(function(){       
+    $('.toggle-btn').click(function(){
+       $('.navigation-mobile').toggleClass("open");
+       
+       return false;
+    });
+    
+    $(".duplicate").clone().appendTo(".navigation-mobile");
+});

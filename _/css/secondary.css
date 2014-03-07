@@ -52,8 +52,8 @@ a:hover {
 
 .header .navigation {
 	position: absolute;
-	top: 30px;
-	right: 27px;
+	top: 37px;
+	right: 232px;
 }
 
 .header li {
@@ -77,12 +77,15 @@ a:hover {
 	border-bottom: solid 2px #4da99d;
 }
 
-.navigation a.appstore_btn:hover {
+a.appstore_btn:hover {
 	color: #fff;
 	border-bottom: none;
 }
 
 a.appstore_btn {
+	position: absolute;
+	top: 31px;
+	right: 20px;
 	font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	text-align: center;
@@ -662,6 +665,50 @@ pre {
 	margin-left: 0;
 }
 
+.navigation-mobile {
+	font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	text-align: center;
+	display: none;
+	max-height: 0;
+	-webkit-transition: max-height .2s ease-in-out;
+	-moz-transition: max-height .2s ease-in-out;
+}
+
+.navigation-mobile.open {
+	max-height: 135px;
+}
+
+.navigation-mobile a {
+	display: block;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-decoration: none;
+	background: #4da99d;
+	color: #fff;
+	padding: .5em 1em;
+	font-size: 14px;
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.navigation-mobile a.first {
+	border-top: none;
+}
+
+.toggle-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2000;
+	display: none;
+	width: 53px;
+	height: 0;
+	padding-top: 48px;
+	background: url("../img/hamburger-btn-dark.png") no-repeat;
+	background-size: 100%;
+	overflow: hidden;
+}
+
 @media only screen and (max-width: 800px) {
 	.about .photo {
 		background-size: 180%;
@@ -679,20 +726,26 @@ pre {
 	.header h1 a {
 		position: static;
 		display: block;
-		margin: 0 auto 1em;
+		margin: 0 auto 2em;
 	}
 	
 	.header .navigation {
 		position: static;
+		margin-bottom: 2em;
 	}
 	
 	.header li {
-		display: block;
-		margin: 0;
+		margin: 0 .75em;
 	}
 	
 	.header .appstore_btn {
-		margin-top: 20px;
+		position: static;
+	}
+	
+	.section,
+    .post {
+		padding: 90px 0;
+		margin: 0 auto;
 	}
 }
 
@@ -734,6 +787,17 @@ pre {
 	}
 }
 
+@media only screen and (max-width: 460px) {
+	.navigation {
+		display: none;
+	}
+	
+	.navigation-mobile,
+	.toggle-btn {
+		display: block;
+	}
+}
+
 @media only screen and (max-width: 400px) {
     .bio {
 		width: 100%;
@@ -760,10 +824,6 @@ pre {
     	padding-left: 4%;
 	    width: 96%;
     }
-    
-    .section {
-		padding: 90px 0;
-	}
 }
 
 @media
@@ -788,5 +848,9 @@ only screen and (                min-resolution: 2dppx) {
 	
 	.footer .logo a {
 		background-image: url("http://cdn.justhum.com/img/hum@2x.png");
+	}
+	
+	.toggle-btn {
+		background-image: url("../img/hamburger-btn-dark@2x.png");
 	}
 }

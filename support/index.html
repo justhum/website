@@ -34,11 +34,11 @@ MMMMMMO  .
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7407272/777922/css/fonts.css" />
-        <link rel="stylesheet" href="http://cdn.justhum.com/css/secondary.min.css">
+        <link rel="stylesheet" href="../_/css/secondary.min.css">
         
         <meta property="og:type" content="company" />
         <meta property="og:title" content="Hum" />
-        <meta property="og:image" content="http://cdn.justhum.com/img/facebook.jpg" />
+        <meta property="og:image" content="_/img/facebook.jpg" />
         <meta property="og:site_name" content="Hum" />
         <meta property="og:description" content="Hum is an iPhone app that combines note-taking and audio recording into a single app for capturing and organizing all your songwriting ideas." />
         <meta property="og:url" content="http://justhum.com/" />
@@ -46,21 +46,26 @@ MMMMMMO  .
         <script type="text/javascript" src="//use.typekit.net/qtx7caw.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         
-        <link rel="shortcut icon" href="http://cdn.justhum.com/favicon.ico">
+        <link rel="shortcut icon" href="_/favicon.ico">
     </head>
     
     <body>
-    
-    
+		<div class="navigation-mobile"></div>    
+
     	<div class="header">
             <h1><a href="/" title="Home">Hum.</a></h1>
             
-            <ul class="navigation">
-				<li><a href="/about/" title="About">About</a></li>
-            	<li><a href="/blog/" title="Blog">Blog</a></li>
-            	<li><a class="current" href="/support/" title="Support">Support</a></li>
-            	<li><a href="https://itunes.apple.com/us/app/hum/id796154884?ls=1&mt=8" title="Download on the App Store" class="appstore_btn" target="_blank">Download on <br>the App Store</a></li>
-            </ul> 
+            <div class="navigation">
+	            <ul class="duplicate">
+					<li><a href="/about/" title="About">About</a></li>
+	            	<li><a href="/blog/" title="Blog">Blog</a></li>
+	            	<li><a class="current" href="/support/" title="Support">Support</a></li>
+	            </ul>
+            </div>
+            
+            <a href="https://itunes.apple.com/us/app/hum/id796154884?ls=1&mt=8" title="Download on the App Store" class="appstore_btn" target="_blank">Download on <br>the App Store</a>
+            
+            <a href="#" class="toggle-btn"></a>
         </div>
     
 
@@ -157,13 +162,6 @@ MMMMMMO  .
             <h1 class="logo"><a href="/">Hum</a></h1>
             <h2>Your Songwriting, Organized</h2>
             
-            <ul>
-            	<li><a href="/about/">About</a></li>
-                <li><a href="/blog/">Blog</a></li>
-                <li><a href="/support/" class="current">Support</a></li>
-                <li><a href="https://itunes.apple.com/us/app/hum/id796154884?ls=1&mt=8" class="appstore_btn" target="_blank">Download on <br>the App Store</a></li>
-            </ul>
-            
             <form action="http://justhum.us5.list-manage.com/subscribe/post?u=66c48ed94c753b5fb093c3807&amp;id=c7fec5ee88" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
             	<input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required spellcheck="false">
             	<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Get<br />Updates</button>
@@ -172,7 +170,7 @@ MMMMMMO  .
         </div>
 				
 		<script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
-        <script src="http://cdn.justhum.com/js/secondary.min.js"></script>
+        <script src="../_/js/production/secondary.min.js"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
