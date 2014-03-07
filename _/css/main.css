@@ -33,7 +33,7 @@ a.appstore_btn {
 	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
-	background: #4da99d url("http://cdn.justhum.com/img/apple_large.png") no-repeat 1em center;
+	background: #4da99d url("../img/apple_large.png") no-repeat 1em center;
 	background-size: 34px;
 	display: inline-block;
 	position: relative;
@@ -72,18 +72,88 @@ a.appstore_btn:hover {
 }
 
 .hero {
-	background: url("http://cdn.justhum.com/img/hero_back.jpg") no-repeat center center;
+	background: url("../img/hero_back.jpg") no-repeat center center;
 	background-color: #323232;
 	background-size: cover;
 	border-top: 4px solid #4da99d;
 	color: #e9e9e9;
+	text-align: center;
 	overflow: hidden;
+	position: relative;
+}
+
+.navigation ul {
+	margin-bottom: 43px;
+}
+
+.navigation li {
+	display: inline-block;
+	margin: 0 1.5em;
+}
+
+.navigation a {
+	color: #969696;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: #4da99d;
+	border-bottom: solid 2px #4da99d;
+}
+
+.nav-collapse ul {
+	margin-bottom: 43px;
+}
+
+.nav-collapse li {
+	display: inline-block;
+	margin: 0 1.5em;
+}
+
+.nav-collapse a {
+	color: #969696;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.nav-collapse a:hover {
+	color: #4da99d;
+	border-bottom: solid 2px #4da99d;
+}
+
+.play-btn {
+	display: inline-block;
+	width: 47px;
+	height: 0;
+	padding-top: 47px;
+	background: url("../img/play-btn.png") no-repeat;
+	background-size: 94px;
+	overflow: hidden;
+	margin-bottom: -13px;
+}
+
+.play-btn:hover {
+	background-position: -47px 0;
 }
 
 .wrapper {
 	max-width: 700px;
 	width: 100%;
 	margin: 0 auto;
+}
+
+.hero .wrapper {
+	width: 90%;
+	max-width: 818px;
+}
+
+.hero h2 {
+	margin-bottom: 84px;
 }
 
 .name {
@@ -93,14 +163,66 @@ a.appstore_btn:hover {
 	width: 400px;
 }
 
-.phone {
-	float: right;
-	margin: 0 auto;
-	width: 233px;
-	height: 494px;
+.phones {
+	display: block;
+	height: 492px;
 	position: relative;
-	background: url("http://cdn.justhum.com/img/phone_scaled.png") no-repeat center top;
-	background-size: 100%;
+	margin-bottom: 50px;
+}
+
+.middle {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -119px;
+	z-index: 3;
+}
+
+.near-left {
+	position: absolute;
+	top: 10px;
+	left: 13.852243%;
+	z-index: 2;
+	
+	/*
+-moz-transition: left .2s ease-in-out, opacity .2s ease-in-out;
+	-webkit-transition: left .2s ease-in-out, opacity .2s ease-in-out;
+*/
+}
+
+.near-right {
+	position: absolute;
+	top: 10px;
+	right: 13.852243%;;
+	z-index: 2;
+/*
+	-moz-transition: right .2s ease-in-out, opacity .2s ease-in-out;
+	-webkit-transition: right .2s ease-in-out, opacity .2s ease-in-out;
+*/
+}
+
+.far-right {
+	position: absolute;
+	top: 36px;
+	right: 0;
+	z-index: 1;
+/*
+	
+	-moz-transition: right .2s ease-in-out;
+	-webkit-transition: right .2s ease-in-out;
+*/
+}
+
+.far-left {
+	position: absolute;
+	top: 36px;
+	left: 0;
+	z-index: 1;
+/*
+	
+	-moz-transition: left .2s ease-in-out;
+	-webkit-transition: left .2s ease-in-out;
+*/
 }
 
 .walkthrough {
@@ -110,12 +232,12 @@ a.appstore_btn:hover {
 }
 
 h1.logo {
-	margin: 0 auto 16px;
+	margin: 0 auto 36px;
 	width: 186px;
 	height: 0;
 	padding-top: 71px;
 	overflow: hidden;
-	background: url("http://cdn.justhum.com/img/hum.png") no-repeat;
+	background: url("../img/hum.png") no-repeat;
 	background-size: 100%;
 }
 
@@ -216,7 +338,7 @@ h4 {
 	padding: 1em 1em .9em 3.6em;
 	margin-top: 0;
 	letter-spacing: 0;
-	background-image: url("http://cdn.justhum.com/img/apple_small.png");
+	background-image: url("../img/apple_small.png");
 	background-size: 21px;
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
@@ -335,7 +457,7 @@ h4 {
 	margin-top: 6px;
 	margin-bottom: 24px;
 	border-right: none;
-	background-image: url("http://cdn.justhum.com/img/dropdown.png");
+	background-image: url("../img/dropdown.png");
 	background-repeat: no-repeat;
 	background-position: 0 14px;
 	background-size: 11px;
@@ -357,7 +479,7 @@ h4 {
 
 .dropdowns a:active {
 	margin-top: 7px;
-	background-image: url("http://cdn.justhum.com/img/dropdown.png");
+	background-image: url("../img/dropdown.png");
 	background-size: 11px;
 	background-repeat: no-repeat;
 	border-right: transparent;
@@ -379,23 +501,23 @@ h4 {
 }
 
 .sad {
-	background: url("http://cdn.justhum.com/img/sad.png") no-repeat;
+	background: url("../img/sad.png") no-repeat;
 	background-size: 100%;
 }
 
 .happy {
-	background: url("http://cdn.justhum.com/img/happy.png") no-repeat;
+	background: url("../img/happy.png") no-repeat;
 	background-size: 100%;
 }
 
 .quiet {
-	background: url("http://cdn.justhum.com/img/quiet.png") no-repeat;
+	background: url("../img/quiet.png") no-repeat;
 	background-size: 100%;
 	clear: both;
 }
 
 .loud {
-	background: url("http://cdn.justhum.com/img/loud.png") no-repeat;
+	background: url("../img/loud.png") no-repeat;
 	background-size: 100%;
 }
 
@@ -434,7 +556,7 @@ h4 {
 }
 
 .noUi-handle {
-	background: url("http://cdn.justhum.com/img/slider.png") no-repeat;
+	background: url("../img/slider.png") no-repeat;
 	background-size: 100%;
 	height: 34px;
 	width: 32px;
@@ -494,7 +616,7 @@ h4 {
 	width: 74px;
 	height: 0;
 	padding-top: 75px;
-	background: url("http://cdn.justhum.com/img/play_btn.png") no-repeat;
+	background: url("../img/play_btn.png") no-repeat;
 	background-size: 400%;
 }
 
@@ -515,7 +637,7 @@ h4 {
 	width: 184px;
 	height: 48px;
 	position: relative;
-	background: url("http://cdn.justhum.com/img/waveform.png") no-repeat;
+	background: url("../img/waveform.png") no-repeat;
 	background-size: 184px;
 	margin-top: 14px;
 }
@@ -524,7 +646,7 @@ h4 {
 	overflow: visible;
 	height: 48px;
 	width: 0;
-	background: url("http://cdn.justhum.com/img/waveform_progress.png");
+	background: url("../img/waveform_progress.png");
 	background-size: 184px;
 }
 
@@ -534,7 +656,7 @@ h4 {
 
 .jp-current-time {
 	display: block;
-	background: url("http://cdn.justhum.com/img/progress.png") no-repeat;
+	background: url("../img/progress.png") no-repeat;
 	background-size: 100%;
 	position: absolute;
 	width: 38px;
@@ -563,7 +685,7 @@ h4 {
 	width: 58px;
 	height: 0;
 	padding-top: 62px;
-	background: url("http://cdn.justhum.com/img/loop_btn.png") no-repeat;
+	background: url("../img/loop_btn.png") no-repeat;
 	background-size: 200%;
 }
 
@@ -700,44 +822,45 @@ label a {
 	color: #4da99d;
 }
 
-/* Basic jQuery Slider essential styles */
-
-ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
-li.bjqs-slide{position:absolute; display:none;}
-ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
-ul.bjqs-controls.v-centered li a{position:absolute;}
-ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
-ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
-ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
-ol.bjqs-markers.h-centered{text-align: center;}
-ol.bjqs-markers li{display:inline;}
-ol.bjqs-markers li a{display:inline-block;}
-p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
-
-ol.bjqs-markers {
-	position: absolute;
-	bottom: -100px;
+.navigation-mobile {
+	display: none;
+	max-height: 0;
+	-webkit-transition: max-height .2s ease-in-out;
+	-moz-transition: max-height .2s ease-in-out;
 }
 
-ol.bjqs-markers li a {
-	display: inline-block;
-	width: 10px;
-	height: 0;
-	padding-top: 10px;
-	background: #858585;
-	border-radius: 10px;
-	overflow: hidden;
-	margin: 0 5px;
+.navigation-mobile.open {
+	max-height: 117px;
 }
 
-ol.bjqs-markers li.active-marker a {
-	background: #fff;
-}
-
-.price {
-	font-size: 12px;
+.navigation-mobile a {
 	display: block;
-	margin-top: 16px;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-decoration: none;
+	background: #4da99d;
+	color: #fff;
+	padding: .5em 1em;
+	font-size: 14px;
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.navigation-mobile a.first {
+	border-top: none;
+}
+
+.toggle-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2000;
+	display: none;
+	width: 53px;
+	height: 0;
+	padding-top: 48px;
+	background: url("../img/hamburger-btn.png") no-repeat;
+	background-size: 100%;
+	overflow: hidden;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -768,17 +891,71 @@ ol.bjqs-markers li.active-marker a {
 		float: none;
 		width: 100%;
 	}
-	
-	.phone {
-		float: none;
-	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 615px) {
+	.far-left {
+		left: 25%;
+	}
+	.far-right {
+		right: 25%;
+	}
+	
+	.near-left {
+		left: 0;
+	}
+	
+	.near-right {
+		right: 0;
+	}
+
     .footer ul li {
 	    display: block;
 	    margin-bottom: 20px;
     }
+    
+    .section {
+		padding: 90px 0;
+	}
+	
+	.feature.sharing {
+		margin-bottom: 0;
+	}
+	
+	.hero h2 {
+		margin-bottom: 54px;
+	}
+	
+	.navigation li {
+		margin: 0 .75em;
+	}
+	
+	.play-btn {
+		display: block;
+		margin: 20px auto 0;
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.near-left {
+		left: 25%;
+	}
+	.near-right {
+		right: 25%;
+	}
+	
+	.hero .wrapper {
+	    width: 100%;
+    }
+	
+	.navigation {
+		display: none;
+	}
+	
+	.navigation-mobile,
+	.toggle-btn {
+		display: block;
+	}
 }
 
 @media only screen and (max-width: 400px) {
@@ -800,6 +977,10 @@ ol.bjqs-markers li.active-marker a {
 	    width: 96%;
     }
     
+    h2 {
+	    font-size: 30px;
+    }
+    
     h3 {
 	    font-size: 22px;
     }
@@ -807,10 +988,6 @@ ol.bjqs-markers li.active-marker a {
     h4 {
 	    font-size: 22px;
     }
-    
-    .section {
-		padding: 90px 0;
-	}
 }
 
 
@@ -823,71 +1000,75 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
     
     h1.logo {
-	    background-image: url("http://cdn.justhum.com/img/hum@2x.png");
-    }
-    
-    .phone {
-	    background-image: url("http://cdn.justhum.com/img/phone_scaled@2x.png");
+	    background-image: url("../img/hum@2x.png");
     }
     
     .play_btn {
-		background-image: url("http://cdn.justhum.com/img/play_btn@2x.png");
+		background-image: url("../img/play_btn@2x.png");
 	}
 	
     .jp-repeat,
 	.jp-repeat-off {
-		background-image: url("http://cdn.justhum.com/img/loop_btn@2x.png");
+		background-image: url("../img/loop_btn@2x.png");
 	}
 	
 	a.appstore_btn {
-		background-image: url("http://cdn.justhum.com/img/apple_large@2x.png");
+		background-image: url("../img/apple_large@2x.png");
 	}
 	
 	.footer a.appstore_btn {
-		background-image: url("http://cdn.justhum.com/img/apple_small@2x.png");
+		background-image: url("../img/apple_small@2x.png");
 	}
 	
 	.dropdowns a {
-		background-image: url("http://cdn.justhum.com/img/dropdown@2x.png");
+		background-image: url("../img/dropdown@2x.png");
 	}
 	
 	.dropdowns a:active {
-		background-image: url("http://cdn.justhum.com/img/dropdown@2x.png");
+		background-image: url("../img/dropdown@2x.png");
 	}
 	
 	.waveform {
-		background-image: url("http://cdn.justhum.com/img/waveform@2x.png");
+		background-image: url("../img/waveform@2x.png");
 	}
 	
 	.waveform-progress {
-		background-image: url("http://cdn.justhum.com/img/waveform_progress@2x.png");
+		background-image: url("../img/waveform_progress@2x.png");
 	}
 	
 	.sad {
-		background-image: url("http://cdn.justhum.com/img/sad@2x.png");
+		background-image: url("../img/sad@2x.png");
 	}
 	
 	.happy {
-		background-image: url("http://cdn.justhum.com/img/happy@2x.png");
+		background-image: url("../img/happy@2x.png");
 	}
 	
 	.quiet {
-		background-image: url("http://cdn.justhum.com/img/quiet@2x.png");
+		background-image: url("../img/quiet@2x.png");
 	}
 	
 	.loud {
-		background-image: url("http://cdn.justhum.com/img/loud@2x.png");
+		background-image: url("../img/loud@2x.png");
 	}
 	
 	.noUi-handle {
-		background-image: url("http://cdn.justhum.com/img/slider@2x.png");
+		background-image: url("../img/slider@2x.png");
 	}
 	
 	.jp-current-time {
-		background-image: url("http://cdn.justhum.com/img/progress@2x.png");
+		background-image: url("../img/progress@2x.png");
 	}
 	
 	.hero {
-		background-image: url("http://cdn.justhum.com/img/hero_back@2x.jpg");
+		background-image: url("../img/hero_back@2x.jpg");
+	}
+	
+	.toggle-btn {
+		background-image: url("../img/hamburger-btn@2x.png");
+	}
+	
+	.play-btn {
+		background-image: url("../img/play-btn@2x.png");
 	}
 }

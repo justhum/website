@@ -1,11 +1,4 @@
-$(function(){
-    $('.walkthrough').bjqs({
-		'height' : 351,
-		'width' : 198,
-		'animtype' : 'slide',
-		'showcontrols' : false
-	});
-    
+$(function(){   
     $('.keys a').click(function(){
         $(this).toggleClass("active");
         return false;
@@ -47,6 +40,14 @@ $(function(){
        
        return false;
     });
+    
+    $('.toggle-btn').click(function(){
+       $('.navigation-mobile').toggleClass("open");
+       
+       return false;
+    });
+    
+    $(".duplicate").clone().appendTo(".navigation-mobile");
     
     $("#jquery_jplayer_1").jPlayer({
         ready: function (event) {
