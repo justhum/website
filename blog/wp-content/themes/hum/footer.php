@@ -10,6 +10,16 @@
             	<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Get<br />Updates</button>
             	<label for="mc-email"></label>
             </form>
+            
+            <ul class="social">
+            	<li><a class="twitter-btn" target="_blank" href="https://twitter.com/justhum">Twitter</a></li>
+            	<li><a class="facebook-btn" target="_blank" href="https://www.facebook.com/justhumapp">Facebook</a></li>
+            </ul>
+            
+            <p class="credit">
+            	&copy; 2013-2014 Just Hum, LLC. Made in the Midwest.<br>
+            	<a href="/terms/">Terms of Use &amp; Privacy</a>
+            </p>
         </div>
 				
 		<script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
