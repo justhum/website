@@ -183,6 +183,10 @@ a.appstore_btn:hover {
 	color: #fff;
 }
 
+.linernotes{
+	background-image: /img/linernotes/kevin-truckenmiller/background.jpg;
+}
+
 .section {
 	padding: 130px 0;
 }
