@@ -300,63 +300,42 @@ h4 {
 	border-bottom: 4px solid #4da99d;
 }
 
-.footer ul  {
-	margin-bottom: 80px;
+.footer .social {
+	margin-bottom: 15px;
 }
 
-.footer ul li {
+.footer .social li {
 	display: inline-block;
-	margin: 0 30px;
-	text-align: center;
-	font-size: 14px;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	text-rendering: optimizeLegibility;
-	vertical-align: middle;
+	margin: 0 3px;
 }
 
-.footer ul li a {
-	text-decoration: none;
+.footer .social a {
+	display: block;
+	width: 26px;
+	height: 0;
+	padding-top: 26px;
+	overflow: hidden;
 }
 
-.footer ul li a:hover,
-.footer ul li a.current {
-	color: #4da99d;
-	border-bottom: solid 2px #4da99d;
+.footer .social a.twitter-btn {
+	background: url("../img/twitter-btn.png") no-repeat;
+	background-size: 100%;
 }
 
-.footer ul li a.appstore_btn:hover {
-	color: #fff;
-	border-bottom: none;
+.footer .social a.facebook-btn {
+	background: url("../img/facebook-btn.png") no-repeat;
+	background-size: 100%;
 }
 
-.footer a.appstore_btn {
-	font-size: 12px;
-	font-weight: 300;
-	line-height: 11px;
-	padding: 1em 1em .9em 3.6em;
-	margin-top: 0;
-	letter-spacing: 0;
-	background-image: url("../img/apple_small.png");
-	background-size: 21px;
-	-webkit-border-radius: 3px;
-	   -moz-border-radius: 3px;
-	        border-radius: 3px;
+.footer .social a.twitter-btn:hover,
+.footer .social a.facebook-btn:hover 
+{
+	background-position: 0 -26px;
 }
 
-.footer .btn {
-	background-color: #4da99d;
-	font-size: 12px;
-	line-height: 11px;
-	margin-top: 0;
-	-webkit-border-radius: 3px;
-	   -moz-border-radius: 3px;
-	        border-radius: 3px;
-}
-
-.footer a.appstore_btn:hover {
-	background-color: #5cb8ac;
+.credit {
+	font-size: 11px;
+	line-height: 1.3em;
 }
 
 .illustration {
@@ -713,7 +692,7 @@ h4 {
 
 form {
 	width: 80%;
-	margin: 0 auto;
+	margin: 0 auto 60px;
 	overflow: hidden;
 	max-width: 450px;
 }
@@ -908,11 +887,6 @@ label a {
 	.near-right {
 		right: 0;
 	}
-
-    .footer ul li {
-	    display: block;
-	    margin-bottom: 20px;
-    }
     
     .section {
 		padding: 90px 0;
@@ -959,11 +933,6 @@ label a {
 }
 
 @media only screen and (max-width: 400px) {
-    .footer ul li {
-	    display: block;
-	    margin-bottom: 20px;
-    }
-    
     input,
     button {
     	clear: both;
@@ -1070,5 +1039,13 @@ only screen and (                min-resolution: 2dppx) {
 	
 	.play-btn {
 		background-image: url("../img/play-btn@2x.png");
+	}
+	
+	.footer .social a.twitter-btn {
+		background-image: url("../img/twitter-btn@2x.png");
+	}
+
+	.footer .social a.facebook-btn {
+		background-image: url("../img/facebook-btn@2x.png");
 	}
 }
