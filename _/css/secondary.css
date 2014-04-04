@@ -186,6 +186,7 @@ a.appstore_btn:hover {
 }
 
 .credit {
+	font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 11px;
 	line-height: 1.3em;
 }
@@ -231,6 +232,13 @@ a.appstore_btn:hover {
 	margin-left: 2em;
 	padding-left: 1em;
 	text-indent: -1em;
+}
+
+ul.notes {
+	text-indent: 0;
+	padding-left: 0;
+	margin-left: 0;
+	list-style-position: outside;
 }
 
 .entry-content ol {
