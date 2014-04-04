@@ -220,6 +220,10 @@ a.appstore_btn:hover {
 
 .entry-content ul {
 	list-style: disc;
+	list-style-position: inside;
+	margin-left: 2em;
+	padding-left: 1em;
+	text-indent: -1em;
 }
 
 .entry-content ol {
@@ -365,7 +369,7 @@ img.aligncenter {
 
 .main {
 	text-align: center;
-	margin-bottom: 8em;
+	margin-bottom: 6em;
 }
 
 .main.sub {
