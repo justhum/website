@@ -184,7 +184,7 @@ a.appstore_btn:hover {
 }
 
 .linernotes{
-	background-image: /img/linernotes/kevin-truckenmiller/background.jpg;
+	background-image: url("../img/linernotes/kevin-truckenmiller/background.jpg");
 }
 
 .section {
