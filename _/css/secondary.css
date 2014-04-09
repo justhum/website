@@ -187,6 +187,16 @@ a.appstore_btn:hover {
 	background-image: url("../img/linernotes/kevin-truckenmiller/background.jpg");
 }
 
+.linernotes h1{
+	width: 460px;
+	padding: 445px 0 0 0;
+	height: 0;
+	background: url("../img/linernotes/thelinernotes.png") no-repeat;
+	margin: 0 auto;
+	overflow: hidden;
+
+}
+
 .section {
 	padding: 130px 0;
 }
@@ -618,6 +628,11 @@ pre {
 .bio {
 	clear: both;
 	overflow: hidden;
+}
+
+.biowrap {
+	width: 670px;
+	margin: 0 auto;
 }
 
 .bio_photo {
