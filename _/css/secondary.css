@@ -183,20 +183,6 @@ a.appstore_btn:hover {
 	color: #fff;
 }
 
-.linernotes{
-	background-image: url("../img/linernotes/kevin-truckenmiller/background.jpg");
-}
-
-.linernotes h1{
-	width: 460px;
-	padding: 445px 0 0 0;
-	height: 0;
-	background: url("../img/linernotes/thelinernotes.png") no-repeat;
-	margin: 0 auto;
-	overflow: hidden;
-
-}
-
 .section {
 	padding: 130px 0;
 }
@@ -625,39 +611,65 @@ pre {
 	padding: 150px 0 70px;
 }
 
-.bio {
+.bio,
+.episode {
 	clear: both;
 	overflow: hidden;
 }
 
-.biowrap {
-	width: 670px;
-	margin: 0 auto;
+.episode {
+    width: 90%;
+    margin: 60px auto 200px;
 }
 
-.bio_photo {
+.bio-photo,
+.episode-photo {
 	float: left;
 	margin-right: 1.6em;
 	margin-bottom: 150px;
 }
 
-.bio_content {
+.bio-content {
 	padding-top: 6em;
 }
 
-.bio .btn {
+.episode-synopsis {
+    padding-top: 5em;
+}
+
+.bio .btn,
+.episode .btn {
 	font-size: 16px;
 }
 
-.bio h4 {
+.episode h3 {
+    font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 32px;
+	color: #d9d9d9;
+	margin-bottom: .1em;
+}
+
+.bio h4,
+.episode h4 {
 	font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 24px;
 	color: #656565;
 	margin-bottom: .5em;
 }
 
+.episode h4 {
+    color: #9a9a9a;
+    margin-bottom: 1em;
+}
+
+.episode p,
 .bio p {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.episode p {
+    margin-bottom: 2em;
+    line-height: 1.4em;
 }
 
 .named-release {
@@ -728,6 +740,33 @@ pre {
 	overflow: hidden;
 }
 
+
+/* Liner Notes */
+
+body.linernotes {
+    background: #2d2d2d url("../img/linernotes/background.jpg") center top no-repeat;
+}
+
+body.linernotes .footer {
+    padding-top: 230px;
+    background: none;
+}
+
+.linernotes h1.linernotes-logo {
+	width: 485px;
+	padding: 326px 0 0 0;
+	height: 0;
+	background: url("../img/linernotes/thelinernotes.png") no-repeat;
+	background-size: 100%;
+	margin: 0 auto 45px;
+	overflow: hidden;
+}
+
+.linernotes .container {
+    padding-top: 50px;
+    max-width: 760px;
+}
+
 @media only screen and (max-width: 800px) {
 	.about .photo {
 		background-size: 180%;
@@ -790,6 +829,11 @@ pre {
 	.footer ul li {
 	    display: block;
 	    margin-bottom: 20px;
+    }
+    
+    .linernotes h1.linernotes-logo {
+        width: 90%;
+        padding-top: 55%;
     }
 }
 
@@ -855,6 +899,10 @@ only screen and (                min-resolution: 2dppx) {
     
     .header h1 a {
 		background-image: url("../img/hum_small@2x.png");
+	}
+	
+	.linernotes h1 {
+		background-image: url("../img/linernotes/thelinernotes@2x.png");
 	}
     
     a.appstore_btn {
