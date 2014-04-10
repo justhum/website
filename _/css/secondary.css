@@ -630,7 +630,7 @@ pre {
 }
 
 .episode-photo {
-    margin-bottom: 270px;
+    margin-bottom: 400px;
 }
 
 .bio-content {
@@ -638,7 +638,7 @@ pre {
 }
 
 .episode-synopsis {
-    padding-top: 5em;
+    padding-top: 5.6em;
 }
 
 .bio .btn,
@@ -680,6 +680,12 @@ pre {
 .episode p {
     margin-bottom: 2em;
     line-height: 1.4em;
+}
+
+.linernotes .player {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
 }
 
 .named-release {
@@ -775,6 +781,10 @@ h1.linernotes-logo {
 .linernotes .container {
     padding-top: 50px;
     max-width: 760px;
+}
+
+.share {
+    margin-right: 20px;
 }
 
 @media only screen and (max-width:900px) {
