@@ -707,7 +707,7 @@ pre {
 }
 
 .navigation-mobile.open {
-	max-height: 135px;
+	max-height: 180px;
 }
 
 .navigation-mobile a {
@@ -767,14 +767,7 @@ body.linernotes .footer {
     max-width: 760px;
 }
 
-@media only screen and (max-width: 800px) {
-	.about .photo {
-		background-size: 180%;
-		padding-bottom: 90%;
-	}
-}
-
-@media only screen and (max-width:760px) {
+@media only screen and (max-width:900px) {
 	.header {
 		text-align: center;
 		padding: 27px 0 40px;
@@ -799,7 +792,16 @@ body.linernotes .footer {
 	.header .appstore_btn {
 		position: static;
 	}
-	
+}
+
+@media only screen and (max-width: 800px) {
+	.about .photo {
+		background-size: 180%;
+		padding-bottom: 90%;
+	}
+}
+
+@media only screen and (max-width:760px) {
 	.section,
     .post {
 		padding: 90px 0;
