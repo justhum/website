@@ -629,6 +629,10 @@ pre {
 	margin-bottom: 150px;
 }
 
+.episode-photo {
+    margin-bottom: 270px;
+}
+
 .bio-content {
 	padding-top: 6em;
 }
@@ -655,6 +659,12 @@ pre {
 	font-size: 24px;
 	color: #656565;
 	margin-bottom: .5em;
+}
+
+.episode h5 {
+    font-size: 12px;
+    color: #9a9a9a;
+    margin-bottom: .25em;
 }
 
 .episode h4 {
@@ -752,7 +762,7 @@ body.linernotes .footer {
     background: none;
 }
 
-.linernotes h1.linernotes-logo {
+h1.linernotes-logo {
 	width: 485px;
 	padding: 326px 0 0 0;
 	height: 0;
@@ -811,21 +821,36 @@ body.linernotes .footer {
 
 
 @media only screen and (max-width: 600px) {
-	.bio_photo {
+    .linernotes .container {
+        padding-top: 20px;
+    }
+
+	.bio-photo,
+	.episode-photo {
 		float: none;
 		width: 190px;
 		margin: 0 auto 1em;
 	}
+	
+	.episode-photo {
+    	width: 160px;
+	}
 
-	.bio_content {
+	.bio-content,
+	.episode-synopsis {
 		padding-top: 0;
 		margin-bottom: 5em;
 	}
 	
-	.bio {
+	.bio,
+	.episode {
 		width: 80%;
 		text-align: center;
 		margin: 0 auto;
+	}
+	
+	.episode {
+    	margin: 60px auto 0;
 	}
 	
 	.footer ul li {
@@ -833,7 +858,7 @@ body.linernotes .footer {
 	    margin-bottom: 20px;
     }
     
-    .linernotes h1.linernotes-logo {
+    h1.linernotes-logo {
         width: 90%;
         padding-top: 55%;
     }
@@ -903,7 +928,7 @@ only screen and (                min-resolution: 2dppx) {
 		background-image: url("../img/hum_small@2x.png");
 	}
 	
-	.linernotes h1 {
+	h1.linernotes-logo {
 		background-image: url("../img/linernotes/thelinernotes@2x.png");
 	}
     
