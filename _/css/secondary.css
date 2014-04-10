@@ -630,34 +630,82 @@ pre {
 	padding: 150px 0 70px;
 }
 
-.bio {
+.bio,
+.episode {
 	clear: both;
 	overflow: hidden;
 }
 
-.bio_photo {
+.episode {
+    width: 90%;
+    margin: 60px auto 0;
+}
+
+.bio-photo,
+.episode-photo {
 	float: left;
 	margin-right: 1.6em;
 	margin-bottom: 150px;
 }
 
-.bio_content {
+.episode-photo {
+    margin-bottom: 400px;
+}
+
+.bio-content {
 	padding-top: 6em;
 }
 
-.bio .btn {
+.episode-synopsis {
+    padding-top: 5.6em;
+}
+
+.bio .btn,
+.episode .btn {
 	font-size: 16px;
 }
 
-.bio h4 {
+.episode h3 {
+    font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 32px;
+	color: #d9d9d9;
+	margin-bottom: .1em;
+}
+
+.bio h4,
+.episode h4 {
 	font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 24px;
 	color: #656565;
 	margin-bottom: .5em;
 }
 
+.episode h5 {
+    font-size: 12px;
+    color: #9a9a9a;
+    margin-bottom: .25em;
+}
+
+.episode h4 {
+    color: #9a9a9a;
+    margin-bottom: 1em;
+}
+
+.episode p,
 .bio p {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.episode p {
+    margin-bottom: 2em;
+    line-height: 1.4em;
+}
+
+.linernotes .player {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    background: #000;
 }
 
 .named-release {
@@ -695,7 +743,7 @@ pre {
 }
 
 .navigation-mobile.open {
-	max-height: 135px;
+	max-height: 180px;
 }
 
 .navigation-mobile a {
@@ -728,14 +776,38 @@ pre {
 	overflow: hidden;
 }
 
-@media only screen and (max-width: 800px) {
-	.about .photo {
-		background-size: 180%;
-		padding-bottom: 90%;
-	}
+
+/* Liner Notes */
+
+body.linernotes {
+    background: #2d2d2d url("../img/linernotes/background.jpg") center top no-repeat;
 }
 
-@media only screen and (max-width:760px) {
+body.linernotes .footer {
+    padding-top: 230px;
+    background: none;
+}
+
+h1.linernotes-logo {
+	width: 485px;
+	padding: 326px 0 0 0;
+	height: 0;
+	background: url("../img/linernotes/thelinernotes.png") no-repeat;
+	background-size: 100%;
+	margin: 0 auto 45px;
+	overflow: hidden;
+}
+
+.linernotes .container {
+    padding-top: 50px;
+    max-width: 760px;
+}
+
+.share {
+    margin-right: 20px;
+}
+
+@media only screen and (max-width:900px) {
 	.header {
 		text-align: center;
 		padding: 27px 0 40px;
@@ -760,7 +832,16 @@ pre {
 	.header .appstore_btn {
 		position: static;
 	}
-	
+}
+
+@media only screen and (max-width: 800px) {
+	.about .photo {
+		background-size: 180%;
+		padding-bottom: 90%;
+	}
+}
+
+@media only screen and (max-width:760px) {
 	.section,
     .post {
 		padding: 90px 0;
@@ -770,26 +851,46 @@ pre {
 
 
 @media only screen and (max-width: 600px) {
-	.bio_photo {
+    .linernotes .container {
+        padding-top: 20px;
+    }
+
+	.bio-photo,
+	.episode-photo {
 		float: none;
 		width: 190px;
 		margin: 0 auto 1em;
 	}
+	
+	.episode-photo {
+    	width: 160px;
+	}
 
-	.bio_content {
+	.bio-content,
+	.episode-synopsis {
 		padding-top: 0;
 		margin-bottom: 5em;
 	}
 	
-	.bio {
+	.bio,
+	.episode {
 		width: 80%;
 		text-align: center;
 		margin: 0 auto;
 	}
 	
+	.episode {
+    	margin: 60px auto 0;
+	}
+	
 	.footer ul li {
 	    display: block;
 	    margin-bottom: 20px;
+    }
+    
+    h1.linernotes-logo {
+        width: 90%;
+        padding-top: 55%;
     }
 }
 
@@ -855,6 +956,10 @@ only screen and (                min-resolution: 2dppx) {
     
     .header h1 a {
 		background-image: url("../img/hum_small@2x.png");
+	}
+	
+	h1.linernotes-logo {
+		background-image: url("../img/linernotes/thelinernotes@2x.png");
 	}
     
     a.appstore_btn {
