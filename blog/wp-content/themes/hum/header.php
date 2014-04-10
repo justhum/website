@@ -63,6 +63,7 @@ MMMMMMO  .
 	            	<li><a href="/about/" title="About">About</a></li>
 	            	<li><a class="current" href="/blog/" title="Blog">Blog</a></li>
 	            	<li><a href="/support/" title="Support">Support</a></li>
+	            	<li><a href="/linernotes/" title="Liner Notes">Liner Notes</a></li>
 	            </ul>
             </div>
             
