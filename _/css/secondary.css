@@ -152,35 +152,43 @@ a.appstore_btn:hover {
 	letter-spacing: -2px;
 }
 
-.footer ul  {
-	margin-bottom: 80px;
+.footer .social {
+	margin-bottom: 15px;
 }
 
-.footer ul li {
+.footer .social li {
 	display: inline-block;
-	margin: 0 30px;
-	text-align: center;
-	font-size: 14px;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	text-rendering: optimizeLegibility;
-	vertical-align: middle;
+	margin: 0 3px;
 }
 
-.footer ul li a {
-	text-decoration: none;
+.footer .social a {
+	display: block;
+	width: 26px;
+	height: 0;
+	padding-top: 26px;
+	overflow: hidden;
 }
 
-.footer ul li a:hover,
-.footer ul li a.current {
-	color: #4da99d;
-	border-bottom: solid 2px #4da99d;
+.footer .social a.twitter-btn {
+	background: url("../img/twitter-btn.png") no-repeat;
+	background-size: 100%;
 }
 
-.footer ul li a.appstore_btn:hover {
-	border-bottom: none;
-	color: #fff;
+.footer .social a.facebook-btn {
+	background: url("../img/facebook-btn.png") no-repeat;
+	background-size: 100%;
+}
+
+.footer .social a.twitter-btn:hover,
+.footer .social a.facebook-btn:hover 
+{
+	background-position: 0 -26px;
+}
+
+.credit {
+	font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	line-height: 1.3em;
 }
 
 .section {
@@ -220,6 +228,17 @@ a.appstore_btn:hover {
 
 .entry-content ul {
 	list-style: disc;
+	list-style-position: inside;
+	margin-left: 2em;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+ul.notes {
+	text-indent: 0;
+	padding-left: 0;
+	margin-left: 0;
+	list-style-position: outside;
 }
 
 .entry-content ol {
@@ -365,7 +384,7 @@ img.aligncenter {
 
 .main {
 	text-align: center;
-	margin-bottom: 8em;
+	margin-bottom: 6em;
 }
 
 .main.sub {
@@ -417,7 +436,7 @@ a.btn:hover {
 
 form {
 	width: 80%;
-	margin: 0 auto;
+	margin: 0 auto 60px;
 	overflow: hidden;
 	max-width: 450px;
 }
@@ -957,5 +976,13 @@ only screen and (                min-resolution: 2dppx) {
 	
 	.toggle-btn {
 		background-image: url("../img/hamburger-btn-dark@2x.png");
+	}
+	
+	.footer .social a.twitter-btn {
+		background-image: url("../img/twitter-btn@2x.png");
+	}
+
+	.footer .social a.facebook-btn {
+		background-image: url("../img/facebook-btn@2x.png");
 	}
 }
