@@ -638,7 +638,7 @@ pre {
 
 .episode {
     width: 90%;
-    margin: 60px auto 200px;
+    margin: 60px auto 0;
 }
 
 .bio-photo,
