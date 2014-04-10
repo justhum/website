@@ -809,7 +809,7 @@ label a {
 }
 
 .navigation-mobile.open {
-	max-height: 117px;
+	max-height: 180px;
 }
 
 .navigation-mobile a {
