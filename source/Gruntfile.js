@@ -4,23 +4,6 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 		
-		preprocess : {
-            dev : {
-                options : {
-                    context : { ENV : 'dev' }
-                },
-                src  : 'index.html',
-                dest : '../local/index.html'
-            },
-            production : {
-                options : {
-                    context : { ENV : 'production' }
-                },
-                src  : 'template.html',
-                dest : 'base.html'
-            }
-        },
-		
 		concat: {
 			basic: {
 				src: [
