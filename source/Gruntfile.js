@@ -3,6 +3,45 @@ module.exports = function(grunt) {
     // 1. All configuration goes here 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        
+        'string-replace': {
+            dist: {
+                files: {
+                    '../deploy/': [
+                        '*.html',
+                        'about/*.html',
+                        'errors/*.html',
+                        'blog/wp-content/themes/hum/header.php',
+                        'blog/wp-content/themes/hum/footer.php',
+                        'linernotes/*.html',
+                        'releases/*.html',
+                        'support/*.html',
+                        'terms/*.html'
+                    ]
+                },
+                options: {
+                    replacements: [{
+                        pattern: /(\/_\/css\/main.css)+/g,
+                        replacement: '/_/css/main.min.css'
+                    },{
+                        pattern: /(\/_\/css\/secondary.css)+/g,
+                        replacement: '/_/css/secondary.min.css'
+                    },{
+                        pattern: /(\/_\/css\/tertiary.css)+/g,
+                        replacement: '/_/css/tertiary.min.css'
+                    },{
+                        pattern: /(\/_\/js\/home.js)+/g,
+                        replacement: '/_/js/home.min.js'
+                    },{
+                        pattern: /(\/_\/js\/secondary.js)+/g,
+                        replacement: '/_/js/secondary.min.js'
+                    },{
+                        pattern: /(\/_\/)+/g,
+                        replacement: 'http://cdn.justhum.com/'
+                    }]
+                }
+            },
+        },
 		
 		concat: {
 			basic: {
@@ -58,13 +97,13 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-preprocess');
+    grunt.loadNpmTasks('grunt-string-replace');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
     
     grunt.registerTask(
-      'dev',
-      ['preprocess:dev']
+      'deploy',
+      ['string-replace']
     );
 };
