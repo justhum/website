@@ -4,6 +4,23 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 		
+		preprocess : {
+            dev : {
+                options : {
+                    context : { ENV : 'dev' }
+                },
+                src  : 'index.html',
+                dest : '../local/index.html'
+            },
+            production : {
+                options : {
+                    context : { ENV : 'production' }
+                },
+                src  : 'template.html',
+                dest : 'base.html'
+            }
+        },
+		
 		concat: {
 			basic: {
 				src: [
@@ -62,4 +79,9 @@ module.exports = function(grunt) {
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
+    
+    grunt.registerTask(
+      'dev',
+      ['preprocess:dev']
+    );
 };
