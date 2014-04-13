@@ -40,11 +40,11 @@ MMMMMMO  .
         <meta property="og:description" content="Hum is an iPhone app that combines note-taking and audio recording into a single app for capturing and organizing all your songwriting ideas." />
         <meta property="og:url" content="http://justhum.com/" />
 
-		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7407272/777922/css/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7407272/777922/css/fonts.css" />
         <link rel="stylesheet" href="/_/css/secondary.css">
         
         <script type="text/javascript" src="//use.typekit.net/qtx7caw.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         
         <link rel="shortcut icon" href="/_/favicon.ico">
         
@@ -53,23 +53,23 @@ MMMMMMO  .
     
     <body <?php body_class(); ?>>
 
-		<div class="navigation-mobile"></div>
+        <div class="navigation-mobile"></div>
 
-		<div class="header">
+        <div class="header">
             <h1><a href="/" title="Home">Hum.</a></h1>
             
             <div class="navigation">
-	            <ul class="duplicate">
-	            	<li><a href="/about/" title="About">About</a></li>
-	            	<li><a class="current" href="/blog/" title="Blog">Blog</a></li>
-	            	<li><a href="/support/" title="Support">Support</a></li>
-	            	<li><a href="/linernotes/" title="Liner Notes">Liner Notes</a></li>
-	            </ul>
+                <ul class="duplicate">
+                    <li><a href="/about/" title="About">About</a></li>
+                    <li><a class="current" href="/blog/" title="Blog">Blog</a></li>
+                    <li><a href="/support/" title="Support">Support</a></li>
+                    <li><a href="/linernotes/" title="Liner Notes">Liner Notes</a></li>
+                </ul>
             </div>
             
-			<a href="https://itunes.apple.com/us/app/hum/id796154884?ls=1&mt=8" title="Download on the App Store" class="appstore_btn" target="_blank">Download on <br>the App Store</a>
-			
-			<a href="#" class="toggle-btn"></a>
+            <a href="https://itunes.apple.com/us/app/hum/id796154884?ls=1&mt=8" title="Download on the App Store" class="appstore_btn" target="_blank">Download on <br>the App Store</a>
+            
+            <a href="#" class="toggle-btn"></a>
         </div>
 
-		<div class="container">
+        <div class="container">
