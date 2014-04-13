@@ -42,47 +42,47 @@ module.exports = function(grunt) {
                 }
             },
         },
-		
-		concat: {
-			basic: {
-				src: [
-					'_/js/libs/jquery.ajaxchimp.min.js',
-					'_/js/libs/fastclick.js',
-					'_/js/fastclick.js',
-					'_/js/form.js',
-					'_/js/sub.js'
-				],
-				dest: '_/js/secondary.js',
-			},
-			extras: {
-				src: [
-					'_/js/libs/*.js', // All JS in the libs folder
-					'_/js/fastclick.js',
-					'_/js/form.js',
-					'_/js/home.js'
-				],
-				dest: '_/js/main.js',
-			},
-		},
-		
-		uglify: {
-		    build: {
-		    	files: {
-			    	'../production/_/js/secondary.min.js': ['_/js/secondary.js'],
-					'../production/_/js/main.min.js': ['_/js/main.js']
-		    	}
-		    },
-		},
-		
-		cssmin: {
-			build: {
-				files: {
-					'../production/_/css/main.min.css': ['_/css/main.css'],
-					'../production/_/css/secondary.min.css': ['_/css/secondary.css'],
-					'../production/_/css/tertiary.min.css': ['_/css/tertiary.css']
-				}	
-			},
-		}
+        
+        concat: {
+            basic: {
+                src: [
+                    '_/js/libs/jquery.ajaxchimp.min.js',
+                    '_/js/libs/fastclick.js',
+                    '_/js/fastclick.js',
+                    '_/js/form.js',
+                    '_/js/sub.js'
+                ],
+                dest: '_/js/secondary.js',
+            },
+            extras: {
+                src: [
+                    '_/js/libs/*.js', // All JS in the libs folder
+                    '_/js/fastclick.js',
+                    '_/js/form.js',
+                    '_/js/home.js'
+                ],
+                dest: '_/js/main.js',
+            },
+        },
+        
+        uglify: {
+            build: {
+                files: {
+                    '../production/_/js/secondary.min.js': ['_/js/secondary.js'],
+                    '../production/_/js/main.min.js': ['_/js/main.js']
+                }
+            },
+        },
+        
+        cssmin: {
+            build: {
+                files: {
+                    '../production/_/css/main.min.css': ['_/css/main.css'],
+                    '../production/_/css/secondary.min.css': ['_/css/secondary.css'],
+                    '../production/_/css/tertiary.min.css': ['_/css/tertiary.css']
+                }    
+            },
+        }
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
@@ -91,8 +91,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-string-replace');
     
-    grunt.registerTask(
-      'deploy',
-      ['string-replace','concat', 'uglify', 'cssmin']
-    );
+    grunt.registerTask('deploy', ['string-replace','concat', 'uglify', 'cssmin']);
 };
