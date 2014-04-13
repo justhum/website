@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         'string-replace': {
             dist: {
                 files: {
-                    '../deploy/': [
+                    '../production/': [
                         '*.html',
                         'about/*.html',
                         'errors/*.html',
@@ -30,8 +30,8 @@ module.exports = function(grunt) {
                         pattern: /(\/_\/css\/tertiary.css)+/g,
                         replacement: '/_/css/tertiary.min.css'
                     },{
-                        pattern: /(\/_\/js\/home.js)+/g,
-                        replacement: '/_/js/home.min.js'
+                        pattern: /(\/_\/js\/main.js)+/g,
+                        replacement: '/_/js/main.min.js'
                     },{
                         pattern: /(\/_\/js\/secondary.js)+/g,
                         replacement: '/_/js/secondary.min.js'
@@ -50,9 +50,9 @@ module.exports = function(grunt) {
 					'_/js/libs/fastclick.js',
 					'_/js/fastclick.js',
 					'_/js/form.js',
-					'_/js/secondary.js'
+					'_/js/sub.js'
 				],
-				dest: '_/js/production/secondary.js',
+				dest: '_/js/secondary.js',
 			},
 			extras: {
 				src: [
@@ -61,15 +61,15 @@ module.exports = function(grunt) {
 					'_/js/form.js',
 					'_/js/home.js'
 				],
-				dest: '_/js/production/home.js',
+				dest: '_/js/main.js',
 			},
 		},
 		
 		uglify: {
 		    build: {
 		    	files: {
-			    	'_/js/production/secondary.min.js': ['_/js/production/secondary.js'],
-					'_/js/production/home.min.js': ['_/js/production/home.js']
+			    	'../production/_/js/secondary.min.js': ['_/js/secondary.js'],
+					'../production/_/js/main.min.js': ['_/js/main.js']
 		    	}
 		    },
 		},
@@ -77,33 +77,22 @@ module.exports = function(grunt) {
 		cssmin: {
 			build: {
 				files: {
-					'_/css/main.min.css': ['_/css/main.css'],
-					'_/css/secondary.min.css': ['_/css/secondary.css'],
-					'_/css/tertiary.min.css': ['_/css/tertiary.css']
+					'../production/_/css/main.min.css': ['_/css/main.css'],
+					'../production/_/css/secondary.min.css': ['_/css/secondary.css'],
+					'../production/_/css/tertiary.min.css': ['_/css/tertiary.css']
 				}	
 			},
-		},
-		
-		watch: {
-			src: {
-				files: ['_/css/main.css', '_/css/secondary.css', '_/css/tertiary.css'],
-				tasks: ['default'],
-			},
-		},
+		}
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-string-replace');
-
-    // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
     
     grunt.registerTask(
       'deploy',
-      ['string-replace']
+      ['string-replace','concat', 'uglify', 'cssmin']
     );
 };
