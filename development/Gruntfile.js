@@ -85,11 +85,10 @@ module.exports = function(grunt) {
         }
     });
 
-    // 3. Where we tell Grunt we plan to use this plug-in.
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-string-replace');
     
-    grunt.registerTask('deploy', ['string-replace','concat', 'uglify', 'cssmin']);
+    grunt.registerTask('build', ['string-replace','concat', 'uglify', 'cssmin']);
 };
