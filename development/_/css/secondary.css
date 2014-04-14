@@ -180,8 +180,7 @@ a.appstore_btn:hover {
 }
 
 .footer .social a.twitter-btn:hover,
-.footer .social a.facebook-btn:hover 
-{
+.footer .social a.facebook-btn:hover {
 	background-position: 0 -26px;
 }
 
@@ -785,7 +784,38 @@ body.linernotes {
 
 body.linernotes .footer {
     padding-top: 230px;
-    background: none;
+    background: #fff;
+    color: #969696;
+}
+
+body.linernotes .footer .logo a {
+	background-image: url("../img/hum-dark.png");
+}
+
+body.linernotes .footer .social a.twitter-btn {
+	background: url("../img/twitter-btn.png") no-repeat 0 -26px;
+	background-size: 100%;
+}
+
+body.linernotes .footer .social a.facebook-btn {
+	background: url("../img/facebook-btn.png") no-repeat 0 -26px;
+	background-size: 100%;
+}
+
+body.linernotes .footer .social a.twitter-btn:hover,
+body.linernotes .footer .social a.facebook-btn:hover {
+	background-position: 0 0;
+}
+
+body.linernotes input {
+	background: rgb(245, 245, 245);
+	color: rgb(100, 100, 100);
+}
+
+body.linernotes input:focus {
+    background: rgb(234, 234, 234);
+    color: #000;
+    outline: none;
 }
 
 h1.linernotes-logo {
@@ -973,6 +1003,10 @@ only screen and (                min-resolution: 2dppx) {
 	.footer .logo a {
 		background-image: url("../img/hum@2x.png");
 	}
+	
+	body.linernotes .footer .logo a {
+	    background-image: url("../img/hum-dark@2x.png");
+    }
 	
 	.toggle-btn {
 		background-image: url("../img/hamburger-btn-dark@2x.png");
