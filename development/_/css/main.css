@@ -1027,10 +1027,6 @@ only screen and (                min-resolution: 2dppx) {
 		background-image: url("../img/progress@2x.png");
 	}
 	
-	.hero {
-		background-image: url("../img/hero_back@2x.jpg");
-	}
-	
 	.toggle-btn {
 		background-image: url("../img/hamburger-btn@2x.png");
 	}

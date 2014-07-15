@@ -125,9 +125,7 @@ a.appstore_btn:hover {
 
 .footer {
 	font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	background: url("../img/hero_back.jpg") no-repeat center center;
-	background-color: #323232;
-	background-size: cover;
+	background: #323232;
 	color: #e9e9e9;
 	border-bottom: 4px solid #4da99d;
 	text-align: center;
@@ -1228,10 +1226,6 @@ only screen and (                min-resolution: 2dppx) {
     
     a.appstore_btn {
 		background-image: url("../img/apple_small@2x.png");
-	}
-	
-	.footer {
-		background-image: url("../img/hero_back@2x.jpg");
 	}
 	
 	.footer .logo a {

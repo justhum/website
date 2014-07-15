@@ -31,8 +31,7 @@ html {
 
 body {
     font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: rgb(50, 50, 50) url("../img/hero_back.jpg") 50% 0% no-repeat fixed;
-    background-size: cover;
+    background: rgb(50, 50, 50);
     font-size: 16px;
     -webkit-text-size-adjust: none;
 	color: #fff;
@@ -150,10 +149,6 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
-
-	body {
-		background-image: url("../img/hero_back@2x.jpg");
-	}
 	
     h1 a { background-image: url("../img/logo_small@2x.png"); }
 
