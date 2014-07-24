@@ -257,9 +257,22 @@ h3 {
 	letter-spacing: -1px;
 }
 
-.sort {
+.sort,
+.reviews {
 	background: #4da99d;
 	color: #fefefe;
+}
+
+.review h3 {
+    margin-bottom: .6em;
+}
+
+.review {
+    margin-bottom: 4em;
+}
+
+.review.last {
+    margin-bottom: 0;
 }
 
 .features {
@@ -840,23 +853,45 @@ label a {
 	overflow: hidden;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 755px) {
 	.features .wrapper {
 		max-width: none;
-		width: 1110px;
+		width: 740px;
+	}
+	
+	.feature {
+		float: left;
+		margin: 0 60px 130px;
 	}
 	
 	.feature.notes {
-		margin-top: 56px;
+		margin-top: 62px;
 	}
 	
-	.feature.sharing {
-		margin-top: -4px;
+	.feature.sharing,
+	.feature.sorting {
+    	clear: both;
+	}
+}
+
+@media only screen and (min-width: 1125px) {
+	.features .wrapper {
+		max-width: none;
+		width: 1110px;
 	}
 
 	.feature {
 		float: left;
 		margin: 0 60px 130px;
+	}
+	
+	.feature.sharing,
+	.feature.sorting {
+    	clear: none;
+	}
+	
+	.feature.printing {
+    	clear: both;
 	}
 }
 
@@ -890,7 +925,7 @@ label a {
 		padding: 90px 0;
 	}
 	
-	.feature.sharing {
+	.feature.searching {
 		margin-bottom: 0;
 	}
 	
