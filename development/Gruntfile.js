@@ -127,6 +127,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: '../production/',
                     src: [
+                        '*.html',
                         'about/*.html',
                         'errors/*.html',
                         'blog/wp-content/themes/hum/**',
@@ -166,4 +167,5 @@ module.exports = function(grunt) {
     
     grunt.registerTask('build', ['string-replace','concat', 'uglify', 'cssmin']);
     grunt.registerTask('deploy', ['ftp_push', 's3', 'cloudfront_clear']);
+    grunt.registerTask('deploy-html', ['ftp_push']);
 };
