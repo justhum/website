@@ -13,7 +13,6 @@
             
             <ul class="social">
                 <li><a class="twitter-btn" target="_blank" href="https://twitter.com/justhum">Twitter</a></li>
-                <li><a class="facebook-btn" target="_blank" href="https://www.facebook.com/justhumapp">Facebook</a></li>
             </ul>
             
             <p class="credit">
