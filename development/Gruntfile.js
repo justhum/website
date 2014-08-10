@@ -82,6 +82,77 @@ module.exports = function(grunt) {
                     '../production/_/css/tertiary.min.css': ['_/css/tertiary.css']
                 }    
             },
+        },
+        
+        s3: {
+            options: {
+                key: 'AKIAJF6IWUYTMAGWSF4Q',
+                secret: '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',
+                bucket: 'justhum.com',
+                access: 'public-read',
+                headers: {
+                    "Cache-Control": "max-age=630720000, public",
+                    "Expires": new Date(Date.now() + 63072000000).toUTCString()
+                    }
+                },
+        
+            dev: {
+                upload: [
+                    {
+                        src: '../production/_/css/*.css',
+                        dest: 'css/',
+                        options: { gzip: true }
+                    },
+                    
+                    {
+                        src: '../production/_/js/*.js',
+                        dest: 'js/',
+                        options: { gzip: true }
+                    }
+                ],
+            }
+        },
+        
+        ftp_push: {
+            your_target: {
+                options: {
+                    username: "justhum",
+                    password: "xB#)2uaRnKA;",
+                    host: "ftp.justhum.com",
+                    dest: "/public_html/",
+                    port: 21
+                },
+            files: [
+                {
+                    expand: true,
+                    cwd: '../production/',
+                    src: [
+                        'about/*.html',
+                        'errors/*.html',
+                        'blog/wp-content/themes/hum/**',
+                        'linernotes/*.html',
+                        'releases/*.html',
+                        'support/*.html',
+                        'terms/*.html'
+                        ]
+                    }
+                ]
+            }
+        },
+        
+        cloudfront_clear: {
+            invalidateIndex: {
+                resourcePaths: [
+                    '/css/main.min.css',
+                    '/css/secondary.min.css',
+                    '/css/tertiary.min.css',
+                    '/js/main.min.js',
+                    '/js/secondary.min.js'
+                ],
+                secret_key: "S3NXysLAIZ55/Olmjt+hwc6g5dGF4FcF5/oAh8JO",
+                access_key: "AKIAJF6IWUYTMAGWSF4Q",
+                dist: "E2MBWZMEY1I71H"
+            }
         }
     });
 
@@ -89,6 +160,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-string-replace');
+    grunt.loadNpmTasks('grunt-s3');
+    grunt.loadNpmTasks('grunt-cloudfront-clear');
+    grunt.loadNpmTasks('grunt-ftp-push');
     
     grunt.registerTask('build', ['string-replace','concat', 'uglify', 'cssmin']);
+    grunt.registerTask('deploy', ['ftp_push', 's3', 'cloudfront_clear']);
 };
