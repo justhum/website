@@ -699,10 +699,17 @@ pre {
 }
 
 .player {
+    position: relative;
     width: 100%;
+    margin-bottom: 1.2em;
     height: 0;
     padding-bottom: 56.25%;
-    margin-bottom: 1.2em;
+}
+
+.player iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .named-release {
