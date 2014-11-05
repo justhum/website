@@ -305,6 +305,21 @@ h4 {
 	margin: 0 auto 130px;
 }
 
+.tentpole {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 130px;
+}
+
+.tentpole img {
+    margin-bottom: 1em;
+}
+
+.tentpole p {
+    margin: 0 auto;
+    width: 80%;
+}
+
 .footer {
 	background: #323232;
 	color: #e9e9e9;
@@ -852,6 +867,10 @@ label a {
 	background: url("../img/hamburger-btn.png") no-repeat;
 	background-size: 100%;
 	overflow: hidden;
+}
+
+.partner {
+    visibility: hidden;
 }
 
 @media only screen and (min-width: 755px) {
