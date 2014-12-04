@@ -324,6 +324,7 @@ only screen and (max-width: 39em) {
 }
 
 .footer .social {
+    margin-top: 3em;
 	margin-bottom: 1em;
 }
 
@@ -356,12 +357,16 @@ only screen and (max-width: 39em) {
 
 form {
 	width: 80%;
-	margin: 0 auto 60px;
+	margin: 0 auto 1em;
 	overflow: hidden;
 	max-width: 450px;
 }
 
 input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
     box-sizing: border-box;
 	font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	float: left;
@@ -441,6 +446,12 @@ label {
 	width: 60%;
 }
 
+@media only screen and (max-width: 21em) {
+    label {
+        font-size: 1.2em;
+    }
+}
+
 label a {
 	color: #4da99d;
 }
@@ -457,6 +468,33 @@ label a {
 	    width: 100%;
 	    margin: 0 0 3px;
     }
+}
+
+.shirt-btn {
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #4da99d;
+    font-size: .75em;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 32em) {
+    .shirt-btn {
+        padding: 2em;
+    }
+}
+
+.shirt-btn:hover {
+    text-decoration: none;
+    background: #5cb8ac;
 }
 
 /*
