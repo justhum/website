@@ -8,6 +8,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     -webkit-user-select: text;                  /* prevent copy paste, to allow, change 'none' to 'text' */
 }
 
+
+/* General Styling -------------------------------------------------- */
+
 body {
 	background: #f0eeed;
 	font-size: 16px;
@@ -18,6 +21,12 @@ body {
 	color: #656565;
 	text-align: center;
 	min-width: 320px;
+}
+
+@media only screen and (max-width: 32em) {
+    body {
+        font-size: 12px;
+    }
 }
 
 img {
@@ -34,42 +43,33 @@ a:hover {
 	text-decoration: underline;
 }
 
-a.appstore_btn {
-    display: inline-block;
-    padding: 1em 1em .9em 3.6em;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    background: #4da99d url("../img/apple_small.png") no-repeat 1em center;
-    background-size: 21px;
-    font-size: .75em;
-    font-weight: 600;
-    line-height: 1em;
-    letter-spacing: 0;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+h2 {
+    width: 90%;
+	font-size: 2.25em;
+	font-weight: 300;
+	margin: 0 auto 2em;
+	letter-spacing: -2px;
 }
 
-a.appstore_btn:hover {
-	text-decoration: none;
-	background-color: #5cb8ac;
+h3 {
+	width: 90%;
+	max-width: 525px;
+	margin: 0 auto 2em;
+	font-size: 1.75em;
+	font-weight: 300;
+	line-height: 1.25em;
+	letter-spacing: -1px;
 }
 
-.btn {
-	color: #fff;
-	background: #000;
-	display: inline-block;
-	position: relative;
-	padding: 1em 1.5em;
-	margin-top: -27px;
-	z-index: 200;
-	font-size: 16px;
-	line-height: 15px;
-	-webkit-border-radius: 6px;
-	   -moz-border-radius: 6px;
-	        border-radius: 6px;
+h4 {
+	color: #656565;
+	font-size: 1.5em;
+	margin-bottom: 1em;
+	letter-spacing: -1px;
 }
+
+
+/* Main Container ----------------------------------------------- */
 
 .container {
     height: 100%;
@@ -77,16 +77,8 @@ a.appstore_btn:hover {
     position: relative;
 }
 
-.content {
-    width: 50%;
-    margin-left: 50%;
-    z-index: 1;
-    position: relative;
-}
 
-.section {
-	padding: 5em 0;
-}
+/* Hero -------------------------------------------------------- */
 
 .hero {
 	width: 50%;
@@ -100,12 +92,35 @@ a.appstore_btn:hover {
 
 .hero .wrapper {
     position: absolute;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     height: 234px;
     left: 50%;
     top: 50%;
     margin-left: -200px;
     margin-top: -117px;
+}
+
+a.appstore_btn {
+    display: inline-block;
+    padding: 1em 1em .9em 3.6em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #4da99d url("../img/apple_small.png") no-repeat 1em center;
+    background-size: 21px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+a.appstore_btn:hover {
+	text-decoration: none;
+	background-color: #5cb8ac;
 }
 
 .navigation {
@@ -115,9 +130,34 @@ a.appstore_btn:hover {
     bottom: 5em;
 }
 
+@media only screen and (max-width: 67em) {   
+    .hero {
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding: 5em 0;
+    }
+    
+    .hero .wrapper {
+        position: static;
+        margin: 0 auto;
+    }
+    
+    .navigation {
+        position: static;
+        margin-top: 8em;
+    }
+}
+
 .navigation li {
     display: inline-block;
 	margin: 0 1.5em;
+}
+
+@media only screen and (max-width: 32em) {
+    .navigation {
+        display: none;
+    }
 }
 
 .navigation a {
@@ -133,21 +173,6 @@ a.appstore_btn:hover {
 	border-bottom: solid 2px #4da99d;
 }
 
-/*
-.wrapper {
-	max-width: 700px;
-	width: 100%;
-	margin: 0 auto;
-}
-*/
-
-/*
-.hero .wrapper {
-	width: 90%;
-	max-width: 818px;
-}
-*/
-
 .hero h2 {
 	margin-bottom: 84px;
 }
@@ -162,22 +187,25 @@ h1.logo {
 	background-size: 100%;
 }
 
-h2 {
-    width: 90%;
-	font-size: 36px;
-	font-weight: 300;
-	margin: 0 auto 70px;
-	letter-spacing: -2px;
+
+/* Main Content ---------------------------------------- */
+
+.content {
+    width: 50%;
+    margin-left: 50%;
+    z-index: 1;
+    position: relative;
 }
 
-h3 {
-	width: 90%;
-	max-width: 525px;
-	margin: 0 auto 2em;
-	font-size: 28px;
-	font-weight: 300;
-	line-height: 1.25em;
-	letter-spacing: -1px;
+@media only screen and (max-width: 67em) {
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.section {
+	padding: 5em 0;
 }
 
 .combine,
@@ -204,6 +232,15 @@ h3 {
 
 .dropbox img {
     border-radius: 6px;
+}
+
+@media only screen and (max-width: 21em) {
+    .combine img,
+    .attach img,
+    .dropbox img {
+        border-radius: 0;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, .2);
+    }
 }
 
 .review h3 {
@@ -235,13 +272,6 @@ h3 {
     overflow: hidden;
 }
 
-h4 {
-	color: #656565;
-	font-size: 24px;
-	margin-bottom: 1em;
-	letter-spacing: -1px;
-}
-
 .feature {
 	max-width: 17em;
 	margin-bottom: 8em;
@@ -253,11 +283,41 @@ h4 {
     margin-right: 6em;
 }
 
-.placeholder {
-    display: inline-block;
-    width: 53px;
-    height: 53px;
+@media only screen and (max-width: 93em) {
+    .features .wrapper {
+        width: 36em;
+    }
+    
+    .feature.first {
+        margin-right: 2em;
+    }
 }
+
+@media
+only screen and (max-width: 81em) and (min-width: 67em),
+only screen and (max-width: 39em) {
+    
+    .features .wrapper {
+        width: 100%;
+    }
+    
+    .feature {
+        float: none;
+        width: 250px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 6em;
+    }
+    
+    .feature.first {
+        clear: none;
+        margin-right: auto;
+    }
+}
+
+
+/* Footer -------------------------------------------------------- */
+
 
 .footer {
     padding-bottom: 2em;
@@ -387,6 +447,16 @@ label a {
 
 .partner {
     visibility: hidden;
+}
+
+@media only screen and (max-width: 32em) {
+    input,
+    button {
+    	clear: both;
+	    float: none;
+	    width: 100%;
+	    margin: 0 0 3px;
+    }
 }
 
 /*
