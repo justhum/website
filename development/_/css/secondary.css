@@ -87,7 +87,7 @@ a.appstore_btn {
 	top: 31px;
 	right: 20px;
 	font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: 300;
+	font-weight: 600;
 	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
@@ -339,18 +339,6 @@ img.aligncenter {
 	text-align: center;
 }
 
-::selection {
-	background: #b8b8b8;
-    color: #000;
-    text-shadow: none;
-}
-
-::-moz-selection {
-	background: #b8b8b8;
-    color: #000;
-    text-shadow: none;
-}
-
 .container .navigation {
 	margin: 0 auto;
 	padding: 0 0 130px 0;
@@ -506,28 +494,6 @@ button:hover, button:focus {
 
 button:active {
 	padding: 0;
-}
-
-button::selection {
-    background: #fff;
-    text-shadow: none;
-}
-
-button::-moz-selection {
-    background: #fff;
-    text-shadow: none;
-}
-
-input::selection {
-    background: rgb(117, 223, 229);
-    color: #000;
-    text-shadow: none;
-}
-
-input::-moz-selection {
-    background: rgb(117, 223, 229);
-    color: #000;
-    text-shadow: none;
 }
 
 label {

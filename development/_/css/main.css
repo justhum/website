@@ -154,12 +154,6 @@ a.appstore_btn:hover {
 	margin: 0 1.5em;
 }
 
-@media only screen and (max-width: 32em) {
-    .navigation {
-        display: none;
-    }
-}
-
 .navigation a {
 	color: #969696;
 	font-weight: 600;
@@ -171,6 +165,60 @@ a.appstore_btn:hover {
 .navigation a:hover {
 	color: #4da99d;
 	border-bottom: solid 2px #4da99d;
+}
+
+.navigation-mobile {
+	font-size: 14px;
+	text-align: center;
+	display: none;
+	max-height: 0;
+	-webkit-transition: max-height .2s ease-in-out;
+	-moz-transition: max-height .2s ease-in-out;
+}
+
+.navigation-mobile.open {
+	max-height: 180px;
+}
+
+.navigation-mobile a {
+	display: block;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-decoration: none;
+	background: #4da99d;
+	color: #fff;
+	padding: .9em 1em;
+	font-size: 14px;
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.navigation-mobile a.first {
+	border-top: none;
+}
+
+.toggle-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2000;
+	width: 53px;
+	height: 0;
+	display: none;
+	padding-top: 48px;
+	background: url("../img/hamburger-btn-dark.png") no-repeat;
+	background-size: 100%;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 27em) {
+    .toggle-btn,
+    .navigation-mobile {
+        display: block;
+    }
+    
+    .navigation {
+        display: none;
+    }
 }
 
 .hero h2 {
@@ -497,147 +545,6 @@ label a {
     background: #5cb8ac;
 }
 
-/*
-@media only screen and (min-width: 755px) {
-	.features .wrapper {
-		max-width: none;
-		width: 740px;
-	}
-	
-	.feature {
-		float: left;
-		margin: 0 60px 130px;
-	}
-	
-	.feature.notes {
-		margin-top: 62px;
-	}
-	
-	.feature.sharing,
-	.feature.sorting {
-    	clear: both;
-	}
-}
-
-@media only screen and (min-width: 1125px) {
-	.features .wrapper {
-		max-width: none;
-		width: 1110px;
-	}
-
-	.feature {
-		float: left;
-		margin: 0 60px 130px;
-	}
-	
-	.feature.sharing,
-	.feature.sorting {
-    	clear: none;
-	}
-	
-	.feature.printing {
-    	clear: both;
-	}
-}
-
-
-@media only screen and (max-width: 800px) {
-	.name {
-		margin-top: 0;
-		margin-bottom: 100px;
-		float: none;
-		width: 100%;
-	}
-}
-
-@media only screen and (max-width: 615px) {
-	.far-left {
-		left: 25%;
-	}
-	.far-right {
-		right: 25%;
-	}
-	
-	.near-left {
-		left: 0;
-	}
-	
-	.near-right {
-		right: 0;
-	}
-    
-    .section {
-		padding: 90px 0;
-	}
-	
-	.feature.searching {
-		margin-bottom: 0;
-	}
-	
-	.hero h2 {
-		margin-bottom: 54px;
-	}
-	
-	.navigation li {
-		margin: 0 .75em;
-	}
-	
-	.play-btn {
-		display: block;
-		margin: 20px auto 0;
-	}
-}
-
-@media only screen and (max-width: 460px) {
-	.near-left {
-		left: 25%;
-	}
-	.near-right {
-		right: 25%;
-	}
-	
-	.hero .wrapper {
-	    width: 100%;
-    }
-	
-	.navigation {
-		display: none;
-	}
-	
-	.navigation-mobile,
-	.toggle-btn {
-		display: block;
-	}
-}
-
-@media only screen and (max-width: 400px) {
-    input,
-    button {
-    	clear: both;
-	    float: none;
-	    width: 100%;
-	    margin: 0 0 3px;
-    }
-    
-    input {
-    	padding-left: 4%;
-	    width: 96%;
-    }
-    
-    h2 {
-	    font-size: 30px;
-    }
-    
-    h3 {
-	    font-size: 22px;
-    }
-    
-    h4 {
-	    font-size: 22px;
-    }
-}
-*/
-
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -657,5 +564,9 @@ only screen and (                min-resolution: 2dppx) {
 	
 	.footer .social a.twitter-btn {
 		background-image: url("../img/twitter-btn@2x.png");
+	}
+	
+	.toggle-btn {
+		background-image: url("../img/hamburger-btn-dark@2x.png");
 	}
 }
