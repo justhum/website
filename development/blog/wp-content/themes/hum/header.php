@@ -40,6 +40,7 @@ MMMMMMO  .
         <meta property="og:url" content="http://justhum.com/" />
 
         <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7407272/777922/css/fonts.css" />
+        <link rel="stylesheet" href="//cdn.selz.com/jquery/1.0.3/jquery.selz.min.css">
         <link rel="stylesheet" href="/_/css/secondary.css">
         
         <script type="text/javascript" src="//use.typekit.net/qtx7caw.js"></script>
