@@ -151,6 +151,7 @@ a.appstore_btn:hover {
 }
 
 .footer .social {
+    margin-top: 3em;
 	margin-bottom: 15px;
 }
 
@@ -433,7 +434,7 @@ a.btn:hover {
 
 form {
 	width: 80%;
-	margin: 0 auto 60px;
+	margin: 0 auto 22px;
 	overflow: hidden;
 	max-width: 450px;
 }
@@ -778,6 +779,37 @@ pre {
 	background: url("../img/hamburger-btn-dark.png") no-repeat;
 	background-size: 100%;
 	overflow: hidden;
+}
+
+.shirt-btn {
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #4da99d;
+    font-size: .75em;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.shirt-btn img {
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 32em) {
+    .shirt-btn {
+        padding: 2em;
+    }
+}
+
+.shirt-btn:hover {
+    text-decoration: none;
+    background: #5cb8ac;
 }
 
 
