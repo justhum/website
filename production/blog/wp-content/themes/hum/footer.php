@@ -11,6 +11,11 @@
                 <label for="mc-email"></label>
             </form>
             
+            <a href="http://selz.co/1vXvHuL" class="shirt-btn">
+                <img src="http://cdn.justhum.com/img/shirt.png" data-ret="http://cdn.justhum.com/img/shirt@2x.png" alt="Shirt" width="103" height="94">
+                Grab a shirt
+            </a>
+            
             <ul class="social">
                 <li><a class="twitter-btn" target="_blank" href="https://twitter.com/justhum">Twitter</a></li>
             </ul>
@@ -22,6 +27,7 @@
         </div>
                 
         <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="//cdn.selz.com/jquery/1.0.3/jquery.selz.min.js"></script>
         <script src="http://cdn.justhum.com/js/secondary.min.js"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
