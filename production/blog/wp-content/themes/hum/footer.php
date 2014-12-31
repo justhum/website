@@ -21,7 +21,7 @@
             </ul>
             
             <p class="credit">
-                &copy; 2013-2014 Just Hum, LLC. Made in the Midwest.<br>
+                &copy; 2013-2015 Just Hum, LLC. Made in the Midwest.<br>
                 <a href="/terms/">Terms of Use &amp; Privacy</a>
             </p>
         </div>
