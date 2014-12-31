@@ -94,14 +94,38 @@ h4 {
     position: absolute;
     max-width: 400px;
     width: 100%;
-    height: 234px;
+    height: 326px;
     left: 50%;
     top: 50%;
     margin-left: -200px;
-    margin-top: -117px;
+    margin-top: -163px;
 }
 
-a.appstore_btn {
+.video-btn {
+    display: inline-block;
+    width: 155px;
+    height: 0;
+    padding-top: 87px;
+    overflow: hidden;
+    margin: 0 .15em 2em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.video-btn:hover {
+    background-position: 100% 0;
+}
+
+.anthem-btn {
+    background: #000 url("../img/anthem-btn.png") no-repeat;
+}
+
+.walkthrough-btn {
+    background: #000 url("../img/walkthrough-btn.png") no-repeat;
+}
+
+.appstore_btn {
     display: inline-block;
     padding: 1em 1em .9em 3.6em;
     text-align: center;
@@ -118,7 +142,7 @@ a.appstore_btn {
     border-radius: 3px;
 }
 
-a.appstore_btn:hover {
+.appstore_btn:hover {
 	text-decoration: none;
 	background-color: #5cb8ac;
 }
@@ -222,7 +246,7 @@ a.appstore_btn:hover {
 }
 
 .hero h2 {
-	margin-bottom: 84px;
+	margin-bottom: 1em;
 }
 
 h1.logo {
