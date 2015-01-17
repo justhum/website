@@ -808,7 +808,7 @@ h1.linernotes-logo {
     margin-right: 20px;
 }
 
-.play-btn-question {
+.video-btn {
     display: inline-block;
     width: 32px;
     height: 0;
@@ -820,7 +820,7 @@ h1.linernotes-logo {
     vertical-align: bottom;
 }
 
-.play-btn-question:hover {
+.video-btn:hover {
     background-position: -32px;
 }
 
