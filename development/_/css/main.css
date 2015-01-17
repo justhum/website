@@ -569,6 +569,59 @@ label a {
     background: #5cb8ac;
 }
 
+.shirt-btn {
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #4da99d;
+    font-size: .75em;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.shirt-btn img {
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 32em) {
+    .shirt-btn {
+        padding: 2em;
+    }
+}
+
+.shirt-btn:hover {
+    text-decoration: none;
+    background: #5cb8ac;
+}
+
+
+@media only screen and (min-width: 755px) {
+	.features .wrapper {
+		max-width: none;
+		width: 740px;
+	}
+	
+	.feature {
+		float: left;
+		margin: 0 60px 130px;
+	}
+	
+	.feature.notes {
+		margin-top: 62px;
+	}
+	
+	.feature.sharing,
+	.feature.sorting {
+    	clear: both;
+	}
+}
+
 /* Magnific Popup CSS */
 .mfp-bg {
   top: 0;
