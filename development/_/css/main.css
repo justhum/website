@@ -600,28 +600,6 @@ label a {
     background: #5cb8ac;
 }
 
-
-@media only screen and (min-width: 755px) {
-	.features .wrapper {
-		max-width: none;
-		width: 740px;
-	}
-	
-	.feature {
-		float: left;
-		margin: 0 60px 130px;
-	}
-	
-	.feature.notes {
-		margin-top: 62px;
-	}
-	
-	.feature.sharing,
-	.feature.sorting {
-    	clear: both;
-	}
-}
-
 /* Magnific Popup CSS */
 .mfp-bg {
   top: 0;
