@@ -29,7 +29,8 @@ body {
     }
 }
 
-img {
+img,
+video {
     vertical-align: middle;
     -webkit-user-drag: none;
 }
@@ -295,11 +296,22 @@ h1.logo {
 }
 
 .combine img,
+.combine video,
 .attach img,
+.attach video,
 .dropbox img {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, .3);
+    overflow: hidden;
+}
+
+.combine img:focus,
+.combine video:focus,
+.attach img:focus,
+.attach video:focus,
+.dropbox img:focus {
+    outline: none;
 }
 
 .dropbox img {
@@ -308,10 +320,12 @@ h1.logo {
 
 @media only screen and (max-width: 21em) {
     .combine img,
+    .combine video,
     .attach img,
     .dropbox img {
         border-radius: 0;
         box-shadow: 0px 0px 50px rgba(0, 0, 0, .2);
+        overflow: hidden;
     }
 }
 
