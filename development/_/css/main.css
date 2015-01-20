@@ -103,9 +103,9 @@ h4 {
 
 .video-btn {
     display: inline-block;
-    width: 155px;
+    width: 130px;
     height: 0;
-    padding-top: 87px;
+    padding-top: 73px;
     overflow: hidden;
     margin: 0 .15em 2em;
     -webkit-border-radius: 3px;
@@ -119,10 +119,12 @@ h4 {
 
 .anthem-btn {
     background: #000 url("../img/anthem-btn.png") no-repeat;
+    background-size: 200%;
 }
 
 .walkthrough-btn {
     background: #000 url("../img/walkthrough-btn.png") no-repeat;
+    background-size: 200%;
 }
 
 .appstore_btn {
@@ -853,5 +855,13 @@ only screen and (                min-resolution: 2dppx) {
 	
 	button.mfp-close {
         background-image: url("../img/close-btn-question@2x.png");
+    }
+    
+    .anthem-btn {
+        background-image: url("../img/anthem-btn@2x.png");
+    }
+
+    .walkthrough-btn {
+        background-image: url("../img/walkthrough-btn@2x.png");
     }
 }
