@@ -29,8 +29,7 @@ body {
     }
 }
 
-img,
-video {
+img {
     vertical-align: middle;
     -webkit-user-drag: none;
 }
@@ -296,9 +295,7 @@ h1.logo {
 }
 
 .combine img,
-.combine video,
 .attach img,
-.attach video,
 .dropbox img {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -307,9 +304,7 @@ h1.logo {
 }
 
 .combine img:focus,
-.combine video:focus,
 .attach img:focus,
-.attach video:focus,
 .dropbox img:focus {
     outline: none;
 }
@@ -320,7 +315,6 @@ h1.logo {
 
 @media only screen and (max-width: 21em) {
     .combine img,
-    .combine video,
     .attach img,
     .dropbox img {
         border-radius: 0;
