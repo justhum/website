@@ -440,6 +440,7 @@ input {
 	padding: 0 0 0 2%;
 	font-size: 20px;
 	border: none;
+	box-sizing: border-box;
 }
 
 input:focus {
@@ -822,13 +823,20 @@ body.linernotes .footer .social a.facebook-btn:hover {
 
 body.linernotes input {
 	background: rgb(245, 245, 245);
+	border: 2px solid rgb(200, 200, 200);
 	color: rgb(100, 100, 100);
 }
 
 body.linernotes input:focus {
-    background: rgb(234, 234, 234);
-    color: #000;
+    background: rgb(255, 255, 255);
+    color: rgb(20,20,20);
+    border: 2px solid rgba(114, 114, 114, 1);
     outline: none;
+}
+
+body.linernotes input.error {
+	color: #ff5d00;
+	border: 2px solid #ff5d00;
 }
 
 h1.linernotes-logo {
@@ -1263,7 +1271,7 @@ only screen and (                min-resolution: 2dppx) {
 		background-image: url("../img/facebook-btn@2x.png");
 	}
 	
-	.play-btn-question {
+	.video-btn {
         background-image: url("../img/play-btn-question@2x.png");
     }
     

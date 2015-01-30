@@ -467,6 +467,7 @@ input {
 input:focus {
     border: 2px solid rgba(114, 114, 114, 1);
     color: rgb(20,20,20);
+    background: rgb(255, 255, 255);
     outline: none;
 }
 
@@ -523,6 +524,7 @@ button:active {
 label {
 	font-size: .75em;
 	margin-top: 1.16em;
+	margin-bottom: 1em;
 	display: inline-block;
 	line-height: 1.33em;
 	width: 60%;
