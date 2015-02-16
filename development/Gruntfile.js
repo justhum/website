@@ -46,9 +46,10 @@ module.exports = function(grunt) {
         concat: {
             basic: {
                 src: [
-                    '_/js/libs/jquery.ajaxchimp.min.js',
+                    '_/js/libs/*.js', // All JS in the libs folder
                     '_/js/libs/fastclick.js',
                     '_/js/fastclick.js',
+                    '_/js/video.js',
                     '_/js/form.js',
                     '_/js/sub.js'
                 ],
@@ -58,6 +59,7 @@ module.exports = function(grunt) {
                 src: [
                     '_/js/libs/*.js', // All JS in the libs folder
                     '_/js/fastclick.js',
+                    '_/js/video.js',
                     '_/js/form.js',
                     '_/js/home.js'
                 ],
