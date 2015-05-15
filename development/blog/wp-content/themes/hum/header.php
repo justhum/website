@@ -2,24 +2,24 @@
 
 <!--
 
-    MMMMM          MMMMM                                                        
-    MMMMM          MMMMM                                                        
-    MMMMM          MMMMM                                                        
-    MMMMM          MMMMM                                                        
-    MMMMM          MMMMM       .        .         .   .IMN7      ~NM8+          
-    MMMMM       .,$MMMMM   MMMMM       MMMM   MMMMM.7MMMMMMMN.,MMMMMMMM=        
-    MMMMM  .:DMMMMMMMMMM   MMMMM       MMMM   MMMMMMMMMMMMMMMDMMMMMMMMMM        
-    MMMMMMMMMMMMMMMMMMMM   MMMMM       MMMM   MMMMMMI.  7MMMMMM   .MMMMM        
-    MMMMMMMMMMMM?  MMMMM   MMMMM       MMMM   MMMMM      MMMMM     .MMMM        
-    MMMMMMD+       MMMMM   MMMMM       MMMM   MMMMM      MMMMM      MMMM        
-    MMMMM          MMMMM   MMMMM       MMMM   MMMMM      MMMMM      MMMM        
-    MMMMM          MMMMM   MMMMM.      MMMM   MMMMM      MMMMM      MMMM        
-    MMMMM          MMMMM   MMMMM.     MMMMM   MMMMM      MMMMM      MMMM        
+    MMMMM          MMMMM
+    MMMMM          MMMMM
+    MMMMM          MMMMM
+    MMMMM          MMMMM
+    MMMMM          MMMMM       .        .         .   .IMN7      ~NM8+
+    MMMMM       .,$MMMMM   MMMMM       MMMM   MMMMM.7MMMMMMMN.,MMMMMMMM=
+    MMMMM  .:DMMMMMMMMMM   MMMMM       MMMM   MMMMMMMMMMMMMMMDMMMMMMMMMM
+    MMMMMMMMMMMMMMMMMMMM   MMMMM       MMMM   MMMMMMI.  7MMMMMM   .MMMMM
+    MMMMMMMMMMMM?  MMMMM   MMMMM       MMMM   MMMMM      MMMMM     .MMMM
+    MMMMMMD+       MMMMM   MMMMM       MMMM   MMMMM      MMMMM      MMMM
+    MMMMM          MMMMM   MMMMM       MMMM   MMMMM      MMMMM      MMMM
+    MMMMM          MMMMM   MMMMM.      MMMM   MMMMM      MMMMM      MMMM
+    MMMMM          MMMMM   MMMMM.     MMMMM   MMMMM      MMMMM      MMMM
   . MMMMM       MMMMMMMM   7MMMMMMMMMMMMMMM   MMMMM      MMMMM      MMMM   DMMM7
  .NMMMMMM    ..MMMMMMMMI    DMMMMMMMMM MMMM   MMMMM      MMMMM      MMMM  .MMMMI
-OMMMMMMMM      MMMMMMMM      .MMMMMD  .MMMM   MMMMM      MMMMM      MMMM   ,MD. 
-MMMMMMMM+      .MMMMZ                  .   .  .          .                 . .. 
-MMMMMMO  .                                                                      
+OMMMMMMMM      MMMMMMMM      .MMMMMD  .MMMM   MMMMM      MMMMM      MMMM   ,MD.
+MMMMMMMM+      .MMMMZ                  .   .  .          .                 . ..
+MMMMMMO  .
 .$M8+.
 
 -->
@@ -27,11 +27,11 @@ MMMMMMO  .
 <html>
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        
+
         <title><?php wp_title(' &ndash; ', true, 'right'); ?></title>
         <meta name="description" content="Hum. Songwriting for iPhone.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <meta property="og:type" content="company" />
         <meta property="og:title" content="Hum" />
         <meta property="og:image" content="/_/img/facebook.jpg" />
@@ -39,25 +39,24 @@ MMMMMMO  .
         <meta property="og:description" content="Hum is an iPhone app that combines note-taking and audio recording into a single app for capturing and organizing all your songwriting ideas." />
         <meta property="og:url" content="http://justhum.com/" />
 
-        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7407272/777922/css/fonts.css" />
-        <link rel="stylesheet" href="//cdn.selz.com/jquery/1.0.3/jquery.selz.min.css">
         <link rel="stylesheet" href="/_/css/secondary.css">
-        
+        <link rel="stylesheet" href="//cdn.selz.com/jquery/1.0.3/jquery.selz.min.css">
+
         <script type="text/javascript" src="//use.typekit.net/qtx7caw.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-        
+
         <link rel="shortcut icon" href="/_/favicon.ico">
-        
+
         <?php wp_head(); ?>
     </head>
-    
+
     <body <?php body_class(); ?>>
 
         <div class="navigation-mobile"></div>
 
         <div class="header">
             <h1><a href="/" title="Home">Hum.</a></h1>
-            
+
             <div class="navigation">
                 <ul class="duplicate">
                     <li><a href="/about/" title="About">About</a></li>
@@ -66,9 +65,9 @@ MMMMMMO  .
                     <li><a href="/linernotes/" title="Liner Notes">Liner Notes</a></li>
                 </ul>
             </div>
-            
+
             <a href="https://itunes.apple.com/us/app/hum/id796154884?ls=1&mt=8" title="Download on the App Store" class="appstore_btn" target="_blank">Download on <br>the App Store</a>
-            
+
             <a href="#" class="toggle-btn"></a>
         </div>
 
