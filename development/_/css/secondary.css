@@ -82,24 +82,19 @@ a:hover {
 	border-bottom: solid 2px #4da99d;
 }
 
-a.appstore_btn:hover {
-	color: #fff;
-	border-bottom: none;
-}
-
 a.appstore_btn {
 	position: absolute;
 	top: 31px;
 	right: 20px;
 	font-family: 'source-sans-pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
 	background: #4da99d url("../img/apple_small.png") no-repeat 1em center;
 	background-size: 21px;
 	display: inline-block;
-	padding: 1em 1em .9em 3.6em;
+	padding: .9em 1em .9em 3.6em;
 	font-size: .75em;
 	line-height: 1em;
 	letter-spacing: 0;
@@ -111,6 +106,8 @@ a.appstore_btn {
 a.appstore_btn:hover {
 	text-decoration: none;
 	background-color: #5cb8ac;
+  color: #fff;
+	border-bottom: none;
 }
 
 .btn {
@@ -390,7 +387,7 @@ img.aligncenter {
 	font-size: .75em;
 	color: #8d8d8d;
 	letter-spacing: 1px;
-	font-weight: 600;
+	font-weight: 700;
 	margin-bottom: 1em;
 }
 
@@ -474,7 +471,7 @@ button {
   border: none;
   padding: 0;
   font-size: .75em;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1em;
   text-align: center;
   text-transform: uppercase;
@@ -516,7 +513,7 @@ span.tag {
   background-color: #323232;
   color: #555;
   font-size: .7em;
-  font-weight: 600;
+  font-weight: 700;
   padding: 3px 6px;
   line-height: 1.4em;
   margin-right: 10px;
@@ -727,7 +724,7 @@ code {
 .navigation-mobile a {
   display: block;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
   background: #4da99d;
   color: #fff;
@@ -762,7 +759,7 @@ code {
   color: #fff;
   background: #4da99d;
   font-size: .75em;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1em;
   letter-spacing: 0;
   -webkit-border-radius: 3px;
