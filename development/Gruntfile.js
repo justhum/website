@@ -1,9 +1,8 @@
 module.exports = function(grunt) {
 
-    // 1. All configuration goes here 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        
+
         'string-replace': {
             dist: {
                 files: {
@@ -42,7 +41,7 @@ module.exports = function(grunt) {
                 }
             },
         },
-        
+
         concat: {
             basic: {
                 src: [
@@ -66,7 +65,7 @@ module.exports = function(grunt) {
                 dest: '_/js/main.js',
             },
         },
-        
+
         uglify: {
             build: {
                 files: {
@@ -75,17 +74,17 @@ module.exports = function(grunt) {
                 }
             },
         },
-        
+
         cssmin: {
             build: {
                 files: {
                     '../production/_/css/main.min.css': ['_/css/main.css'],
                     '../production/_/css/secondary.min.css': ['_/css/secondary.css'],
                     '../production/_/css/tertiary.min.css': ['_/css/tertiary.css']
-                }    
+                }
             },
         },
-        
+
         s3: {
             options: {
                 key: 'AKIAJF6IWUYTMAGWSF4Q',
@@ -97,7 +96,7 @@ module.exports = function(grunt) {
                     "Expires": new Date(Date.now() + 63072000000).toUTCString()
                     }
                 },
-        
+
             dev: {
                 upload: [
                     {
@@ -105,7 +104,7 @@ module.exports = function(grunt) {
                         dest: 'css/',
                         options: { gzip: true }
                     },
-                    
+
                     {
                         src: '../production/_/js/*.js',
                         dest: 'js/',
@@ -114,35 +113,31 @@ module.exports = function(grunt) {
                 ],
             }
         },
-        
-        ftp_push: {
-            your_target: {
-                options: {
-                    username: "justhum",
-                    password: "xB#)2uaRnKA;",
-                    host: "ftp.justhum.com",
-                    dest: "/public_html/",
-                    port: 21
-                },
-            files: [
-                {
-                    expand: true,
-                    cwd: '../production/',
-                    src: [
-                        '*.html',
-                        'about/*.html',
-                        'errors/*.html',
-                        'blog/wp-content/themes/hum/**',
-                        'linernotes/*.html',
-                        'releases/*.html',
-                        'support/*.html',
-                        'terms/*.html'
-                        ]
-                    }
-                ]
+
+        sftp: {
+          push: {
+            files: {
+              "../production/": [
+                '*.html',
+                'about/*.html',
+                'errors/*.html',
+                'blog/wp-content/themes/hum/**',
+                'linernotes/*.html',
+                'releases/*.html',
+                'support/*.html',
+                'terms/*.html'
+              ]
+            },
+            options: {
+              path: '/apps/justhum/public/',
+              host: '45.55.179.159',
+              username: 'serverpilot',
+              password: '7wZUoV&QZVWcEvrH6NdMMaw*h3x&9L*z',
+              showProgress: true
             }
+          }
         },
-        
+
         cloudfront_clear: {
             invalidateIndex: {
                 resourcePaths: [
@@ -165,9 +160,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-string-replace');
     grunt.loadNpmTasks('grunt-s3');
     grunt.loadNpmTasks('grunt-cloudfront-clear');
-    grunt.loadNpmTasks('grunt-ftp-push');
-    
+    grunt.loadNpmTasks('grunt-ssh');
+
     grunt.registerTask('build', ['string-replace','concat', 'uglify', 'cssmin']);
-    grunt.registerTask('deploy', ['ftp_push', 's3', 'cloudfront_clear']);
-    grunt.registerTask('deploy-html', ['ftp_push']);
+    grunt.registerTask('deploy', ['ssh', 's3', 'cloudfront_clear']);
+    grunt.registerTask('deploy-html', ['ssh']);
 };
