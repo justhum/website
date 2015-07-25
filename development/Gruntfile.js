@@ -117,19 +117,13 @@ module.exports = function(grunt) {
         sftp: {
           push: {
             files: {
-              "../production/": [
-                '*.html',
-                'about/*.html',
-                'errors/*.html',
-                'blog/wp-content/themes/hum/**',
-                'linernotes/*.html',
-                'releases/*.html',
-                'support/*.html',
-                'terms/*.html'
+              "/production/": [
+                'index.html'
               ]
             },
             options: {
-              path: '/apps/justhum/public/',
+              // path: '/apps/justhum/public',
+              path: '/apps/',
               host: '45.55.179.159',
               username: 'serverpilot',
               password: '7wZUoV&QZVWcEvrH6NdMMaw*h3x&9L*z',
@@ -163,6 +157,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-ssh');
 
     grunt.registerTask('build', ['string-replace','concat', 'uglify', 'cssmin']);
-    grunt.registerTask('deploy', ['ssh', 's3', 'cloudfront_clear']);
-    grunt.registerTask('deploy-html', ['ssh']);
+    grunt.registerTask('deploy', ['sftp', 'cloudfront_clear']);
+    grunt.registerTask('deploy-html', ['sftp']);
 };
