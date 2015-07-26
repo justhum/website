@@ -40,7 +40,6 @@ MMMMMMO  .
         <meta property="og:url" content="http://justhum.com/" />
 
         <link rel="stylesheet" href="http://cdn.justhum.com/css/secondary.min.css">
-        <link rel="stylesheet" href="//cdn.selz.com/jquery/1.0.3/jquery.selz.min.css">
 
         <script type="text/javascript" src="//use.typekit.net/qtx7caw.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
