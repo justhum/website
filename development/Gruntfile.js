@@ -85,39 +85,32 @@ module.exports = function(grunt) {
             },
         },
 
-        s3: {
+        aws_s3: {
+          options: {
+            accessKeyId: 'AKIAJF6IWUYTMAGWSF4Q',
+            secretAccessKey: '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',
+            region: 'eu-west-1',
+            uploadConcurrency: 5,
+            downloadConcurrency: 5
+          },
+          production: {
             options: {
-                key: 'AKIAJF6IWUYTMAGWSF4Q',
-                secret: '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',
-                bucket: 'justhum.com',
-                access: 'public-read',
-                headers: {
-                    "Cache-Control": "max-age=630720000, public",
-                    "Expires": new Date(Date.now() + 63072000000).toUTCString()
-                    }
-                },
-
-            dev: {
-                upload: [
-                    {
-                        src: '../production/_/css/*.css',
-                        dest: 'css/',
-                        options: { gzip: true }
-                    },
-
-                    {
-                        src: '../production/_/js/*.js',
-                        dest: 'js/',
-                        options: { gzip: true }
-                    }
-                ],
-            }
+              bucket: 'justhum.com',
+              params: {
+                ContentEncoding: 'gzip'
+              }
+            },
+            files: [
+              {expand: true, cwd: '../production/_/css/*.css', src: ['**'], dest: 'css/'},
+              {expand: true, cwd: '../production/_/js/*.js', src: ['**'], dest: 'js/'},
+            ]
+          }
         },
 
         rsync: {
           options: {
               args: ["--verbose"],
-              //exclude: [".git*","*.scss","node_modules"],
+              exclude: [".DS_Store"],
               recursive: true
           },
           production: {
@@ -125,7 +118,7 @@ module.exports = function(grunt) {
                   src: "../production/",
                   dest: "/srv/users/serverpilot/apps/justhum/public",
                   host: "serverpilot@45.55.179.159",
-                  delete: true // Careful this option could cause data loss, read the docs!
+                  delete: false
               }
           }
         },
@@ -150,11 +143,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-string-replace');
-    grunt.loadNpmTasks('grunt-s3');
+    grunt.loadNpmTasks('grunt-aws-s3');
     grunt.loadNpmTasks('grunt-cloudfront-clear');
     grunt.loadNpmTasks('grunt-rsync');
 
     grunt.registerTask('build', ['string-replace','concat', 'uglify', 'cssmin']);
-    grunt.registerTask('deploy', ['rsync:production', 's3', 'cloudfront_clear']);
+    grunt.registerTask('deploy', ['rsync:production', 'aws_s3:production', 'cloudfront_clear']);
     grunt.registerTask('deploy-html', ['rsync:production']);
 };
