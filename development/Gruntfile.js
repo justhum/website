@@ -88,10 +88,7 @@ module.exports = function(grunt) {
         aws_s3: {
           options: {
             accessKeyId: 'AKIAJF6IWUYTMAGWSF4Q',
-            secretAccessKey: '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',
-            region: 'eu-west-1',
-            uploadConcurrency: 5,
-            downloadConcurrency: 5
+            secretAccessKey: 'S3NXysLAIZ55/Olmjt+hwc6g5dGF4FcF5/oAh8JO'
           },
           production: {
             options: {
@@ -101,8 +98,8 @@ module.exports = function(grunt) {
               }
             },
             files: [
-              {expand: true, cwd: '../production/_/css/*.css', src: ['**'], dest: 'css/'},
-              {expand: true, cwd: '../production/_/js/*.js', src: ['**'], dest: 'js/'},
+              {expand: true, cwd: '../production/_/css', src: ['**'], dest: 'css/'},
+              {expand: true, cwd: '../production/_/js', src: ['**'], dest: 'js/'},
             ]
           }
         },
@@ -150,4 +147,5 @@ module.exports = function(grunt) {
     grunt.registerTask('build', ['string-replace','concat', 'uglify', 'cssmin']);
     grunt.registerTask('deploy', ['rsync:production', 'aws_s3:production', 'cloudfront_clear']);
     grunt.registerTask('deploy-html', ['rsync:production']);
+    grunt.registerTask('deploy-s3', ['aws_s3:production', 'cloudfront_clear']);
 };
