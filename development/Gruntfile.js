@@ -114,21 +114,19 @@ module.exports = function(grunt) {
             }
         },
 
-        sftp: {
-          push: {
-            files: {
-              "/production/": [
-                'index.html'
-              ]
-            },
-            options: {
-              // path: '/apps/justhum/public',
-              path: '/apps/',
-              host: '45.55.179.159',
-              username: 'serverpilot',
-              password: '7wZUoV&QZVWcEvrH6NdMMaw*h3x&9L*z',
-              showProgress: true
-            }
+        rsync: {
+          options: {
+              args: ["--verbose"],
+              //exclude: [".git*","*.scss","node_modules"],
+              recursive: true
+          },
+          production: {
+              options: {
+                  src: "../production/",
+                  dest: "/srv/users/serverpilot/apps/justhum/public",
+                  host: "serverpilot@45.55.179.159",
+                  delete: true // Careful this option could cause data loss, read the docs!
+              }
           }
         },
 
@@ -154,9 +152,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-string-replace');
     grunt.loadNpmTasks('grunt-s3');
     grunt.loadNpmTasks('grunt-cloudfront-clear');
-    grunt.loadNpmTasks('grunt-ssh');
+    grunt.loadNpmTasks('grunt-rsync');
 
     grunt.registerTask('build', ['string-replace','concat', 'uglify', 'cssmin']);
-    grunt.registerTask('deploy', ['sftp', 'cloudfront_clear']);
-    grunt.registerTask('deploy-html', ['sftp']);
+    grunt.registerTask('deploy', ['rsync:production', 's3', 'cloudfront_clear']);
+    grunt.registerTask('deploy-html', ['rsync:production']);
 };

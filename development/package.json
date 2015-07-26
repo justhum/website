@@ -8,7 +8,7 @@
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-cssmin": "^0.12.3",
     "grunt-contrib-uglify": "^0.9.1",
-    "grunt-ftp-push": "~0.2.4",
+    "grunt-rsync": "^0.6.2",
     "grunt-s3": "^0.2.0-alpha.3",
     "grunt-string-replace": "^1.2.0"
   }
