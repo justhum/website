@@ -93,9 +93,9 @@ module.exports = function(grunt) {
           production: {
             options: {
               bucket: 'justhum.com',
-              params: {
-                ContentEncoding: 'gzip'
-              }
+              // params: { Punt on this for now
+              //   ContentEncoding: 'gzip'
+              // }
             },
             files: [
               {expand: true, cwd: '../production/_/css', src: ['**'], dest: 'css/'},
