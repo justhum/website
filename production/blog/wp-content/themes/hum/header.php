@@ -41,8 +41,8 @@ MMMMMMO  .
 
         <link rel="stylesheet" href="http://cdn.justhum.com/css/secondary.min.css">
 
-        <script type="text/javascript" src="//use.typekit.net/qtx7caw.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script src="//use.typekit.net/qtx7caw.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
         <link rel="shortcut icon" href="http://cdn.justhum.com/favicon.ico">
 
