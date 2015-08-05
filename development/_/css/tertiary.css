@@ -153,3 +153,13 @@ only screen and (                min-resolution: 2dppx) {
   h1 a { background-image: url("../img/logo_small@2x.png"); }
 
 }
+
+/* Typekit loading overrides */
+
+.wf-loading h1,
+.wf-loading h2,
+.wf-loading h3,
+.wf-loading p,
+.wf-loading .btn {
+  visibilility: hidden;
+}

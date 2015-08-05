@@ -1311,3 +1311,15 @@ only screen and (                min-resolution: 2dppx) {
     background-image: url("../img/close-btn-question@2x.png");
   }
 }
+
+/* Typekit loading overrides */
+
+.wf-loading h1,
+.wf-loading h2,
+.wf-loading h3,
+.wf-loading h4,
+.wf-loading p,
+.wf-loading .navigation,
+.wf-loading .appstore_btn {
+  visibilility: hidden;
+}
