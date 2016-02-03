@@ -10,3 +10,5 @@ Typing `grunt deploy` will upload all the static HTML and blog theme to their pr
 Typing `grunt deploy-s3` only changes the JS and CSS.
 
 Similarly, `grunt deploy-html` only updates the static HTML and blog theme files.
+
+For now, images are copied to S3 manually.
