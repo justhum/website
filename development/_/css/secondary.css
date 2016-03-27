@@ -538,6 +538,12 @@ span.tag.added {
   left: 33px;
 }
 
+span.tag.removed {
+  background: #e5b4ab;
+  color: #646464;
+  left: 21px;
+}
+
 .notes {
 	list-style: none outside none;
 	margin-bottom: 20px;
