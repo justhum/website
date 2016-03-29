@@ -36,7 +36,7 @@ module.exports = function(grunt) {
                         replacement: '/_/js/secondary.min.js'
                     },{
                         pattern: /(\/_\/)+/g,
-                        replacement: 'http://cdn.justhum.com/'
+                        replacement: '//d3st4vfgl01ske.cloudfront.net/'
                     }]
                 }
             },

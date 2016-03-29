@@ -34,17 +34,17 @@ MMMMMMO  .
 
         <meta property="og:type" content="company" />
         <meta property="og:title" content="Hum" />
-        <meta property="og:image" content="http://cdn.justhum.com/img/facebook.jpg" />
+        <meta property="og:image" content="//d3st4vfgl01ske.cloudfront.net/img/facebook.jpg" />
         <meta property="og:site_name" content="Hum" />
         <meta property="og:description" content="Hum is an iPhone app that combines note-taking and audio recording into a single app for capturing and organizing all your songwriting ideas." />
         <meta property="og:url" content="http://justhum.com/" />
 
-        <link rel="stylesheet" href="http://cdn.justhum.com/css/secondary.min.css">
+        <link rel="stylesheet" href="//d3st4vfgl01ske.cloudfront.net/css/secondary.min.css">
 
         <script src="//use.typekit.net/qtx7caw.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-        <link rel="shortcut icon" href="http://cdn.justhum.com/favicon.ico">
+        <link rel="shortcut icon" href="//d3st4vfgl01ske.cloudfront.net/favicon.ico">
 
         <?php wp_head(); ?>
     </head>
