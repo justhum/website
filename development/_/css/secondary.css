@@ -1281,10 +1281,6 @@ only screen and (                min-resolution: 2dppx) {
     background-image: url("../img/hum_small@2x.png");
   }
 
-  h1.linernotes-logo {
-    background-image: url("../img/linernotes/thelinernotes@2x.png");
-  }
-
   a.appstore_btn {
     background-image: url("../img/apple_small@2x.png");
   }
