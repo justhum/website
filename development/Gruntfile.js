@@ -9,11 +9,12 @@ module.exports = function(grunt) {
                     '../production/': [
                         '*.php',
                         'about/*.php',
-                        'errors/*.php',
+                        'errors/*.html',
                         'blog/wp-content/themes/hum/header.php',
                         'blog/wp-content/themes/hum/footer.php',
                         'linernotes/*.php',
                         'releases/*.php',
+                        'includes/*.php',
                         'support/*.php',
                         'terms/*.php'
                     ]
