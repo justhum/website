@@ -18,7 +18,8 @@
 
   <body class="linernotes">
     <? if (!$headless) {
-        include $_SERVER['DOCUMENT_ROOT']."/includes/navigation.php";
+      $is_linernotes = TRUE;
+      include $_SERVER['DOCUMENT_ROOT']."/includes/navigation.php";
     } ?>
 
     <div class="container">

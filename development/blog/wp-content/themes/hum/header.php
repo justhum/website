@@ -21,7 +21,8 @@
     <body <?php body_class(); ?>>
 
       <? if (!$headless) {
-          include $_SERVER['DOCUMENT_ROOT']."/includes/navigation.php";
+        $is_blog = TRUE;
+        include $_SERVER['DOCUMENT_ROOT']."/includes/navigation.php";
       } ?>
 
         <div class="container">

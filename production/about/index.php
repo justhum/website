@@ -18,6 +18,7 @@
 
   <body>
     <? if (!$headless) {
+        $is_about = TRUE;
         include $_SERVER['DOCUMENT_ROOT']."/includes/navigation.php";
     } ?>
 
@@ -169,7 +170,7 @@
         </div>
       </div>
     </div>
-    
+
     <? if (!$headless) {
         include $_SERVER['DOCUMENT_ROOT']."/includes/footer.php";
     } ?>

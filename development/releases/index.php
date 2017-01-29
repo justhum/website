@@ -18,7 +18,8 @@
 
   <body>
     <? if (!$headless) {
-        include $_SERVER['DOCUMENT_ROOT']."/includes/navigation.php";
+      $is_support = TRUE;
+      include $_SERVER['DOCUMENT_ROOT']."/includes/navigation.php";
     } ?>
 
     <div class="container post">
