@@ -23,9 +23,11 @@
     } ?>
 
     <div class="container post">
-      <div class="main">
-        <h1>Releases</h1>
-      </div>
+      <? if (!$headless) : ?>
+        <div class="main">
+          <h1>Releases</h1>
+        </div>
+      <? endif; ?>
 
       <div class="entry-content">
         <div class="named-release">

@@ -24,7 +24,9 @@
 
     <div class="container post">
       <div class="main">
-        <h1>Support</h1>
+        <? if (!$headless) : ?>
+          <h1>Support</h1>
+        <? endif; ?>
 
         <h5>Ask Us Anything</h5>
         <script type="text/javascript">
