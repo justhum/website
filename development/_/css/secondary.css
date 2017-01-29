@@ -1323,5 +1323,5 @@ only screen and (                min-resolution: 2dppx) {
 .wf-loading p,
 .wf-loading .navigation,
 .wf-loading .appstore_btn {
-  visibilility: hidden;
+  visibility: hidden;
 }
