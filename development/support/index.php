@@ -1,37 +1,10 @@
 <!DOCTYPE html>
 
-<!--
-
-    MMMMM          MMMMM
-    MMMMM          MMMMM
-    MMMMM          MMMMM
-    MMMMM          MMMMM
-    MMMMM          MMMMM       .        .         .   .IMN7      ~NM8+
-    MMMMM       .,$MMMMM   MMMMM       MMMM   MMMMM.7MMMMMMMN.,MMMMMMMM=
-    MMMMM  .:DMMMMMMMMMM   MMMMM       MMMM   MMMMMMMMMMMMMMMDMMMMMMMMMM
-    MMMMMMMMMMMMMMMMMMMM   MMMMM       MMMM   MMMMMMI.  7MMMMMM   .MMMMM
-    MMMMMMMMMMMM?  MMMMM   MMMMM       MMMM   MMMMM      MMMMM     .MMMM
-    MMMMMMD+       MMMMM   MMMMM       MMMM   MMMMM      MMMMM      MMMM
-    MMMMM          MMMMM   MMMMM       MMMM   MMMMM      MMMMM      MMMM
-    MMMMM          MMMMM   MMMMM.      MMMM   MMMMM      MMMMM      MMMM
-    MMMMM          MMMMM   MMMMM.     MMMMM   MMMMM      MMMMM      MMMM
-  . MMMMM       MMMMMMMM   7MMMMMMMMMMMMMMM   MMMMM      MMMMM      MMMM   DMMM7
- .NMMMMMM    ..MMMMMMMMI    DMMMMMMMMM MMMM   MMMMM      MMMMM      MMMM  .MMMMI
-OMMMMMMMM      MMMMMMMM      .MMMMMD  .MMMM   MMMMM      MMMMM      MMMM   ,MD.
-MMMMMMMM+      .MMMMZ                  .   .  .          .                 . ..
-MMMMMMO  .
-.$M8+.
-
--->
-
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <? include $_SERVER['DOCUMENT_ROOT']."/includes/header.php" ?>
 
     <title>Support &ndash; Hum. &ndash; Songwriting for iPhone.</title>
-    <meta name="description" content="Hum. Songwriting for iPhone.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="/_/css/secondary.css">
 
@@ -40,37 +13,20 @@ MMMMMMO  .
     <meta property="og:image" content="/_/img/facebook.jpg" />
     <meta property="og:site_name" content="Hum" />
     <meta property="og:description" content="Hum is an iPhone app that combines note-taking and audio recording into a single app for capturing and organizing all your songwriting ideas." />
-    <meta property="og:url" content="http://justhum.com/" />
-
-    <script src="//use.typekit.net/qtx7caw.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
-    <link rel="shortcut icon" href="/_/favicon.ico">
+    <meta property="og:url" content="https://justhum.com/" />
   </head>
 
   <body>
-    <div class="navigation-mobile"></div>
+    <? if (!$headless) {
+      $is_support = TRUE;
+      include $_SERVER['DOCUMENT_ROOT']."/includes/navigation.php";
+    } ?>
 
-    <div class="header">
-      <h1><a href="/" title="Home">Hum.</a></h1>
-
-      <div class="navigation">
-        <ul class="duplicate">
-          <li><a href="/about/" title="About">About</a></li>
-          <li><a href="/blog/" title="Blog">Blog</a></li>
-          <li><a class="current" href="/support/" title="Support">Support</a></li>
-          <li><a href="/linernotes/" title="Liner Notes">Liner Notes</a></li>
-        </ul>
-      </div>
-
-      <a href="https://itunes.apple.com/us/app/hum/id796154884?ls=1&mt=8" title="Download on the App Store" class="appstore_btn" target="_blank">Download on <br>the App Store</a>
-
-      <a href="#" class="toggle-btn"></a>
-    </div>
-    
     <div class="container post">
       <div class="main">
-        <h1>Support</h1>
+        <? if (!$headless) : ?>
+          <h1>Support</h1>
+        <? endif; ?>
 
         <h5>Ask Us Anything</h5>
         <script type="text/javascript">
@@ -185,25 +141,9 @@ MMMMMMO  .
       </div>
     </div>
 
-    <div class="section footer">
-      <h1 class="logo"><a href="/">Hum</a></h1>
-      <h2>Your Songwriting, Organized</h2>
-
-      <form action="https://justhum.us5.list-manage.com/subscribe/post?u=66c48ed94c753b5fb093c3807&amp;id=c7fec5ee88" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
-        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required spellcheck="false">
-        <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Get<br />Updates</button>
-        <label for="mc-email"></label>
-      </form>
-
-      <ul class="social">
-        <li><a class="twitter-btn" target="_blank" href="https://twitter.com/justhum">Twitter</a></li>
-      </ul>
-
-      <p class="credit">
-        &copy; 2013-2017 Just Hum, LLC. Made in the Midwest.<br>
-        <a href="/terms/">Terms of Use &amp; Privacy</a>
-      </p>
-    </div>
+    <? if (!$headless) {
+        include $_SERVER['DOCUMENT_ROOT']."/includes/footer.php";
+    } ?>
 
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="/_/js/secondary.js"></script>

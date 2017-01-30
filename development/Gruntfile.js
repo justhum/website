@@ -7,15 +7,16 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     '../production/': [
-                        '*.html',
-                        'about/*.html',
+                        '*.php',
+                        'about/*.php',
                         'errors/*.html',
                         'blog/wp-content/themes/hum/header.php',
                         'blog/wp-content/themes/hum/footer.php',
-                        'linernotes/*.html',
-                        'releases/*.html',
-                        'support/*.html',
-                        'terms/*.html'
+                        'linernotes/*.php',
+                        'releases/*.php',
+                        'includes/*.php',
+                        'support/*.php',
+                        'terms/*.php'
                     ]
                 },
                 options: {

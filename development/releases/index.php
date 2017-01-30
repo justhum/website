@@ -1,37 +1,10 @@
 <!DOCTYPE html>
 
-<!--
-
-    MMMMM          MMMMM
-    MMMMM          MMMMM
-    MMMMM          MMMMM
-    MMMMM          MMMMM
-    MMMMM          MMMMM       .        .         .   .IMN7      ~NM8+
-    MMMMM       .,$MMMMM   MMMMM       MMMM   MMMMM.7MMMMMMMN.,MMMMMMMM=
-    MMMMM  .:DMMMMMMMMMM   MMMMM       MMMM   MMMMMMMMMMMMMMMDMMMMMMMMMM
-    MMMMMMMMMMMMMMMMMMMM   MMMMM       MMMM   MMMMMMI.  7MMMMMM   .MMMMM
-    MMMMMMMMMMMM?  MMMMM   MMMMM       MMMM   MMMMM      MMMMM     .MMMM
-    MMMMMMD+       MMMMM   MMMMM       MMMM   MMMMM      MMMMM      MMMM
-    MMMMM          MMMMM   MMMMM       MMMM   MMMMM      MMMMM      MMMM
-    MMMMM          MMMMM   MMMMM.      MMMM   MMMMM      MMMMM      MMMM
-    MMMMM          MMMMM   MMMMM.     MMMMM   MMMMM      MMMMM      MMMM
-  . MMMMM       MMMMMMMM   7MMMMMMMMMMMMMMM   MMMMM      MMMMM      MMMM   DMMM7
- .NMMMMMM    ..MMMMMMMMI    DMMMMMMMMM MMMM   MMMMM      MMMMM      MMMM  .MMMMI
-OMMMMMMMM      MMMMMMMM      .MMMMMD  .MMMM   MMMMM      MMMMM      MMMM   ,MD.
-MMMMMMMM+      .MMMMZ                  .   .  .          .                 . ..
-MMMMMMO  .
-.$M8+.
-
--->
-
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <? include $_SERVER['DOCUMENT_ROOT']."/includes/header.php" ?>
 
     <title>Release Notes &ndash; Hum. &ndash; Songwriting for iPhone.</title>
-    <meta name="description" content="Hum. Songwriting for iPhone.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="/_/css/secondary.css">
 
@@ -40,40 +13,62 @@ MMMMMMO  .
     <meta property="og:image" content="/_/img/facebook.jpg" />
     <meta property="og:site_name" content="Hum" />
     <meta property="og:description" content="Hum is an iPhone app that combines note-taking and audio recording into a single app for capturing and organizing all your songwriting ideas." />
-    <meta property="og:url" content="http://justhum.com/" />
-
-    <script src="//use.typekit.net/qtx7caw.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
-    <link rel="shortcut icon" href="/_/favicon.ico">
+    <meta property="og:url" content="https://justhum.com/" />
   </head>
 
   <body>
-    <div class="navigation-mobile"></div>
-
-    <div class="header">
-      <h1><a href="/" title="Home">Hum.</a></h1>
-
-      <div class="navigation">
-        <ul class="duplicate">
-          <li><a href="/about/" title="About">About</a></li>
-          <li><a href="/blog/" title="Blog">Blog</a></li>
-          <li><a href="/support/" title="Support">Support</a></li>
-          <li><a href="/linernotes/" title="Liner Notes">Liner Notes</a></li>
-        </ul>
-      </div>
-
-      <a href="https://itunes.apple.com/us/app/hum/id796154884?ls=1&mt=8" title="Download on the App Store" class="appstore_btn" target="_blank">Download on <br>the App Store</a>
-
-      <a href="#" class="toggle-btn"></a>
-    </div>
+    <? if (!$headless) {
+      $is_support = TRUE;
+      include $_SERVER['DOCUMENT_ROOT']."/includes/navigation.php";
+    } ?>
 
     <div class="container post">
-      <div class="main">
-        <h1>Releases</h1>
-      </div>
+      <? if (!$headless) : ?>
+        <div class="main">
+          <h1>Releases</h1>
+        </div>
+      <? endif; ?>
 
       <div class="entry-content">
+        <div class="named-release">
+          <a href="https://open.spotify.com/album/1NvW80mVflSphrro6oWLuP">
+              <img class="release" width="75" src="/_/img/releases/johnmoreland-highontulsaheat.jpg">
+          </a>
+          <h3 class="release">Version 1.8
+            <a href="https://open.spotify.com/album/1NvW80mVflSphrro6oWLuP">
+              &ldquo;High on Tulsa Heat&rdquo;
+            </a>
+            <span class="date">January 30, 2017</span>
+          </h3>
+        </div>
+
+        <ul class="notes">
+          <li>
+            <span class="added tag">Added</span>
+            You can now import audio into Hum. If you’re in an app that has audio files, you can now import them to Hum as a newly created Hum.
+          </li>
+          <li>
+            <span class="added tag">Added</span>
+            We added a few more links to the junk drawer.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            Thickened up the waveform in spots where the audio’s very quiet.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            Scrubbing audio should now follow your finger a bit better.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            There were some crashes when sharing.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            After playing a song, sometimes we'd show a loading spinner when it wasn't necessary.
+          </li>
+        </ul>
+
         <div class="named-release">
           <a href="https://open.spotify.com/album/22G4usbImmkJvKIcSF5e1l">
               <img class="release" width="75" src="/_/img/releases/diarrheaplanet-imrichbeyondyourwildestdreams.jpg">
@@ -92,20 +87,20 @@ MMMMMMO  .
             We’re using the native sharing in iOS so you can now share your Hums to more apps.
           </li>
           <li>
-            <span class="fixed tag">Fixed</span>
-            Sometimes our inline waveforms wouldn’t generate properly.
-          </li>
-          <li>
-            <span class="fixed tag">Fixed</span>
-            Inline playback after pausing in the control center would cause the playback scrubber to jump all over.
-          </li>
-          <li>
             <span class="improved tag">Improved</span>
             Waveforms now draw a little differently visually as part of a larger forthcoming redesign. They should also be a tiny bit faster.
           </li>
           <li>
             <span class="improved tag">Improved</span>
             It’s now a lot more clear which color is selected.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            Sometimes our inline waveforms wouldn’t generate properly.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            Inline playback after pausing in the control center would cause the playback scrubber to jump all over.
           </li>
           <li>
             <span class="removed tag">Removed</span>
@@ -425,6 +420,14 @@ MMMMMMO  .
         </div>
         <ul class="notes">
           <li>
+            <span class="added tag">Added</span>
+            We now support Dynamic Text. If you set your text larger in the iOS settings, Hum follows suit.
+          </li>
+          <li>
+            <span class="added tag">Added</span>
+            You can now use Hum in both portrait and landscape orientations.
+          </li>
+          <li>
             <span class="improved tag">Improved</span>
             We&rsquo;ve updated for iOS8. No more scaling!
           </li>
@@ -443,14 +446,6 @@ MMMMMMO  .
           <li>
             <span class="improved tag">Improved</span>
             Text is thicker and more readable throughout.
-          </li>
-          <li>
-            <span class="added tag">Added</span>
-            We now support Dynamic Text. If you set your text larger in the iOS settings, Hum follows suit.
-          </li>
-          <li>
-            <span class="added tag">Added</span>
-            You can now use Hum in both portrait and landscape orientations.
           </li>
           <li>
             <span class="fixed tag">Fixed</span>
@@ -690,20 +685,20 @@ MMMMMMO  .
         <h3 class="release">Release Candidate 2 <span class="date">January 5, 2014</span></h3>
         <ul class="notes">
           <li>
-            <span class="fixed tag">Fixed</span>
-            There was crash if you opened the notification center right after you added a new song.
-          </li>
-          <li>
-            <span class="fixed tag">Fixed</span>
-            When you put Hum in the background during a recording, it wouldn&rsquo;t actually save.
-          </li>
-          <li>
             <span class="improved tag">Improved</span>
             Throughout the app our buttons are much more responsive. <a href="/blog/fighting-ios7-control-center-uibuttons/">Fighting iOS7&rsquo;s Control Center with UIButtons at the bottom of the screen</a>.
           </li>
           <li>
             <span class="improved tag">Improved</span>
             Playhead accuracy is much better.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            There was crash if you opened the notification center right after you added a new song.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            When you put Hum in the background during a recording, it wouldn&rsquo;t actually save.
           </li>
         </ul>
 
@@ -797,25 +792,9 @@ MMMMMMO  .
       </div>
     </div>
 
-    <div class="section footer">
-      <h1 class="logo"><a href="/">Hum</a></h1>
-      <h2>Your Songwriting, Organized</h2>
-
-      <form action="https://justhum.us5.list-manage.com/subscribe/post?u=66c48ed94c753b5fb093c3807&amp;id=c7fec5ee88" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
-        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required spellcheck="false">
-        <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Get<br />Updates</button>
-        <label for="mc-email"></label>
-      </form>
-
-      <ul class="social">
-        <li><a class="twitter-btn" target="_blank" href="https://twitter.com/justhum">Twitter</a></li>
-      </ul>
-
-      <p class="credit">
-        &copy; 2013-2017 Just Hum, LLC. Made in the Midwest.<br>
-        <a href="/terms/">Terms of Use &amp; Privacy</a>
-      </p>
-    </div>
+    <? if (!$headless) {
+        include $_SERVER['DOCUMENT_ROOT']."/includes/footer.php";
+    } ?>
 
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="/_/js/secondary.js"></script>

@@ -1,36 +1,12 @@
 <!DOCTYPE html>
 
-<!--
-
-    MMMMM          MMMMM
-    MMMMM          MMMMM
-    MMMMM          MMMMM
-    MMMMM          MMMMM
-    MMMMM          MMMMM       .        .         .   .IMN7      ~NM8+
-    MMMMM       .,$MMMMM   MMMMM       MMMM   MMMMM.7MMMMMMMN.,MMMMMMMM=
-    MMMMM  .:DMMMMMMMMMM   MMMMM       MMMM   MMMMMMMMMMMMMMMDMMMMMMMMMM
-    MMMMMMMMMMMMMMMMMMMM   MMMMM       MMMM   MMMMMMI.  7MMMMMM   .MMMMM
-    MMMMMMMMMMMM?  MMMMM   MMMMM       MMMM   MMMMM      MMMMM     .MMMM
-    MMMMMMD+       MMMMM   MMMMM       MMMM   MMMMM      MMMMM      MMMM
-    MMMMM          MMMMM   MMMMM       MMMM   MMMMM      MMMMM      MMMM
-    MMMMM          MMMMM   MMMMM.      MMMM   MMMMM      MMMMM      MMMM
-    MMMMM          MMMMM   MMMMM.     MMMMM   MMMMM      MMMMM      MMMM
-  . MMMMM       MMMMMMMM   7MMMMMMMMMMMMMMM   MMMMM      MMMMM      MMMM   DMMM7
- .NMMMMMM    ..MMMMMMMMI    DMMMMMMMMM MMMM   MMMMM      MMMMM      MMMM  .MMMMI
-OMMMMMMMM      MMMMMMMM      .MMMMMD  .MMMM   MMMMM      MMMMM      MMMM   ,MD.
-MMMMMMMM+      .MMMMZ                  .   .  .          .                 . ..
-MMMMMMO  .
-.$M8+.
-
--->
-
 <html>
     <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <? include $_SERVER['DOCUMENT_ROOT']."/includes/header.php" ?>
 
         <title><?php wp_title( ' &ndash; ', true, 'right' ); ?><?php bloginfo('name'); ?></title>
-        <meta name="description" content="Hum. Songwriting for iPhone.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="//d3st4vfgl01ske.cloudfront.net/css/secondary.min.css">
 
         <meta property="og:type" content="company" />
         <meta property="og:title" content="Hum" />
@@ -39,35 +15,14 @@ MMMMMMO  .
         <meta property="og:description" content="Hum is an iPhone app that combines note-taking and audio recording into a single app for capturing and organizing all your songwriting ideas." />
         <meta property="og:url" content="http://justhum.com/" />
 
-        <link rel="stylesheet" href="//d3st4vfgl01ske.cloudfront.net/css/secondary.min.css">
-
-        <script src="//use.typekit.net/qtx7caw.js"></script>
-        <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
-        <link rel="shortcut icon" href="//d3st4vfgl01ske.cloudfront.net/favicon.ico">
-
         <?php wp_head(); ?>
     </head>
 
     <body <?php body_class(); ?>>
 
-        <div class="navigation-mobile"></div>
-
-        <div class="header">
-            <h1><a href="/" title="Home">Hum.</a></h1>
-
-            <div class="navigation">
-                <ul class="duplicate">
-                    <li><a href="/about/" title="About">About</a></li>
-                    <li><a class="current" href="/blog/" title="Blog">Blog</a></li>
-                    <li><a href="/support/" title="Support">Support</a></li>
-                    <li><a href="/linernotes/" title="Liner Notes">Liner Notes</a></li>
-                </ul>
-            </div>
-
-            <a href="https://itunes.apple.com/us/app/hum/id796154884?ls=1&mt=8" title="Download on the App Store" class="appstore_btn" target="_blank">Download on <br>the App Store</a>
-
-            <a href="#" class="toggle-btn"></a>
-        </div>
+      <? if (!$headless) {
+        $is_blog = TRUE;
+        include $_SERVER['DOCUMENT_ROOT']."/includes/navigation.php";
+      } ?>
 
         <div class="container">
