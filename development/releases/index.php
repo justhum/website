@@ -31,6 +31,45 @@
 
       <div class="entry-content">
         <div class="named-release">
+          <a href="https://open.spotify.com/album/1NvW80mVflSphrro6oWLuP">
+              <img class="release" width="75" src="/_/img/releases/johnmoreland-highontulsaheat.jpg">
+          </a>
+          <h3 class="release">Version 1.8
+            <a href="https://open.spotify.com/album/1NvW80mVflSphrro6oWLuP">
+              &ldquo;High on Tulsa Heat&rdquo;
+            </a>
+            <span class="date">January 30, 2017</span>
+          </h3>
+        </div>
+
+        <ul class="notes">
+          <li>
+            <span class="added tag">Added</span>
+            You can now import audio into Hum. If you’re in an app that has audio files, you can now import them to Hum as a newly created Hum.
+          </li>
+          <li>
+            <span class="added tag">Added</span>
+            We added a few more links to the junk drawer.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            Thickened up the waveform in spots where the audio’s very quiet.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            Scrubbing audio should now follow your finger a bit better.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            There were some crashes when sharing.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            After playing a song, sometimes we'd show a loading spinner when it wasn't necessary.
+          </li>
+        </ul>
+
+        <div class="named-release">
           <a href="https://open.spotify.com/album/22G4usbImmkJvKIcSF5e1l">
               <img class="release" width="75" src="/_/img/releases/diarrheaplanet-imrichbeyondyourwildestdreams.jpg">
           </a>
@@ -48,20 +87,20 @@
             We’re using the native sharing in iOS so you can now share your Hums to more apps.
           </li>
           <li>
-            <span class="fixed tag">Fixed</span>
-            Sometimes our inline waveforms wouldn’t generate properly.
-          </li>
-          <li>
-            <span class="fixed tag">Fixed</span>
-            Inline playback after pausing in the control center would cause the playback scrubber to jump all over.
-          </li>
-          <li>
             <span class="improved tag">Improved</span>
             Waveforms now draw a little differently visually as part of a larger forthcoming redesign. They should also be a tiny bit faster.
           </li>
           <li>
             <span class="improved tag">Improved</span>
             It’s now a lot more clear which color is selected.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            Sometimes our inline waveforms wouldn’t generate properly.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            Inline playback after pausing in the control center would cause the playback scrubber to jump all over.
           </li>
           <li>
             <span class="removed tag">Removed</span>
@@ -381,6 +420,14 @@
         </div>
         <ul class="notes">
           <li>
+            <span class="added tag">Added</span>
+            We now support Dynamic Text. If you set your text larger in the iOS settings, Hum follows suit.
+          </li>
+          <li>
+            <span class="added tag">Added</span>
+            You can now use Hum in both portrait and landscape orientations.
+          </li>
+          <li>
             <span class="improved tag">Improved</span>
             We&rsquo;ve updated for iOS8. No more scaling!
           </li>
@@ -399,14 +446,6 @@
           <li>
             <span class="improved tag">Improved</span>
             Text is thicker and more readable throughout.
-          </li>
-          <li>
-            <span class="added tag">Added</span>
-            We now support Dynamic Text. If you set your text larger in the iOS settings, Hum follows suit.
-          </li>
-          <li>
-            <span class="added tag">Added</span>
-            You can now use Hum in both portrait and landscape orientations.
           </li>
           <li>
             <span class="fixed tag">Fixed</span>
@@ -646,20 +685,20 @@
         <h3 class="release">Release Candidate 2 <span class="date">January 5, 2014</span></h3>
         <ul class="notes">
           <li>
-            <span class="fixed tag">Fixed</span>
-            There was crash if you opened the notification center right after you added a new song.
-          </li>
-          <li>
-            <span class="fixed tag">Fixed</span>
-            When you put Hum in the background during a recording, it wouldn&rsquo;t actually save.
-          </li>
-          <li>
             <span class="improved tag">Improved</span>
             Throughout the app our buttons are much more responsive. <a href="/blog/fighting-ios7-control-center-uibuttons/">Fighting iOS7&rsquo;s Control Center with UIButtons at the bottom of the screen</a>.
           </li>
           <li>
             <span class="improved tag">Improved</span>
             Playhead accuracy is much better.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            There was crash if you opened the notification center right after you added a new song.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            When you put Hum in the background during a recording, it wouldn&rsquo;t actually save.
           </li>
         </ul>
 

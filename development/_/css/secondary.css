@@ -530,7 +530,7 @@ span.tag.fixed {
 
 span.tag.improved {
   background: #bfbfbf;
-  left: 15px;
+  left: 17px;
 }
 
 span.tag.added {
@@ -699,7 +699,7 @@ code {
 }
 
 .named-release img {
-	margin: -17px 15px 0 -87px;
+	margin: -11px 15px 0 -87px;
 	float: left;
 	border: 1px solid #BDBDBD;
 }
@@ -1324,4 +1324,4 @@ only screen and (                min-resolution: 2dppx) {
 .wf-loading .navigation,
 .wf-loading .appstore_btn {
   visibility: hidden;
-}
+}justh
