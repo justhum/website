@@ -12,3 +12,7 @@ Typing `grunt deploy-s3` only changes the JS and CSS.
 Similarly, `grunt deploy-html` only updates the static HTML and blog theme files.
 
 For now, images are copied to S3 manually.
+
+### SSL Renewal
+
+Login as root at Digital Ocean's IP. You'll then want to run `./certbot-auto renew --no-self-upgrade`. This will provide fresh certs.
