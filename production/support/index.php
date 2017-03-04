@@ -93,7 +93,7 @@
         <p>If you don&rsquo;t have Dropbox syncing enabled, first, plug your old phone into iTunes and back it up. Then, plug in your new phone. You&rsquo;ll want to restore your new phone from your old phone&rsquo;s backup.</p>
 
         <h3>Can Hum import my Voice Memos?</h3>
-        <p>No. We think you&rsquo;ll be better off starting from scratch instead of having to go through all your old ideas to categorize them. For Hum&rsquo;s sorting features to be useful, you&rsquo;ll want to keep accurate track of key, tuning, and mood for <em>all</em> your songs. The best way to do this is to do it as you add lyrics and recordings from a fresh library.</p>
+        <p>Yep! In Voice Memos, press the share button. Hum’s icon will appear in this list. Once shared from Voice Memos, or any other app, Hum will show you a screen where you can give your new Hum a title. Press save, and you’ll find your freshly-imported Hum in your library.</p>
 
         <h3>How do I add a title to a Hum?</h3>
         <p>The first line of the lyrics field is your title. We don&rsquo;t ever want giving your songs a title to get in the way of capturing an idea.</p>
