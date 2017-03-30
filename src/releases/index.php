@@ -6,11 +6,11 @@
 
     <title>Release Notes &ndash; Hum. &ndash; Songwriting for iPhone.</title>
 
-    <link rel="stylesheet" href="//d3st4vfgl01ske.cloudfront.net/css/secondary.min.css">
+    <link rel="stylesheet" href="/_/css/secondary.css">
 
     <meta property="og:type" content="company" />
     <meta property="og:title" content="Hum" />
-    <meta property="og:image" content="//d3st4vfgl01ske.cloudfront.net/img/facebook.jpg" />
+    <meta property="og:image" content="/_/img/facebook.jpg" />
     <meta property="og:site_name" content="Hum" />
     <meta property="og:description" content="Hum is an iPhone app that combines note-taking and audio recording into a single app for capturing and organizing all your songwriting ideas." />
     <meta property="og:url" content="https://justhum.com/" />
@@ -32,7 +32,7 @@
       <div class="entry-content">
         <div class="named-release">
           <a href="https://open.spotify.com/album/1NvW80mVflSphrro6oWLuP">
-              <img class="release" width="75" src="//d3st4vfgl01ske.cloudfront.net/img/releases/johnmoreland-highontulsaheat.jpg">
+              <img class="release" width="75" src="/_/img/releases/johnmoreland-highontulsaheat.jpg">
           </a>
           <h3 class="release">Version 1.8
             <a href="https://open.spotify.com/album/1NvW80mVflSphrro6oWLuP">
@@ -71,7 +71,7 @@
 
         <div class="named-release">
           <a href="https://open.spotify.com/album/22G4usbImmkJvKIcSF5e1l">
-              <img class="release" width="75" src="//d3st4vfgl01ske.cloudfront.net/img/releases/diarrheaplanet-imrichbeyondyourwildestdreams.jpg">
+              <img class="release" width="75" src="/_/img/releases/diarrheaplanet-imrichbeyondyourwildestdreams.jpg">
           </a>
           <h3 class="release">Version 1.7
             <a href="https://open.spotify.com/album/22G4usbImmkJvKIcSF5e1l">
@@ -138,7 +138,7 @@
 
         <div class="named-release">
           <a href="https://open.spotify.com/album/5klZj0GbathSjaZZBD2Qxm">
-              <img class="release" width="75" src="//d3st4vfgl01ske.cloudfront.net/img/releases/badbadhats-psychicreader.jpg">
+              <img class="release" width="75" src="/_/img/releases/badbadhats-psychicreader.jpg">
           </a>
           <h3 class="release">Version 1.6
             <a href="https://open.spotify.com/album/5klZj0GbathSjaZZBD2Qxm">
@@ -201,7 +201,7 @@
 
         <div class="named-release">
           <a href="http://www.rdio.com/artist/The_Coals/album/A_Happy_Animal/">
-            <img class="release" width="75" src="//d3st4vfgl01ske.cloudfront.net/img/releases/thecoals-ahappyanimal.jpg">
+            <img class="release" width="75" src="/_/img/releases/thecoals-ahappyanimal.jpg">
           </a>
           <h3 class="release">Version 1.5
             <a href="http://www.rdio.com/artist/The_Coals/album/A_Happy_Animal/">
@@ -256,7 +256,7 @@
 
         <div class="named-release">
           <a href="http://www.rdio.com/artist/The_Police/album/Synchronicity_(Remastered)/">
-            <img class="release" width="75" src="//d3st4vfgl01ske.cloudfront.net/img/releases/thepolice-synchronicity.jpg">
+            <img class="release" width="75" src="/_/img/releases/thepolice-synchronicity.jpg">
           </a>
           <h3 class="release">Version 1.4
             <a href="http://www.rdio.com/artist/The_Police/album/Synchronicity_(Remastered)/">
@@ -371,7 +371,7 @@
 
         <div class="named-release">
           <a href="http://www.rdio.com/artist/Bahamas/album/Bahamas_is_Afie/">
-            <img class="release" width="75" src="//d3st4vfgl01ske.cloudfront.net/img/releases/bahamas-bahamasisafie.jpg">
+            <img class="release" width="75" src="/_/img/releases/bahamas-bahamasisafie.jpg">
           </a>
           <h3 class="release">Version 1.3
             <a href="http://www.rdio.com/artist/Bahamas/album/Bahamas_is_Afie/">
@@ -409,7 +409,7 @@
 
         <div class="named-release">
           <a href="http://www.rdio.com/artist/Bad_Bad_Hats/album/It_Hurts/">
-            <img class="release" width="75" src="//d3st4vfgl01ske.cloudfront.net/img/releases/badbadhats-ithurts.jpg">
+            <img class="release" width="75" src="/_/img/releases/badbadhats-ithurts.jpg">
           </a>
           <h3 class="release">Version 1.2
             <a href="http://www.rdio.com/artist/Bad_Bad_Hats/album/It_Hurts/">
@@ -467,7 +467,7 @@
 
         <div class="named-release">
           <a href="http://www.rdio.com/artist/J_Roddy_Walston__The_Business/album/Essential_Tremors/">
-            <img class="release" width="75" src="//d3st4vfgl01ske.cloudfront.net/img/releases/jroddywalston-essentialtremors.jpg">
+            <img class="release" width="75" src="/_/img/releases/jroddywalston-essentialtremors.jpg">
           </a>
           <h3 class="release">Version 1.1
             <a href="http://www.rdio.com/artist/J_Roddy_Walston__The_Business/album/Essential_Tremors/">
@@ -666,7 +666,7 @@
 
         <div class="named-release">
           <a href="http://www.rdio.com/artist/Calexico/album/Algiers/">
-            <img class="release" width="75" src="//d3st4vfgl01ske.cloudfront.net/img/releases/calexico-algiers.jpg">
+            <img class="release" width="75" src="/_/img/releases/calexico-algiers.jpg">
           </a>
           <h3 class="release">Version 1.0
             <a href="http://www.rdio.com/artist/Calexico/album/Algiers/">
@@ -797,7 +797,7 @@
     } ?>
 
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="//d3st4vfgl01ske.cloudfront.net/js/secondary.min.js"></script>
+    <script src="/_/js/secondary.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

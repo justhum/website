@@ -6,11 +6,11 @@
 
     <title>About &ndash; Hum. &ndash; Songwriting for iPhone</title>
 
-    <link rel="stylesheet" href="//d3st4vfgl01ske.cloudfront.net/css/secondary.min.css">
+    <link rel="stylesheet" href="/_/css/secondary.css">
 
     <meta property="og:type" content="company" />
     <meta property="og:title" content="Hum" />
-    <meta property="og:image" content="//d3st4vfgl01ske.cloudfront.net/img/facebook_about.jpg" />
+    <meta property="og:image" content="/_/img/facebook_about.jpg" />
     <meta property="og:site_name" content="Hum" />
     <meta property="og:description" content="Hum is an iPhone app that combines note-taking and audio recording into a single app for capturing and organizing all your songwriting ideas." />
     <meta property="og:url" content="https://justhum.com/about/" />
@@ -66,14 +66,14 @@
 
           <p>Thanks,</p>
 
-          <p><img src="//d3st4vfgl01ske.cloudfront.net/img/signature.svg" width="280"></p>
+          <p><img src="/_/img/signature.svg" width="280"></p>
 
           <p>Aaron Shekey</p>
         </div>
 
         <div class="main sub">
           <h5>Writing a Story?</h5>
-          <a href="//d3st4vfgl01ske.cloudfront.net/hum_presskit-jan2014.zip" class="btn">Download our Presskit</a>
+          <a href="/_/hum_presskit-jan2014.zip" class="btn">Download our Presskit</a>
         </div>
       </div>
     </div>
@@ -82,7 +82,7 @@
       <div class="container">
         <div class="bio">
           <div class="bio-photo">
-            <img src="//d3st4vfgl01ske.cloudfront.net/img/bio_aaron.png" alt="Aaron Shekey" width="192" data-ret="//d3st4vfgl01ske.cloudfront.net/img/bio_aaron@2x.png">
+            <img src="/_/img/bio_aaron.png" alt="Aaron Shekey" width="192" data-ret="/_/img/bio_aaron@2x.png">
           </div>
 
           <div class="bio-content">
@@ -113,7 +113,7 @@
 
         <div class="bio">
           <div class="bio-photo">
-            <img src="//d3st4vfgl01ske.cloudfront.net/img/bio_joseph.png" alt="Joseph Kuefler" width="192" data-ret="//d3st4vfgl01ske.cloudfront.net/img/bio_joseph@2x.png">
+            <img src="/_/img/bio_joseph.png" alt="Joseph Kuefler" width="192" data-ret="/_/img/bio_joseph@2x.png">
           </div>
 
           <div class="bio-content">
@@ -141,7 +141,7 @@
 
         <div class="bio">
           <div class="bio-photo">
-            <img src="//d3st4vfgl01ske.cloudfront.net/img/bio_ellen.png" alt="Ellen Shapiro" width="192" data-ret="//d3st4vfgl01ske.cloudfront.net/img/bio_ellen@2x.png">
+            <img src="/_/img/bio_ellen.png" alt="Ellen Shapiro" width="192" data-ret="/_/img/bio_ellen@2x.png">
           </div>
 
           <div class="bio-content">
@@ -176,7 +176,7 @@
     } ?>
 
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="//d3st4vfgl01ske.cloudfront.net/js/secondary.min.js"></script>
+    <script src="/_/js/secondary.js"></script>
     <script>
       $(function() {
         if(window.devicePixelRatio >= 1.2){

@@ -35,17 +35,17 @@ MMMMMMO  .
 
     <meta property="og:type" content="company" />
     <meta property="og:title" content="Hum" />
-    <meta property="og:image" content="//d3st4vfgl01ske.cloudfront.net/img/facebook.jpg" />
+    <meta property="og:image" content="/_/img/facebook.jpg" />
     <meta property="og:site_name" content="Hum" />
     <meta property="og:description" content="Hum is an iPhone app that combines note-taking and audio recording into a single app for capturing and organizing all your songwriting ideas." />
     <meta property="og:url" content="http://justhum.com/" />
 
-    <link rel="stylesheet" href="//d3st4vfgl01ske.cloudfront.net/css/main.min.css">
+    <link rel="stylesheet" href="/_/css/main.css">
 
     <script src="//use.typekit.net/qtx7caw.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-    <link rel="shortcut icon" href="//d3st4vfgl01ske.cloudfront.net/favicon.ico">
+    <link rel="shortcut icon" href="/_/favicon.ico">
   </head>
   <body>
     <div class="container">
@@ -79,63 +79,63 @@ MMMMMMO  .
       <div class="content">
         <div class="section combine">
           <h3>Hum combines note-taking and audio recording into a single app for capturing and organizing all your songwriting ideas.</h3>
-          <img src="//d3st4vfgl01ske.cloudfront.net/img/library.gif" data-ret="//d3st4vfgl01ske.cloudfront.net/img/library@2x.gif" alt="Library" width="320" height="351">
+          <img src="/_/img/library.gif" data-ret="/_/img/library@2x.gif" alt="Library" width="320" height="351">
         </div>
 
         <div class="section sort">
           <h3>Hum organizes all your lyrics and melodies by key, tuning, and mood so you never lose anything again.</h3>
-          <img src="//d3st4vfgl01ske.cloudfront.net/img/sort.png" data-ret="//d3st4vfgl01ske.cloudfront.net/img/sort@2x.png" alt="Sort" width="300" height="424">
+          <img src="/_/img/sort.png" data-ret="/_/img/sort@2x.png" alt="Sort" width="300" height="424">
         </div>
 
         <div class="section attach">
           <h3>Hum attaches recordings to your lyrics so you can work on them at the same time.</h3>
-          <img src="//d3st4vfgl01ske.cloudfront.net/img/attach.gif" data-ret="//d3st4vfgl01ske.cloudfront.net/img/attach@2x.gif" alt="Song" width="320" height="257">
+          <img src="/_/img/attach.gif" data-ret="/_/img/attach@2x.gif" alt="Song" width="320" height="257">
         </div>
 
         <div class="section tune">
           <h3>Hum keeps you in tune</h3>
-          <img src="//d3st4vfgl01ske.cloudfront.net/img/tuner.png" data-ret="//d3st4vfgl01ske.cloudfront.net/img/tuner@2x.png" alt="Tuner" width="282" height="26">
+          <img src="/_/img/tuner.png" data-ret="/_/img/tuner@2x.png" alt="Tuner" width="282" height="26">
         </div>
 
         <div class="section dropbox">
           <h3>Hum syncs your library to Dropbox</h3>
-          <img src="//d3st4vfgl01ske.cloudfront.net/img/dropbox.png" data-ret="//d3st4vfgl01ske.cloudfront.net/img/dropbox@2x.png" alt="Tuner" width="320" height="70">
+          <img src="/_/img/dropbox.png" data-ret="/_/img/dropbox@2x.png" alt="Tuner" width="320" height="70">
         </div>
 
         <div class="section features">
           <div class="wrapper">
             <div class="feature first">
-              <img src="//d3st4vfgl01ske.cloudfront.net/img/quickplay.png" alt="Quick Play" width="38" height="53" data-ret="//d3st4vfgl01ske.cloudfront.net/img/quickplay@2x.png">
+              <img src="/_/img/quickplay.png" alt="Quick Play" width="38" height="53" data-ret="/_/img/quickplay@2x.png">
               <h4>Quick Play</h4>
               <p>Hum lets you play your ideas directly without having to drill down into your library.</p>
             </div>
 
             <div class="feature notes last">
-              <img class="notes" src="//d3st4vfgl01ske.cloudfront.net/img/notes.gif" alt="Cursor" width="3" height="53" data-ret="//d3st4vfgl01ske.cloudfront.net/img/notes@2x.gif">
+              <img class="notes" src="/_/img/notes.gif" alt="Cursor" width="3" height="53" data-ret="/_/img/notes@2x.gif">
               <h4>Notes</h4>
               <p>Hum provides a full page of notes that are kept separate from your lyrics.</p>
             </div>
 
             <div class="feature sharing first">
-              <img src="//d3st4vfgl01ske.cloudfront.net/img/sharing.png" alt="Sharing" width="70" height="53" data-ret="//d3st4vfgl01ske.cloudfront.net/img/sharing@2x.png">
+              <img src="/_/img/sharing.png" alt="Sharing" width="70" height="53" data-ret="/_/img/sharing@2x.png">
               <h4>Sharing</h4>
               <p>Hum allows you to easily share your ideas with others by iMessage or email.</p>
             </div>
 
             <div class="feature printing last">
-              <img src="//d3st4vfgl01ske.cloudfront.net/img/printing.png" alt="Printing" width="50" height="53" data-ret="//d3st4vfgl01ske.cloudfront.net/img/printing@2x.png">
+              <img src="/_/img/printing.png" alt="Printing" width="50" height="53" data-ret="/_/img/printing@2x.png">
               <h4>Printing</h4>
               <p>Hum lets you print your lyrics with any nearby printer.</p>
             </div>
 
             <div class="feature sorting first">
-              <img src="//d3st4vfgl01ske.cloudfront.net/img/sorting.png" alt="Sorting" width="42" height="53" data-ret="//d3st4vfgl01ske.cloudfront.net/img/sorting@2x.png">
+              <img src="/_/img/sorting.png" alt="Sorting" width="42" height="53" data-ret="/_/img/sorting@2x.png">
               <h4>Sorting</h4>
               <p>Hum easily sorts your whole library by key, tuning, or mood.</p>
             </div>
 
             <div class="feature searching last">
-              <img src="//d3st4vfgl01ske.cloudfront.net/img/searching.png" alt="Searching" width="53" height="53" data-ret="//d3st4vfgl01ske.cloudfront.net/img/searching@2x.png">
+              <img src="/_/img/searching.png" alt="Searching" width="53" height="53" data-ret="/_/img/searching@2x.png">
 
               <h4>Searching</h4>
               <p>Hum can find a single word or phrase within thousands.</p>
@@ -147,12 +147,12 @@ MMMMMMO  .
           <div class="wrapper">
             <div class="review">
               <h3>&ldquo;Impeccably designed&rdquo;</h3>
-              <a href="http://www.macworld.com/article/2153580/staff-picks-hum-is-the-little-songwriting-app-i-never-knew-i-needed.html"><img src="//d3st4vfgl01ske.cloudfront.net/img/macworld.png" data-ret="//d3st4vfgl01ske.cloudfront.net/img/macworld@2x.png" alt="Macworld" width="139" height="54"></a>
+              <a href="http://www.macworld.com/article/2153580/staff-picks-hum-is-the-little-songwriting-app-i-never-knew-i-needed.html"><img src="/_/img/macworld.png" data-ret="/_/img/macworld@2x.png" alt="Macworld" width="139" height="54"></a>
             </div>
 
              <div class="review last">
               <h3>&ldquo;I love this app&rdquo;</h3>
-              <a href="http://www.loopinsight.com/2014/02/01/hum/"><img src="//d3st4vfgl01ske.cloudfront.net/img/theloop.png" data-ret="//d3st4vfgl01ske.cloudfront.net/img/theloop@2x.png" alt="The Loop" width="74" height="28"></a>
+              <a href="http://www.loopinsight.com/2014/02/01/hum/"><img src="/_/img/theloop.png" data-ret="/_/img/theloop@2x.png" alt="The Loop" width="74" height="28"></a>
             </div>
           </div>
         </div>
@@ -179,7 +179,7 @@ MMMMMMO  .
     </div>
 
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="//d3st4vfgl01ske.cloudfront.net/js/main.min.js"></script>
+    <script src="/_/js/main.js"></script>
     <script>
       $(function() {
           if(window.devicePixelRatio >= 1.2){

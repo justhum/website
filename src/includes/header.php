@@ -17,4 +17,4 @@
   <script src="//use.typekit.net/qtx7caw.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-  <link rel="shortcut icon" href="//d3st4vfgl01ske.cloudfront.net/favicon.ico">
+  <link rel="shortcut icon" href="/_/favicon.ico">

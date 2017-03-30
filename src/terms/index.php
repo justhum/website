@@ -6,11 +6,11 @@
 
     <title>Terms of Service &amp; Privacy Policy &ndash; Hum. &ndash; Songwriting for iPhone.</title>
 
-    <link rel="stylesheet" href="//d3st4vfgl01ske.cloudfront.net/css/secondary.min.css">
+    <link rel="stylesheet" href="/_/css/secondary.css">
 
     <meta property="og:type" content="company" />
     <meta property="og:title" content="Hum" />
-    <meta property="og:image" content="//d3st4vfgl01ske.cloudfront.net/img/facebook.jpg" />
+    <meta property="og:image" content="/_/img/facebook.jpg" />
     <meta property="og:site_name" content="Hum" />
     <meta property="og:description" content="Hum is an iPhone app that combines note-taking and audio recording into a single app for capturing and organizing all your songwriting ideas." />
     <meta property="og:url" content="https://justhum.com/" />
@@ -272,7 +272,7 @@
     } ?>
 
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="//d3st4vfgl01ske.cloudfront.net/js/secondary.min.js"></script>
+    <script src="/_/js/secondary.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

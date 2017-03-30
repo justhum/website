@@ -6,11 +6,11 @@
 
     <title>The Liner Notes &ndash; Hum. &ndash; Songwriting for iPhone</title>
 
-    <link rel="stylesheet" href="//d3st4vfgl01ske.cloudfront.net/css/secondary.min.css">
+    <link rel="stylesheet" href="/_/css/secondary.css">
 
     <meta property="og:type" content="company" />
     <meta property="og:title" content="Hum" />
-    <meta property="og:image" content="//d3st4vfgl01ske.cloudfront.net/img/facebook_linernotes.jpg" />
+    <meta property="og:image" content="/_/img/facebook_linernotes.jpg" />
     <meta property="og:site_name" content="Hum" />
     <meta property="og:description" content="The Liner Notes is a video series about songwriters and their craft." />
     <meta property="og:url" content="https://justhum.com/linernotes/" />
@@ -31,7 +31,7 @@
 
       <div class="episode">
         <div class="episode-photo">
-          <img src="//d3st4vfgl01ske.cloudfront.net/img/linernotes/jason-mandell.png" alt="Jason Mandell" width="160"  data-ret="//d3st4vfgl01ske.cloudfront.net/img/linernotes/jason-mandell@2x.png">
+          <img src="/_/img/linernotes/jason-mandell.png" alt="Jason Mandell" width="160"  data-ret="/_/img/linernotes/jason-mandell@2x.png">
         </div>
 
         <div class="episode-synopsis">
@@ -50,7 +50,7 @@
 
       <div class="episode">
         <div class="episode-photo">
-          <img src="//d3st4vfgl01ske.cloudfront.net/img/linernotes/mike-krol.png" alt="Mike Krol" width="160">
+          <img src="/_/img/linernotes/mike-krol.png" alt="Mike Krol" width="160">
         </div>
 
         <div class="episode-synopsis">
@@ -68,7 +68,7 @@
 
       <div class="episode">
         <div class="episode-photo">
-          <img src="//d3st4vfgl01ske.cloudfront.net/img/linernotes/seth-davin.png" alt="Seth Davin" width="160">
+          <img src="/_/img/linernotes/seth-davin.png" alt="Seth Davin" width="160">
         </div>
 
         <div class="episode-synopsis">
@@ -87,7 +87,7 @@
 
       <div class="episode">
         <div class="episode-photo">
-          <img src="//d3st4vfgl01ske.cloudfront.net/img/linernotes/badbadhats.png" alt="Bad Bad Hats" width="160">
+          <img src="/_/img/linernotes/badbadhats.png" alt="Bad Bad Hats" width="160">
         </div>
 
         <div class="episode-synopsis">
@@ -106,7 +106,7 @@
 
       <div class="episode">
         <div class="episode-photo">
-          <img src="//d3st4vfgl01ske.cloudfront.net/img/linernotes/savannah-smith.png" alt="Savannah Smith" width="160">
+          <img src="/_/img/linernotes/savannah-smith.png" alt="Savannah Smith" width="160">
         </div>
 
         <div class="episode-synopsis">
@@ -124,7 +124,7 @@
 
       <div class="episode">
         <div class="episode-photo">
-          <img src="//d3st4vfgl01ske.cloudfront.net/img/linernotes/kevin-truckenmiller.png" alt="Kevin Truckenmiller" width="160">
+          <img src="/_/img/linernotes/kevin-truckenmiller.png" alt="Kevin Truckenmiller" width="160">
         </div>
 
         <div class="episode-synopsis">
@@ -143,7 +143,7 @@
     } ?>
 
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="//d3st4vfgl01ske.cloudfront.net/js/secondary.min.js"></script>
+    <script src="/_/js/secondary.js"></script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
