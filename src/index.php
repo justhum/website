@@ -79,7 +79,7 @@ MMMMMMO  .
       <div class="content">
         <div class="section combine">
           <h3>Hum combines note-taking and audio recording into a single app for capturing and organizing all your songwriting ideas.</h3>
-          <img src="/_/img/library.gif" alt="Library" width="320" height="351">
+          <img src="/_/img/library.png" alt="Library" width="320" height="351">
         </div>
 
         <div class="section sort">
@@ -89,7 +89,7 @@ MMMMMMO  .
 
         <div class="section attach">
           <h3>Hum attaches recordings to your lyrics so you can work on them at the same time.</h3>
-          <img src="/_/img/attach.gif" alt="Song" width="320" height="257">
+          <img src="/_/img/song.png" alt="Song" width="320" height="244">
         </div>
 
         <div class="section tune">
