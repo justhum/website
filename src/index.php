@@ -84,7 +84,7 @@ MMMMMMO  .
 
         <div class="section sort">
           <h3>Hum organizes all your lyrics and melodies by key, tuning, and mood so you never lose anything again.</h3>
-          <img src="/_/img/sort@2x.png" alt="Sort" width="300" height="424">
+          <img src="/_/img/filtering@2x.png" alt="Filtering" width="300" height="348">
         </div>
 
         <div class="section attach">
