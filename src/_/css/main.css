@@ -134,7 +134,7 @@ h4 {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  background: #4da99d url("../img/apple_small.png") no-repeat 1em center;
+  background: #4da99d url("../img/apple-small.png") no-repeat 1em center;
   background-size: 21px;
   font-size: .75em;
   font-weight: 700;
@@ -870,44 +870,6 @@ button.mfp-close:hover {
 
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
 	opacity: 0;
-}
-
-
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-
-  h1.logo {
-    background-image: url("../img/hum@2x.png");
-  }
-
-  a.appstore_btn {
-    background-image: url("../img/apple_small@2x.png");
-  }
-
-  .footer .social a.twitter-btn {
-    background-image: url("../img/twitter-btn@2x.png");
-  }
-
-  .toggle-btn {
-    background-image: url("../img/hamburger-btn-dark@2x.png");
-  }
-
-  button.mfp-close {
-    background-image: url("../img/close-btn-question@2x.png");
-  }
-
-  .anthem-btn {
-    background-image: url("../img/anthem-btn@2x.png");
-  }
-
-  .walkthrough-btn {
-    background-image: url("../img/walkthrough-btn@2x.png");
-  }
 }
 
 /* Typekit loading overrides */

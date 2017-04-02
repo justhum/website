@@ -79,63 +79,63 @@ MMMMMMO  .
       <div class="content">
         <div class="section combine">
           <h3>Hum combines note-taking and audio recording into a single app for capturing and organizing all your songwriting ideas.</h3>
-          <img src="/_/img/library@2x.gif" alt="Library" width="320" height="351">
+          <img src="/_/img/library.gif" alt="Library" width="320" height="351">
         </div>
 
         <div class="section sort">
           <h3>Hum organizes all your lyrics and melodies by key, tuning, and mood so you never lose anything again.</h3>
-          <img src="/_/img/filtering@2x.png" alt="Filtering" width="300" height="348">
+          <img src="/_/img/filtering.png" alt="Filtering" width="300" height="348">
         </div>
 
         <div class="section attach">
           <h3>Hum attaches recordings to your lyrics so you can work on them at the same time.</h3>
-          <img src="/_/img/attach@2x.gif" alt="Song" width="320" height="257">
+          <img src="/_/img/attach.gif" alt="Song" width="320" height="257">
         </div>
 
         <div class="section tune">
           <h3>Hum keeps you in tune</h3>
-          <img src="/_/img/tuner@2x.png" alt="Tuner" width="282" height="26">
+          <img src="/_/img/tuner.png" alt="Tuner" width="282" height="28">
         </div>
 
         <div class="section dropbox">
           <h3>Hum syncs your library to Dropbox</h3>
-          <img src="/_/img/dropbox@2x.png" alt="Tuner" width="320" height="70">
+          <img src="/_/img/dropbox.png" alt="Dropbox" width="320" height="70">
         </div>
 
         <div class="section features">
           <div class="wrapper">
             <div class="feature first">
-              <img src="/_/img/quickplay@2x.png" alt="Quick Play" width="38" height="53">
+              <img src="/_/img/quickplay.png" alt="Quick Play" width="38" height="53">
               <h4>Quick Play</h4>
               <p>Hum lets you play your ideas directly without having to drill down into your library.</p>
             </div>
 
             <div class="feature notes last">
-              <img class="notes" src="/_/img/notes@2x.gif" alt="Cursor" width="3" height="53">
+              <img class="notes" src="/_/img/notes.gif" alt="Cursor" width="3" height="53">
               <h4>Notes</h4>
               <p>Hum provides a full page of notes that are kept separate from your lyrics.</p>
             </div>
 
             <div class="feature sharing first">
-              <img src="/_/img/sharing@2x.png" alt="Sharing" width="70" height="53">
+              <img src="/_/img/sharing.png" alt="Sharing" width="70" height="53">
               <h4>Sharing</h4>
               <p>Hum allows you to easily share your ideas with others by iMessage or email.</p>
             </div>
 
             <div class="feature printing last">
-              <img src="/_/img/printing@2x.png" alt="Printing" width="50" height="53">
+              <img src="/_/img/printing.png" alt="Printing" width="50" height="52">
               <h4>Printing</h4>
               <p>Hum lets you print your lyrics with any nearby printer.</p>
             </div>
 
             <div class="feature sorting first">
-              <img src="/_/img/sorting@2x.png" alt="Sorting" width="42" height="53">
+              <img src="/_/img/sorting.png" alt="Sorting" width="42" height="53">
               <h4>Sorting</h4>
               <p>Hum easily sorts your whole library by key, tuning, or mood.</p>
             </div>
 
             <div class="feature searching last">
-              <img src="/_/img/searching@2x.png" alt="Searching" width="53" height="53">
+              <img src="/_/img/searching.png" alt="Searching" width="53" height="53">
               <h4>Searching</h4>
               <p>Hum can find a single word or phrase within thousands.</p>
             </div>
@@ -146,12 +146,12 @@ MMMMMMO  .
           <div class="wrapper">
             <div class="review">
               <h3>&ldquo;Impeccably designed&rdquo;</h3>
-              <a href="http://www.macworld.com/article/2153580/staff-picks-hum-is-the-little-songwriting-app-i-never-knew-i-needed.html"><img src="/_/img/macworld@2x.png" alt="Macworld" width="139" height="54"></a>
+              <a href="http://www.macworld.com/article/2153580/staff-picks-hum-is-the-little-songwriting-app-i-never-knew-i-needed.html"><img src="/_/img/macworld.png" alt="Macworld" width="139" height="54"></a>
             </div>
 
              <div class="review last">
               <h3>&ldquo;I love this app&rdquo;</h3>
-              <a href="http://www.loopinsight.com/2014/02/01/hum/"><img src="/_/img/theloop@2x.png" alt="The Loop" width="74" height="28"></a>
+              <a href="http://www.loopinsight.com/2014/02/01/hum/"><img src="/_/img/theloop.png" alt="The Loop" width="74" height="28"></a>
             </div>
           </div>
         </div>

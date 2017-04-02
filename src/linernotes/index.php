@@ -10,7 +10,7 @@
 
     <meta property="og:type" content="company" />
     <meta property="og:title" content="Hum" />
-    <meta property="og:image" content="/_/img/facebook_linernotes.jpg" />
+    <meta property="og:image" content="/_/img/facebook-linernotes.jpg" />
     <meta property="og:site_name" content="Hum" />
     <meta property="og:description" content="The Liner Notes is a video series about songwriters and their craft." />
     <meta property="og:url" content="https://justhum.com/linernotes/" />
@@ -31,7 +31,7 @@
 
       <div class="episode">
         <div class="episode-photo">
-          <img src="/_/img/linernotes/jason-mandell.png" alt="Jason Mandell" width="160"  data-ret="/_/img/linernotes/jason-mandell@2x.png">
+          <img src="/_/img/linernotes/jason-mandell.png" alt="Jason Mandell" width="160">
         </div>
 
         <div class="episode-synopsis">

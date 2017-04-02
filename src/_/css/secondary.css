@@ -49,7 +49,7 @@ a:hover {
 	display: block;
 	height: 0;
 	overflow: hidden;
-	background: url("../img/hum_small.png") no-repeat;
+	background: url("../img/hum-small.png") no-repeat;
 	background-size: 100%;
 	padding-top: 55px;
 	width: 145px;
@@ -91,7 +91,7 @@ a.appstore_btn {
 	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
-	background: #4da99d url("../img/apple_small.png") no-repeat 1em center;
+	background: #4da99d url("../img/apple-small.png") no-repeat 1em center;
 	background-size: 21px;
 	display: inline-block;
 	padding: .9em 1em .9em 3.6em;
@@ -1269,51 +1269,6 @@ button.mfp-close:hover {
   }
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-
-  .header h1 a {
-    background-image: url("../img/hum_small@2x.png");
-  }
-
-  a.appstore_btn {
-    background-image: url("../img/apple_small@2x.png");
-  }
-
-  .footer .logo a {
-    background-image: url("../img/hum@2x.png");
-  }
-
-  body.linernotes .footer .logo a {
-    background-image: url("../img/hum-dark@2x.png");
-  }
-
-  .toggle-btn {
-    background-image: url("../img/hamburger-btn-dark@2x.png");
-  }
-
-  .footer .social a.twitter-btn {
-    background-image: url("../img/twitter-btn@2x.png");
-  }
-
-  .footer .social a.facebook-btn {
-    background-image: url("../img/facebook-btn@2x.png");
-  }
-
-  .video-btn {
-    background-image: url("../img/play-btn-question@2x.png");
-  }
-
-  button.mfp-close {
-    background-image: url("../img/close-btn-question@2x.png");
-  }
-}
-
 /* Typekit loading overrides */
 
 .wf-loading h1,
@@ -1324,4 +1279,4 @@ only screen and (                min-resolution: 2dppx) {
 .wf-loading .navigation,
 .wf-loading .appstore_btn {
   visibility: hidden;
-}justh
+}
