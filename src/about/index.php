@@ -75,7 +75,7 @@
 
         <div class="main sub">
           <h5>Writing a Story?</h5>
-          <a href="/_/hum_presskit-jan2014.zip" class="btn">Download our Presskit</a>
+          <a href="/_/hum_presskit.zip" class="btn">Download our Presskit</a>
         </div>
       </div>
     </div>
