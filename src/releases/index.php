@@ -31,6 +31,44 @@
 
       <div class="entry-content">
         <div class="named-release">
+          <a href="https://open.spotify.com/album/1bGy0DWYudx9kTbDvP7lHO">
+              <img class="release" width="75" src="/_/img/releases/timmytheteeth-justanotherday.jpg">
+          </a>
+          <h3 class="release">Version 1.9
+            <a href="https://open.spotify.com/album/1bGy0DWYudx9kTbDvP7lHO">
+              &ldquo;Just Another Day&rdquo;
+            </a>
+            <span class="date">April 4, 2017</span>
+          </h3>
+        </div>
+
+        <ul class="notes">
+          <li>
+            <span class="added tag">Added</span>
+            We’ve added a trash so your Hums won’t be deleted immediately. You can access the trash in the sidebar.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            We’ve changed the design of Hum a little bit. We’ve added a sidebar to make room for some future features.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            Your main library is now called “All Hums” and can be accessed in the sidebar.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            Sorting and Filtering have moved next to the search bar.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            Our translations have been improved throughout Hum.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            To account for a new design, our launch image needed to change a bit.
+          </li>
+        </ul>
+        <div class="named-release">
           <a href="https://open.spotify.com/album/1NvW80mVflSphrro6oWLuP">
               <img class="release" width="75" src="/_/img/releases/johnmoreland-highontulsaheat.jpg">
           </a>
