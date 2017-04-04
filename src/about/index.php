@@ -109,7 +109,7 @@
               //-->
               //]]>
             </script>
-            <a href="http://twitter.com/aaronshekey" target="_blank" title="Follow Aaron on Twitter" class="btn">@aaronshekey</a>
+            <a href="https://twitter.com/aaronshekey" target="_blank" title="Follow Aaron on Twitter" class="btn">@aaronshekey</a>
           </div>
         </div>
 
@@ -137,7 +137,7 @@
               //-->
               //]]>
             </script>
-            <a href="http://twitter.com/josephkuefler" target="_blank" title="Follow Joseph on Twitter" class="btn">@josephkuefler</a>
+            <a href="https://twitter.com/josephkuefler" target="_blank" title="Follow Joseph on Twitter" class="btn">@josephkuefler</a>
           </div>
         </div>
 
@@ -167,7 +167,19 @@
               //-->
               //]]>
             </script>
-            <a href="http://twitter.com/designatednerd" target="_blank" title="Follow Ellen on Twitter" class="btn">@designatednerd</a>
+            <a href="https://twitter.com/designatednerd" target="_blank" title="Follow Ellen on Twitter" class="btn">@designatednerd</a>
+          </div>
+        </div>
+
+        <div class="bio">
+          <div class="bio-photo">
+            <img src="/_/img/bio-rachel.png" alt="Rachel Hyman" width="192">
+          </div>
+
+          <div class="bio-content">
+            <h4>Rachel Hyman</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
+            <a href="https://twitter.com/comethrugirl" target="_blank" title="Follow Rachel on Twitter" class="btn">@comethrugirl</a>
           </div>
         </div>
       </div>
