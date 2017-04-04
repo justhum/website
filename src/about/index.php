@@ -56,13 +56,13 @@
         </div>
 
         <div class="entry-content">
-          <p>Hi. I&rsquo;m Aaron.</p>
+          <p>Hi. I’m Aaron.</p>
 
           <p>Joseph and I were both tired of every song idea ending up being captured as a voice memo with only the most basic meta data attached to it. We were tired of our lyrics ending up as fragments between shopping lists and reminders. In the spring of 2013, I quit my job at Adobe to pursue working on the initial designs of Hum. After seeing my sketches, Joseph spent the next few weeks on the branding.</p>
 
           <p>We realized we had designs for a tool that would solve all our shared frustrations with songwriting in a modern age. We showed it to all our songwriter friends and they agreed. We spent the next six months building and polishing the first version, enlisting the help of <a href="http://designatednerd.com" target="_blank">Ellen Shapiro</a> to do the heavy lifting on the code side of things while I built the user interface.</p>
 
-          <p>We&rsquo;re incredibly proud of Hum. It&rsquo;s available now on <a href="https://itunes.apple.com/us/app/hum/id796154884?ls=1&mt=8" target="_blank">the App Store.</a></p>
+          <p>We’re incredibly proud of Hum. It’s available now on <a href="https://itunes.apple.com/us/app/hum/id796154884?ls=1&mt=8" target="_blank">the App Store.</a></p>
 
           <p>Thanks,</p>
 
@@ -120,7 +120,7 @@
 
           <div class="bio-content">
             <h4>Joseph Kuefler</h4>
-            <p>I came up leading creative teams at modern branding agency <a href="http://zeusjones.com/" target="_blank">Zeus Jones.</a> I was the creative director at a boutique music technology company. Now, I&rsquo;m a strategy lead at <a href="http://gokartlabs.com">GoKart</a>. I&rsquo;m a multi-instrumentalist and songwriter. I branded Hum.</p>
+            <p>I came up leading creative teams at modern branding agency <a href="http://zeusjones.com/" target="_blank">Zeus Jones.</a> I was the creative director at a boutique music technology company. Now, I’m a strategy lead at <a href="https://www.thebigknow.com">The Big Know</a>. I’m a multi-instrumentalist and songwriter. I branded Hum.</p>
             <script type="text/javascript">
               //<![CDATA[
               <!--
@@ -148,7 +148,7 @@
 
           <div class="bio-content">
             <h4>Ellen Shapiro</h4>
-            <p>I&rsquo;ve spent my whole life creating - from being a singer-songwriter to working in TV production to building apps. I build iOS and Android apps for <a href="http://vokalinteractive.com" target="_blank">Vokal Interactive</a> and on my own. I architected and built the back end of Hum.</p>
+            <p>I’ve spent my whole life creating - from being a singer-songwriter to working in TV production to building apps. I build iOS and Android apps for <a href="https://spothero.com/" target="_blank">Spot Hero</a> and on my own. I architected and built the back end of Hum.</p>
             <script type="text/javascript">
               //<![CDATA[
               <!--
@@ -178,7 +178,23 @@
 
           <div class="bio-content">
             <h4>Rachel Hyman</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
+            <p>After studying geography in college, I serendipitously fell into iOS development when I had the opportunity to do a bootcamp. I never looked back. I do iOS development at <a href="https://sittercity.com">Sittercity</a> by day and the same for Hum at night, with my shiba Kenny by my side.</p>
+            <script type="text/javascript">
+              //<![CDATA[
+              <!--
+              var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+              "=48){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+              ".substr(0,ol);}f(\")511,\\\"PZRAEX400\\\\K_710\\\\610\\\\300\\\\q3(4/),2720" +
+              "\\\\:0<03#nm220\\\\!)#)(230\\\\g*,%.700\\\\c430\\\\200\\\\[QHRN130\\\\230\\" +
+              "\\kXAV120\\\\n410\\\\C\\\\\\\\OAO310\\\\010\\\\uEHE310\\\\IVJUSjt]p~rzye,z`" +
+              "771\\\\{p}-R0jnxa(f:',mndt720\\\\710\\\\310\\\\U610\\\\720\\\\530\\\\230\\\\"+
+              "300\\\\620\\\\330\\\\720\\\\\\\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCra" +
+              "hCmorf.gnirtS=+o;721=%y;2=*y))y+511(>i(fi{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\"+
+              "\"=o,i rav{)y,x(f noitcnuf\")"                                               ;
+              while(x=eval(x));
+              //-->
+              //]]>
+            </script>
             <a href="https://twitter.com/comethrugirl" target="_blank" title="Follow Rachel on Twitter" class="btn">@comethrugirl</a>
           </div>
         </div>
