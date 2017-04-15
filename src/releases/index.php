@@ -30,6 +30,30 @@
       <? endif; ?>
 
       <div class="entry-content">
+        <h3 class="release">1.9.1 <span class="date">April 15, 2017</span></h3>
+        <ul class="notes">
+          <li>
+            <span class="added tag">Added</span>
+            We’ve gotten some help from Rachel Hyman, so we’ve added her to the <a href="/about/">About</a> page.
+          </li>
+          <li>
+            <span class="added tag">Added</span>
+            Hum is now translated to Spanish.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            Scrubbing a song that’s playing in the library no longer reveals the sidebar.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            There was a crash when sharing songs.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            We now disable searching, sorting, and filtering if there are no songs in the Library or Trash.
+          </li>
+        </ul>
+
         <div class="named-release">
           <a href="https://open.spotify.com/album/1bGy0DWYudx9kTbDvP7lHO">
               <img class="release" width="75" src="/_/img/releases/timmytheteeth-justanotherday.jpg">
