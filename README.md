@@ -9,4 +9,4 @@ Typing `grunt deploy` will upload the static `build` directory and blog theme to
 
 ### SSL Renewal
 
-Login as root at Digital Ocean's IP address. You'll then want to run `./certbot-auto renew --no-self-upgrade`. This will provide fresh certs.
+Login as root at Digital Ocean's IP address. You'll then want to run `./certbot-auto renew --no-self-upgrade`. This will provide fresh certs. Then, you'll want to restart `nginx` so it actually uses the new certs. To do this, run `service nginx-sp restart`
