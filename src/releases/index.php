@@ -30,6 +30,44 @@
       <? endif; ?>
 
       <div class="entry-content">
+        <div class="named-release">
+          <a href="https://open.spotify.com/album/3ZGUBwDiY5HPOcWv4SBPQg">
+              <img class="release" width="75" src="/_/img/releases/tompetty-wildflowers.jpg">
+          </a>
+          <h3 class="release">Version 1.10
+            <a href="https://open.spotify.com/album/3ZGUBwDiY5HPOcWv4SBPQg">
+              &ldquo;Wildflowers&rdquo;
+            </a>
+            <span class="date">October 21, 2017</span>
+          </h3>
+        </div>
+
+        <ul class="notes">
+          <li>
+            <span class="added tag">Added</span>
+            Hum’s been updated for iOS 11.
+          </li>
+          <li>
+            <span class="added tag">Added</span>
+            We now count the number of Hums in the sidebar.
+          <li>
+            <span class="improved tag">Improved</span>
+            We’ve got better gestures for revealing the sidebar throughout.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            We’ve rewritten our syncing engine.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            The keyboard no longer closes when your search returns zero results.
+          </li>
+          <li>
+            <span class="removed tag">Removed</span>
+            We’ve dropped support for iOS 9.
+          </li>
+        </ul>
+        
         <h3 class="release">1.9.1 <span class="date">April 15, 2017</span></h3>
         <ul class="notes">
           <li>
