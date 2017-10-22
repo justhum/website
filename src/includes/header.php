@@ -14,4 +14,4 @@
   <meta name="description" content="Hum. Songwriting for iPhone.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="shortcut icon" href="/_/favicon.ico">
+  <link rel="shortcut icon" href="/favicon.ico">
