@@ -7,6 +7,7 @@
     <title>Terms of Service &amp; Privacy Policy &ndash; Hum. &ndash; Songwriting for iPhone.</title>
 
     <link rel="stylesheet" href="/_/css/secondary.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
 
     <meta property="og:type" content="company" />
     <meta property="og:title" content="Hum" />

@@ -7,6 +7,8 @@
         <title><?php wp_title( ' &ndash; ', true, 'right' ); ?><?php bloginfo('name'); ?></title>
 
         <link rel="stylesheet" href="/_/css/secondary.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
 
         <meta property="og:type" content="company" />
         <meta property="og:title" content="Hum" />

@@ -6,6 +6,7 @@
 
     <title>About &ndash; Hum. &ndash; Songwriting for iPhone</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
     <link rel="stylesheet" href="/_/css/secondary.css">
 
     <meta property="og:type" content="company" />

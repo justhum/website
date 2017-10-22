@@ -1,6 +1,7 @@
 <div class="navigation-mobile"></div>
 
-    <div class="header">
+  <div class="header">
+    <div class="navigation-wrapper">
       <h1><a href="/">Hum.</a></h1>
 
       <div class="navigation">
@@ -16,3 +17,4 @@
 
       <a href="#" class="toggle-btn"></a>
     </div>
+  </div>

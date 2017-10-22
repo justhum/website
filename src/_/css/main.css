@@ -14,9 +14,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body {
   background: #f0eeed;
   font-size: 18px;
-  font-family: 'source-sans-pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-style: normal;
   line-height: 1.5em;
   color: #656565;
   text-align: center;
@@ -35,12 +34,12 @@ img {
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 h2 {
@@ -221,21 +220,21 @@ h4 {
 }
 
 .navigation-mobile a.first {
-	border-top: none;
+  border-top: none;
 }
 
 .toggle-btn {
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 2000;
-	width: 53px;
-	height: 0;
-	display: none;
-	padding-top: 48px;
-	background: url("../img/hamburger-btn-dark.png") no-repeat;
-	background-size: 100%;
-	overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2000;
+  width: 53px;
+  height: 0;
+  display: none;
+  padding-top: 48px;
+  background: url("../img/hamburger-btn-dark.png") no-repeat;
+  background-size: 100%;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 27em) {
@@ -250,17 +249,17 @@ h4 {
 }
 
 .hero h2 {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 h1.logo {
-	margin: 0 auto 10px;
-	width: 186px;
-	height: 0;
-	padding-top: 71px;
-	overflow: hidden;
-	background: url("../img/hum.png") no-repeat;
-	background-size: 100%;
+  margin: 0 auto 10px;
+  width: 186px;
+  height: 0;
+  padding-top: 71px;
+  overflow: hidden;
+  background: url("../img/hum.png") no-repeat;
+  background-size: 100%;
 }
 
 
@@ -281,15 +280,15 @@ h1.logo {
 }
 
 .section {
-	padding: 5em 0;
+  padding: 5em 0;
 }
 
 .combine,
 .attach,
 .dropbox,
 .reviews {
-	background: #4da99d;
-	color: #fefefe;
+  background: #4da99d;
+  color: #fefefe;
 }
 
 .combine,
@@ -340,14 +339,14 @@ h1.logo {
 }
 
 .features {
-	color: #878787;
-	font-weight: 300;
-	overflow: hidden;
-	padding-bottom: 0;
+  color: #878787;
+  font-weight: 300;
+  overflow: hidden;
+  padding-bottom: 0;
 }
 
 .features img {
-	margin-bottom: .8em;
+  margin-bottom: .8em;
 }
 
 .features .wrapper {
@@ -357,9 +356,9 @@ h1.logo {
 }
 
 .feature {
-	max-width: 17em;
-	margin-bottom: 8em;
-	float: left;
+  max-width: 17em;
+  margin-bottom: 8em;
+  float: left;
 }
 
 .feature.first {
@@ -378,7 +377,7 @@ h1.logo {
 }
 
 @media
-only screen and (max-width: 81em) and (min-width: 67em),
+only screen and (max-width: 84em) and (min-width: 67em),
 only screen and (max-width: 39em) {
 
   .features .wrapper {
@@ -413,37 +412,37 @@ only screen and (max-width: 39em) {
 }
 
 .footer .social li {
-	display: inline-block;
-	margin: 0 3px;
+  display: inline-block;
+  margin: 0 3px;
 }
 
 .footer .social a {
-	display: block;
-	width: 26px;
-	height: 0;
-	padding-top: 26px;
-	overflow: hidden;
+  display: block;
+  width: 26px;
+  height: 0;
+  padding-top: 26px;
+  overflow: hidden;
 }
 
 .footer .social a.twitter-btn {
-	background: url("../img/twitter-btn.png") no-repeat;
-	background-size: 100%;
+  background: url("../img/twitter-btn.png") no-repeat;
+  background-size: 100%;
 }
 
 .footer .social a.twitter-btn:hover {
-	background-position: 0 -26px;
+  background-position: 0 -26px;
 }
 
 .credit {
-	font-size: .6875em;
-	line-height: 1.3em;
+  font-size: .6875em;
+  line-height: 1.3em;
 }
 
 form {
-	width: 80%;
-	margin: 0 auto 1em;
-	overflow: hidden;
-	max-width: 450px;
+  width: 80%;
+  margin: 0 auto 1em;
+  overflow: hidden;
+  max-width: 450px;
 }
 
 input {
@@ -452,7 +451,8 @@ input {
   appearance: none;
 
   box-sizing: border-box;
-  font-family: 'source-sans-pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
   float: left;
   height: 55px;
   width: 67.3610295777828%;
@@ -486,12 +486,12 @@ input::-moz-placeholder {
 }
 
 input.error {
-	color: #ff5d00;
-	border: 2px solid #ff5d00;
+  color: #ff5d00;
+  border: 2px solid #ff5d00;
 }
 
 button {
-  font-family: 'source-sans-pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #fff;
   text-decoration: none;
   height: 55px;
@@ -520,16 +520,16 @@ button:hover, button:focus {
 }
 
 button:active {
-	padding: 0;
+  padding: 0;
 }
 
 label {
-	font-size: .75em;
-	margin-top: 1.16em;
-	margin-bottom: 1em;
-	display: inline-block;
-	line-height: 1.33em;
-	width: 60%;
+  font-size: .75em;
+  margin-top: 1.16em;
+  margin-bottom: 1em;
+  display: inline-block;
+  line-height: 1.33em;
+  width: 60%;
 }
 
 @media only screen and (max-width: 21em) {
@@ -539,7 +539,7 @@ label {
 }
 
 label a {
-	color: #4da99d;
+  color: #4da99d;
 }
 
 .partner {
@@ -549,7 +549,7 @@ label a {
 @media only screen and (max-width: 32em) {
   input,
   button {
-  	clear: both;
+    clear: both;
     float: none;
     width: 100%;
     margin: 0 0 3px;
@@ -843,43 +843,31 @@ button.mfp-close:hover {
 }
 
 .mfp-fade.mfp-bg {
-	opacity: 0.001; /* Chrome opacity transition bug */
-	-webkit-transition: all 0.15s ease-out;
-	-moz-transition: all 0.15s ease-out;
-	transition: all 0.15s ease-out;
+  opacity: 0.001; /* Chrome opacity transition bug */
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
 }
 
 .mfp-fade.mfp-bg.mfp-ready {
-	opacity: 0.8;
+  opacity: 0.8;
 }
 
 .mfp-fade.mfp-bg.mfp-removing {
-	opacity: 0;
+  opacity: 0;
 }
 
 .mfp-fade.mfp-wrap .mfp-content {
-	opacity: 0;
-	-webkit-transition: all 0.15s ease-out;
-	-moz-transition: all 0.15s ease-out;
-	transition: all 0.15s ease-out;
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
 }
 
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-	opacity: 1;
+  opacity: 1;
 }
 
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-	opacity: 0;
-}
-
-/* Typekit loading overrides */
-
-.wf-loading h1,
-.wf-loading h2,
-.wf-loading h3,
-.wf-loading h4,
-.wf-loading p,
-.wf-loading .navigation,
-.wf-loading .appstore_btn {
-  visibility: hidden;
+  opacity: 0;
 }

@@ -40,10 +40,8 @@ MMMMMMO  .
     <meta property="og:description" content="Hum is an iPhone app that combines note-taking and audio recording into a single app for capturing and organizing all your songwriting ideas." />
     <meta property="og:url" content="http://justhum.com/" />
 
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
     <link rel="stylesheet" href="/_/css/main.css">
-
-    <script src="//use.typekit.net/qtx7caw.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     <link rel="shortcut icon" href="/_/favicon.ico">
   </head>
