@@ -39,7 +39,7 @@
             <a href="https://open.spotify.com/album/3ZGUBwDiY5HPOcWv4SBPQg">
               &ldquo;Wildflowers&rdquo;
             </a>
-            <span class="date">October 21, 2017</span>
+            <span class="date">October 26, 2017</span>
           </h3>
         </div>
 
