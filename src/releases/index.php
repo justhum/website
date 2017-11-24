@@ -31,7 +31,7 @@
       <? endif; ?>
 
       <div class="entry-content">
-        <div class="named-release">
+        <!-- <div class="named-release">
           <a href="https://open.spotify.com/album/3ZGUBwDiY5HPOcWv4SBPQg">
               <img class="release" width="75" src="/_/img/releases/tompetty-wildflowers.jpg">
           </a>
@@ -67,7 +67,7 @@
             <span class="removed tag">Removed</span>
             We’ve dropped support for iOS 9.
           </li>
-        </ul>
+        </ul> -->
         
         <h3 class="release">1.9.1 <span class="date">April 15, 2017</span></h3>
         <ul class="notes">
