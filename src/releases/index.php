@@ -31,15 +31,15 @@
       <? endif; ?>
 
       <div class="entry-content">
-        <!-- <div class="named-release">
+        <div class="named-release">
           <a href="https://open.spotify.com/album/3ZGUBwDiY5HPOcWv4SBPQg">
-              <img class="release" width="75" src="/_/img/releases/tompetty-wildflowers.jpg">
+            <img class="release" width="75" src="/_/img/releases/tompetty-wildflowers.jpg">
           </a>
           <h3 class="release">Version 1.10
             <a href="https://open.spotify.com/album/3ZGUBwDiY5HPOcWv4SBPQg">
               &ldquo;Wildflowers&rdquo;
             </a>
-            <span class="date">October 26, 2017</span>
+            <span class="date">January 11, 2017</span>
           </h3>
         </div>
 
@@ -50,7 +50,16 @@
           </li>
           <li>
             <span class="added tag">Added</span>
+            Hum now looks right on iPhone X.
+          </li>
+          <li>
+            <span class="added tag">Added</span>
             We now count the number of Hums in the sidebar.
+          </li>
+          <li>
+            <span class="added tag">Added</span>
+            You can now restore a Hum from the trash. Duh!
+          </li>
           <li>
             <span class="improved tag">Improved</span>
             We’ve got better gestures for revealing the sidebar throughout.
@@ -67,7 +76,7 @@
             <span class="removed tag">Removed</span>
             We’ve dropped support for iOS 9.
           </li>
-        </ul> -->
+        </ul>
         
         <h3 class="release">1.9.1 <span class="date">April 15, 2017</span></h3>
         <ul class="notes">
@@ -133,7 +142,7 @@
         </ul>
         <div class="named-release">
           <a href="https://open.spotify.com/album/1NvW80mVflSphrro6oWLuP">
-              <img class="release" width="75" src="/_/img/releases/johnmoreland-highontulsaheat.jpg">
+            <img class="release" width="75" src="/_/img/releases/johnmoreland-highontulsaheat.jpg">
           </a>
           <h3 class="release">Version 1.8
             <a href="https://open.spotify.com/album/1NvW80mVflSphrro6oWLuP">
