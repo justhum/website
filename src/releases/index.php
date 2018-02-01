@@ -31,6 +31,26 @@
       <? endif; ?>
 
       <div class="entry-content">
+        <h3 class="release">1.10.2 <span class="date">February 1, 2018</span></h3>
+        <ul class="notes">
+          <li>
+            <span class="fixed tag">Fixed</span>
+            Hum was syncing too often and interrupting lyric-writing.
+          </li>
+        </ul>
+
+        <h3 class="release">1.10.1 <span class="date">January 14, 2018</span></h3>
+        <ul class="notes">
+          <li>
+            <span class="fixed tag">Fixed</span>
+            The sorting and filtering popovers weren't looking right on iOS 10.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            The search bar was trolling our iOS 10 users.
+          </li>
+        </ul>
+
         <div class="named-release">
           <a href="https://open.spotify.com/album/3ZGUBwDiY5HPOcWv4SBPQg">
             <img class="release" width="75" src="/_/img/releases/tompetty-wildflowers.jpg">
