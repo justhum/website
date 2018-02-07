@@ -60,7 +60,7 @@
         <p>We’ve added a few options in Hum. If you tap the gear at the lower right of your library you’ll find preferences for Key Notation, Recording Countdown, and Usage Statistics. You’ll also find links to get help and leave us feedback.</p>
 
         <h3>How do I delete a Hum? <a class="video-btn" href="http://www.youtube.com/watch?v=E3VIugsJu10">Play</a></h3>
-        <p>In your library, swipe from right to left. Tap the delete button that appears.</p>
+        <p>In your library, swipe from right to left. Tap the Move to Trash button that appears.</p>
 
         <h3>So, wait. Hum lets you sing a melody into your phone and it converts it into music? Is it MIDI or something? Or is it more like Shazam?</h3>
         <p>Nope. Hum doesn’t do any of those things. Hum combines note-taking and audio recording into a single app. Capture new ideas, filter through older ones and share with your bandmates or friends. So, while Hum will <em>not</em> transcribe a sound you hum into written music, it will make you a more organized and efficient songwriter. It only records what you sing into it to capture your melodic ideas.</p>
@@ -81,7 +81,7 @@
         <p>Hum’s folder in Dropbox meant to be read-only. If you edit any of these files by hand, or move them, you could ruin Hum’s ability to sync to it, risking your whole library. If you still want to use your audio, you’ll want to copy the files out of Dropbox and edit them elsewhere.</p>
 
         <h3>How do I enable Dropbox syncing?</h3>
-        <p>To enable Dropbox syncing, press the settings gear in the lower right corner of your library and flip the Dropbox switch. It’ll bounce you to a screen where you can log in to your Dropbox account. A spinner will fire up and start spinning, showing you it’s uploading everything. Once the spinner stops, your library is uploaded. You can also check the status of a sync in the Settings screen.</p>
+        <p>To enable Dropbox syncing, first open the left sidebar by pressing the button on the top left that looks like 3 lines. Then press the settings gear at the bottom of this list. Now you can flip the Dropbox switch. It’ll bounce you to a screen where you can log in to your Dropbox account. A spinner will fire up and start spinning, showing you it’s uploading everything. Once the spinner stops, your library is uploaded. You can also check the status of a sync in the Settings screen.</p>
 
         <h3>What happens to my library if my phone is lost or stolen?</h3>
         <p>If you sync your library to Dropbox, you can load up Hum on a new phone and sync your old library.</p>
@@ -91,7 +91,7 @@
         <p>If you don’t have Dropbox syncing enabled, first, plug your old phone into iTunes and back it up. Then, plug in your new phone. You’ll want to restore your new phone from your old phone’s backup.</p>
 
         <h3>Can Hum import my Voice Memos?</h3>
-        <p>Yep! In Voice Memos, press the share button. Hum’s icon will appear in this list. Once shared from Voice Memos, or any other app, Hum will show you a screen where you can give your new Hum a title. Press save, and you’ll find your freshly-imported Hum in your library.</p>
+        <p>Yep! In Voice Memos, press the share button. Hum’s icon will appear in this list. Tap “Copy to Hum”. This will bounce you over to Hum. Once shared from Voice Memos, or any other app, Hum will show you a screen where you can give your new Hum a title. Press save, and you’ll find your freshly-imported Hum in your library.</p>
 
         <h3>How do I add a title to a Hum?</h3>
         <p>The first line of the lyrics field is your title. We don’t ever want giving your songs a title to get in the way of capturing an idea.</p>
