@@ -33,20 +33,20 @@ MMMMMMO  .
         <meta name="description" content="Hum. is a songwriting app for iPhone.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7407272/777922/css/fonts.css" />
-        <link rel="stylesheet" href="http://cdn.justhum.com/css/tertiary.min.css">
+        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7407272/777922/css/fonts.css" />
+        <link rel="stylesheet" href="/_/css/tertiary.css">
         
-        <link rel="shortcut icon" href="http://cdn.justhum.com/favicon.ico">
+        <link rel="shortcut icon" href="/favicon.ico">
     </head>
     <body>
-        <div class="container">        
+        <div class="container">
             <h1><a href="/">Hum.</a></h1>
             <h2>Page Not Found</h2>
         
             <p>
                 Sorry! We don&rsquo;t know where this page is.
                 <br /><br /><a class="btn" href="/">Start Over</a>
-            </p>       
+            </p>
         </div>
         
         <script>

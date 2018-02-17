@@ -43,7 +43,7 @@ MMMMMMO  .
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
     <link rel="stylesheet" href="/_/css/main.css">
 
-    <link rel="shortcut icon" href="/_/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
   </head>
   <body>
     <div class="container">
