@@ -29,8 +29,27 @@
           <h1>Releases</h1>
         </div>
       <? endif; ?>
+      
 
       <div class="entry-content">
+        <div class="named-release">
+          <a href="https://open.spotify.com/album/1IsUz7AJsQlQ9cMv7lfoFR">
+              <img class="release" width="75" src="/_/img/releases/sacricuori-delone.jpg">
+          </a>
+          <h3 class="release">Version 1.11
+            <a href="https://open.spotify.com/album/1IsUz7AJsQlQ9cMv7lfoFR">
+              &ldquo;Delone&rdquo;
+            </a>
+            <span class="date">May 29, 2018</span>
+          </h3>
+        </div>
+
+        <ul class="notes">
+          <li>
+            <span class="added tag">Added</span>
+            Folders. You can now add Hums to folders to further keep things organized.
+          </li>
+        </ul>
         <h3 class="release">1.10.2 <span class="date">February 1, 2018</span></h3>
         <ul class="notes">
           <li>
