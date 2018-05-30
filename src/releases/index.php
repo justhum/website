@@ -78,7 +78,7 @@
             <a href="https://open.spotify.com/album/3ZGUBwDiY5HPOcWv4SBPQg">
               &ldquo;Wildflowers&rdquo;
             </a>
-            <span class="date">January 11, 2017</span>
+            <span class="date">January 11, 2018</span>
           </h3>
         </div>
 
