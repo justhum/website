@@ -46,6 +46,24 @@
       </div> -->
 
       <div class="player">
+        <iframe width="100%" height="100%" src="//www.youtube.com/embed/7-eiBnICZNY?modestbranding=1&autohide=1&showinfo=0&rel=0&vq=hd720" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="episode">
+        <div class="episode-photo">
+          <img src="/_/img/linernotes/charlie-abbott.png" alt="Charlie Abbott" width="160">
+        </div>
+
+        <div class="episode-synopsis">
+          <h5>Episode 6</h5>
+          <h3>Charlie Abbott</h3>
+          <p>Charlie Abbott plays rock songs, most often stripped down to what makes them essential—guitar, drums, bass, and the truth. He flows with ease between grunge, pop, and radio-friendly rock. We joined him in his home studio in Nashville, TN after the release of “Mise En Place.”</p>
+
+          <a href="http://youtu.be/7-eiBnICZNY" class="btn" target="_blank">YouTube</a>
+        </div>
+      </div>
+
+      <div class="player">
         <iframe width="100%" height="100%" src="//www.youtube.com/embed/WOOJCDHcr6g?modestbranding=1&autohide=1&showinfo=0&rel=0&vq=hd720" frameborder="0" allowfullscreen></iframe>
       </div>
 
