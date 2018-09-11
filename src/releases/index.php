@@ -32,6 +32,13 @@
       
 
       <div class="entry-content">
+        <h3 class="release">1.11.1 <span class="date">September 8, 2018</span></h3>
+        <ul class="notes">
+          <li>
+            <span class="fixed tag">Fixed</span>
+            Disabling Dropbox syncing works better.
+          </li>
+        </ul>
         <div class="named-release">
           <a href="https://open.spotify.com/album/1IsUz7AJsQlQ9cMv7lfoFR">
               <img class="release" width="75" src="/_/img/releases/sacricuori-delone.jpg">
