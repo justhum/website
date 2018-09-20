@@ -32,6 +32,13 @@
       
 
       <div class="entry-content">
+        <h3 class="release">1.11.2 <span class="date">September 19, 2018</span></h3>
+        <ul class="notes">
+          <li>
+            <span class="added tag">Added</span>
+            You can now ask Siri to “add a new Hum.” It’s amazing!
+          </li>
+        </ul>
         <h3 class="release">1.11.1 <span class="date">September 8, 2018</span></h3>
         <ul class="notes">
           <li>
