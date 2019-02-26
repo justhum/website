@@ -33,6 +33,42 @@
       
 
       <div class="entry-content">
+        <h3 class="release">1.11.4 <span class="date">February 28, 2019</span></h3>
+        <ul class="notes">
+          <li>
+            <span class="fixed tag">Fixed</span>
+            Hum will no longer crash if you don’t have email setup on your device.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            There was a rare case where Hums would disappear if you synced Hum to multiple devices over the years. This show stopper of a bug has been fixed.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            We now automatically restart the syncing engine after sync failures and retry.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            There was a crash when generating a waveform.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            Much more logging and testing has been added to our syncing engine.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            There are now confirmation messages when moving a Hum into the trash or a folder.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            Checkmarks throughout the app have been made more consistent.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            Some Trash user interface logic has been improved.
+          </li>
+        </ul>
+
         <h3 class="release">1.11.3 <span class="date">January 7, 2019</span></h3>
         <ul class="notes">
           <li>
