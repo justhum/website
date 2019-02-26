@@ -33,6 +33,17 @@
       
 
       <div class="entry-content">
+        <h3 class="release">1.11.3 <span class="date">January 7, 2019</span></h3>
+        <ul class="notes">
+          <li>
+            <span class="improved tag">Improved</span>
+            Syncing should be a bit more robust
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            The placement of the Done button when editing your library was goofy.
+          </li>
+        </ul>
         <h3 class="release">1.11.2 <span class="date">September 19, 2018</span></h3>
         <ul class="notes">
           <li>
