@@ -6,18 +6,23 @@
     "type": "git",
     "url": "git+https://github.com/justhum/website.git"
   },
+  "scripts": {
+    "start": "grunt",
+    "deploy": "grunt deploy",
+    "build": "grunt build"
+  },
   "description": "Hum's marketing website https://justhum.com/",
   "bugs": {
     "url": "https://github.com/justhum/website/issues"
   },
   "homepage": "https://justhum.com/",
   "devDependencies": {
-    "grunt": "~0.4.5",
+    "grunt": "^1.0.3",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-uglify": "^2.2.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-rsync": "^1.0.1"
+    "grunt-rsync": "^3.0.0"
   }
 }
