@@ -30,9 +30,35 @@
           <h1>Releases</h1>
         </div>
       <? endif; ?>
-      
 
       <div class="entry-content">
+        <h3 class="release">1.11.5 <span class="date">April 7, 2019</span></h3>
+        <ul class="notes">
+          <li>
+            <span class="fixed tag">Fixed</span>
+            We fixed a concurrency issue with how we were saving data.
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            We no longer show table row edit actions when playing a song.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            We removed a ton of UI logic that was no longer used in current versions of Hum.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            We now show a confirmation when you delete a folder, restore from the trash, or delete something permanently.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            We now close the keyboard when you’re done searching.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            We’ve re-implemented our swipe actions, making it harder to accidentally permanently delete a Hum.
+          </li>
+        </ul>
         <h3 class="release">1.11.4 <span class="date">February 28, 2019</span></h3>
         <ul class="notes">
           <li>
