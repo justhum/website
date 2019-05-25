@@ -32,6 +32,17 @@
       <? endif; ?>
 
       <div class="entry-content">
+        <h3 class="release">1.11.6 <span class="date">May 19, 2019</span></h3>
+        <ul class="notes">
+          <li>
+            <span class="added tag">Added</span>
+            You can now long press on a note name to hear a preview of the note.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            The library doesn’t jump around so much when syncing to Dropbox.
+          </li>
+        </ul>
         <h3 class="release">1.11.5 <span class="date">April 7, 2019</span></h3>
         <ul class="notes">
           <li>
