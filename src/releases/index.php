@@ -32,6 +32,21 @@
       <? endif; ?>
 
       <div class="entry-content">
+        <h3 class="release">1.12 <span class="date">November 3, 2019</span></h3>
+        <ul class="notes">
+          <li>
+            <span class="added tag">Added</span>
+            A huge under the hood update to add dark mode
+          </li>
+          <li>
+            <span class="fixed tag">Fixed</span>
+            There were a few bugs with searching when there weren’t any results.
+          </li>
+          <li>
+            <span class="improved tag">Improved</span>
+            Waveform drawing and scrubbing is now improved throughout.
+          </li>
+        </ul>
         <h3 class="release">1.11.6 <span class="date">May 19, 2019</span></h3>
         <ul class="notes">
           <li>
