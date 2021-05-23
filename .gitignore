@@ -34,3 +34,4 @@ node_modules
 
 # Ignore the build folder
 build
+.DS_Store
